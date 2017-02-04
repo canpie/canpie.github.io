@@ -1,0 +1,5 @@
+<map id="QCanFrame" name="QCanFrame">
+<area shape="rect" id="node3" href="$classQCanFrameApi.html" title="CAN API frame. " alt="" coords="5,155,120,181"/>
+<area shape="rect" id="node4" href="$classQCanFrameError.html" title="CAN error frame. " alt="" coords="144,155,269,181"/>
+<area shape="rect" id="node2" href="$classCpFrame.html" title="CAN frame. " alt="" coords="96,5,173,32"/>
+</map>
