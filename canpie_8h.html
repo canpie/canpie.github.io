@@ -69,7 +69,6 @@ $(function() {
   <div class="summary">
 <a href="#nested-classes">Data Structures</a> &#124;
 <a href="#define-members">Macros</a> &#124;
-<a href="#typedef-members">Typedefs</a> &#124;
 <a href="#enum-members">Enumerations</a>  </div>
   <div class="headertitle">
 <div class="title">canpie.h File Reference</div>  </div>
@@ -130,9 +129,9 @@ Macros</h2></td></tr>
 <tr class="separator:gacc8fd10c9c8b39a1c4e53a3cde341b29"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga724e98df59c0e38f2e711c3d24f1eb95"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__CP__CONF.html#ga724e98df59c0e38f2e711c3d24f1eb95">CP_STATISTIC</a>&#160;&#160;&#160;0</td></tr>
 <tr class="separator:ga724e98df59c0e38f2e711c3d24f1eb95"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gac02132b57a51a1c26ff6fb11dc046c04"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__CP__VERSION.html#gac02132b57a51a1c26ff6fb11dc046c04">CP_VERSION_MAJOR</a>&#160;&#160;&#160;3</td></tr>
+<tr class="memitem:gac02132b57a51a1c26ff6fb11dc046c04"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__CP__VERSION.html#gac02132b57a51a1c26ff6fb11dc046c04">CP_VERSION_MAJOR</a>&#160;&#160;&#160;((uint8_t) 3)</td></tr>
 <tr class="separator:gac02132b57a51a1c26ff6fb11dc046c04"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga015d989acd6a013e84ea8696953172a8"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__CP__VERSION.html#ga015d989acd6a013e84ea8696953172a8">CP_VERSION_MINOR</a>&#160;&#160;&#160;0</td></tr>
+<tr class="memitem:ga015d989acd6a013e84ea8696953172a8"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__CP__VERSION.html#ga015d989acd6a013e84ea8696953172a8">CP_VERSION_MINOR</a>&#160;&#160;&#160;((uint8_t) 0)</td></tr>
 <tr class="separator:ga015d989acd6a013e84ea8696953172a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gada1cad88f6070db2ce1c15502af60b8f"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__CP__MASK.html#gada1cad88f6070db2ce1c15502af60b8f">CP_MASK_STD_FRAME</a>&#160;&#160;&#160;((uint32_t) 0x000007FF)</td></tr>
 <tr class="separator:gada1cad88f6070db2ce1c15502af60b8f"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -160,11 +159,6 @@ Macros</h2></td></tr>
 <tr class="separator:gab4fe68b0f4adfd4c062af7c034804d70"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9c68a7db1319edf3516467a07b0da16f"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="canpie_8h.html#a9c68a7db1319edf3516467a07b0da16f">CP_DATA_SIZE</a>&#160;&#160;&#160;((uint8_t) 64)</td></tr>
 <tr class="separator:a9c68a7db1319edf3516467a07b0da16f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
-Typedefs</h2></td></tr>
-<tr class="memitem:a95dacb0d9e14ca1df49661098c581769"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="structCpHdi__s.html">CpHdi_s</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="canpie_8h.html#a95dacb0d9e14ca1df49661098c581769">CpHdi_ts</a></td></tr>
-<tr class="separator:a95dacb0d9e14ca1df49661098c581769"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
 Enumerations</h2></td></tr>
@@ -256,7 +250,9 @@ Enumerations</h2></td></tr>
  }</td></tr>
 <tr class="separator:a1701ab116f6fb6d511dfc34e5115de2b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a364ad643291389f2be3c52e7e0d5f0bf"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="canpie_8h.html#a364ad643291389f2be3c52e7e0d5f0bf">CpChannel_e</a> { <br />
-&#160;&#160;<a class="el" href="canpie_8h.html#a364ad643291389f2be3c52e7e0d5f0bfa6339424fe05aa422027f98daa81a5cce">eCP_CHANNEL_1</a> = 0, 
+&#160;&#160;<a class="el" href="canpie_8h.html#a364ad643291389f2be3c52e7e0d5f0bfa944a3fb5a143c7997c9e03990b645ae4">eCP_CHANNEL_NONE</a> = 0, 
+<br />
+&#160;&#160;<a class="el" href="canpie_8h.html#a364ad643291389f2be3c52e7e0d5f0bfa6339424fe05aa422027f98daa81a5cce">eCP_CHANNEL_1</a>, 
 <br />
 &#160;&#160;<a class="el" href="canpie_8h.html#a364ad643291389f2be3c52e7e0d5f0bfa26614fc016c4d703d11e39e5481d2ffd">eCP_CHANNEL_2</a>, 
 <br />
@@ -281,7 +277,9 @@ Enumerations</h2></td></tr>
 <br />
 &#160;&#160;<a class="el" href="canpie_8h.html#a6b769a64b2ac853a0ca92d49bba9f66aacc795d5a3049aafc3a50e0b452d137d8">eCP_MODE_LISTEN_ONLY</a>, 
 <br />
-&#160;&#160;<a class="el" href="canpie_8h.html#a6b769a64b2ac853a0ca92d49bba9f66aae9c379a5535f149a907ab5f17c1110cb">eCP_MODE_SLEEP</a>
+&#160;&#160;<a class="el" href="canpie_8h.html#a6b769a64b2ac853a0ca92d49bba9f66aae9c379a5535f149a907ab5f17c1110cb">eCP_MODE_SLEEP</a>, 
+<br />
+&#160;&#160;<a class="el" href="canpie_8h.html#a6b769a64b2ac853a0ca92d49bba9f66aa2ba9f31fcb3d70d84901b8651de3d386">eCP_MODE_SELF_TEST</a>
 <br />
  }</td></tr>
 <tr class="separator:a6b769a64b2ac853a0ca92d49bba9f66a"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -309,14 +307,28 @@ Enumerations</h2></td></tr>
 <tr class="memitem:a302c7829baa00e4f617928947c59db2e"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="canpie_8h.html#a302c7829baa00e4f617928947c59db2e">CpErrType_e</a> { <br />
 &#160;&#160;<a class="el" href="canpie_8h.html#a302c7829baa00e4f617928947c59db2eaa54ca0933548e7c8652964b748e8b9ac">eCP_ERR_TYPE_NONE</a> = 0, 
 <br />
-&#160;&#160;<a class="el" href="canpie_8h.html#a302c7829baa00e4f617928947c59db2ea0c9e0229e2f9704ad389893552090664">eCP_ERR_TYPE_BIT0</a>
+&#160;&#160;<a class="el" href="canpie_8h.html#a302c7829baa00e4f617928947c59db2ea0c9e0229e2f9704ad389893552090664">eCP_ERR_TYPE_BIT0</a>, 
+<br />
+&#160;&#160;<a class="el" href="canpie_8h.html#a302c7829baa00e4f617928947c59db2eaec6c3e87f14164c94be211cfea26ee73">eCP_ERR_TYPE_BIT1</a>, 
+<br />
+&#160;&#160;<a class="el" href="canpie_8h.html#a302c7829baa00e4f617928947c59db2ea6e9d865432e783b823a9d237c97182e2">eCP_ERR_TYPE_STUFF</a>, 
+<br />
+&#160;&#160;<a class="el" href="canpie_8h.html#a302c7829baa00e4f617928947c59db2ea9b4752cbc20ac8bad7cd063bbc58fdde">eCP_ERR_TYPE_FORM</a>, 
+<br />
+&#160;&#160;<a class="el" href="canpie_8h.html#a302c7829baa00e4f617928947c59db2eaabb6bcd0f6d8192f087c281fc57a46e1">eCP_ERR_TYPE_CRC</a>, 
+<br />
+&#160;&#160;<a class="el" href="canpie_8h.html#a302c7829baa00e4f617928947c59db2ea91e4851a4b6ae149a96f6a225c58da7c">eCP_ERR_TYPE_ACK</a>
 <br />
  }</td></tr>
 <tr class="separator:a302c7829baa00e4f617928947c59db2e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1caf27851701fe290669e728e26ae04c"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="canpie_8h.html#a1caf27851701fe290669e728e26ae04c">CpBuffer_e</a> { <br />
 &#160;&#160;<a class="el" href="canpie_8h.html#a1caf27851701fe290669e728e26ae04ca4cd5c90f776b5a4afcccf31cbd9c1a8f">eCP_BUFFER_1</a> = 1, 
 <br />
-&#160;&#160;<a class="el" href="canpie_8h.html#a1caf27851701fe290669e728e26ae04caae03e04aa3f6a90b7de01f37ed52c201">eCP_BUFFER_2</a>
+&#160;&#160;<a class="el" href="canpie_8h.html#a1caf27851701fe290669e728e26ae04caae03e04aa3f6a90b7de01f37ed52c201">eCP_BUFFER_2</a>, 
+<br />
+&#160;&#160;<a class="el" href="canpie_8h.html#a1caf27851701fe290669e728e26ae04cadfa2e6fc5dfae32cbb55fba3759e72b0">eCP_BUFFER_3</a>
+, <br />
+&#160;&#160;<a class="el" href="canpie_8h.html#a1caf27851701fe290669e728e26ae04ca14328ffec1f309a2c739b7490f32a9b8">eCP_BUFFER_16</a>
 <br />
  }</td></tr>
 <tr class="separator:a1caf27851701fe290669e728e26ae04c"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -341,24 +353,6 @@ Enumerations</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>The symbol CP_DATA_SIZE defines the maximum number of bytes which are transferred inside the data field of a CAN message. For classic CAN frames the maximum number of bytes is 8, for CAN FD frames the maximum number of bytes is 64. </p>
-
-</div>
-</div>
-<h2 class="groupheader">Typedef Documentation</h2>
-<a id="a95dacb0d9e14ca1df49661098c581769"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a95dacb0d9e14ca1df49661098c581769">&#9670;&nbsp;</a></span>CpHdi_ts</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="canpie_8h.html#a95dacb0d9e14ca1df49661098c581769">CpHdi_ts</a></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Hardware description interface structure. </p>
-<p>The structure <a class="el" href="structCpHdi__s.html" title="Hardware description interface. ">CpHdi_s</a> provides fields to gather information about the CAN hardware. </p>
 
 </div>
 </div>
@@ -417,11 +411,15 @@ Enumerations</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Buffer definition. </p>
-<p>The enumeration CpBuffer_e is used to define a message buffer inside a FullCAN controller. The index for the first buffer starts at 0. </p>
+<p>The enumeration CpBuffer_e is used to define a message buffer inside a FullCAN controller. The index for the first buffer starts at 1. </p>
 <table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a1caf27851701fe290669e728e26ae04ca4cd5c90f776b5a4afcccf31cbd9c1a8f"></a>eCP_BUFFER_1&#160;</td><td class="fielddoc"><p>First buffer of FullCAN controller </p>
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a1caf27851701fe290669e728e26ae04ca4cd5c90f776b5a4afcccf31cbd9c1a8f"></a>eCP_BUFFER_1&#160;</td><td class="fielddoc"><p>Buffer number 1 </p>
 </td></tr>
-<tr><td class="fieldname"><a id="a1caf27851701fe290669e728e26ae04caae03e04aa3f6a90b7de01f37ed52c201"></a>eCP_BUFFER_2&#160;</td><td class="fielddoc"><p>Seconds buffer of FullCAN controller </p>
+<tr><td class="fieldname"><a id="a1caf27851701fe290669e728e26ae04caae03e04aa3f6a90b7de01f37ed52c201"></a>eCP_BUFFER_2&#160;</td><td class="fielddoc"><p>Buffer number 2 </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a1caf27851701fe290669e728e26ae04cadfa2e6fc5dfae32cbb55fba3759e72b0"></a>eCP_BUFFER_3&#160;</td><td class="fielddoc"><p>Buffer number 3 .. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a1caf27851701fe290669e728e26ae04ca14328ffec1f309a2c739b7490f32a9b8"></a>eCP_BUFFER_16&#160;</td><td class="fielddoc"><p>Buffer number 16 </p>
 </td></tr>
 </table>
 
@@ -464,7 +462,7 @@ Enumerations</h2></td></tr>
 
 <p>Callback Return Codes. </p>
 <p>These return values are used by the callback functions that can be installed by the function <a class="el" href="cp__core_8h.html#a2936dcc6b4368d10bbba90db996cc9d9" title="Install callback functions. ">CpCoreIntFunctions()</a>. </p>
-<p><b>Example</b> </p><div class="fragment"><div class="line">uint8_t MyCallback(<a class="code" href="structCpCanMsg__s.html">CpCanMsg_ts</a> * ptsCanMsgV, uint8_t ubBufferIdxV)</div><div class="line">{</div><div class="line">   <span class="comment">// Do something with IDs &lt; 100</span></div><div class="line">   <span class="keywordflow">if</span>( <a class="code" href="cp__msg_8h.html#ac41dcecbacff1145c80fef22ed670c9f">CpMsgGetStdId</a>(ptsCanMsgV) &lt; 100)</div><div class="line">   {</div><div class="line">      <span class="comment">//.....</span></div><div class="line">      <span class="keywordflow">return</span>(<a class="code" href="canpie_8h.html#a7891705c91cde48c26c7d1aafefc2790a7fe178bab816d830d71a699e5f3bb912">eCP_CALLBACK_PROCESSED</a>)</div><div class="line">   }</div><div class="line"></div><div class="line">   <span class="comment">// Put all other messages into the FIFO</span></div><div class="line">   <span class="keywordflow">return</span> (<a class="code" href="canpie_8h.html#a7891705c91cde48c26c7d1aafefc2790ac6edae190f4075ecaa9a61a9ea49a02f">eCP_CALLBACK_PUSH_FIFO</a>);</div><div class="line">}</div></div><!-- fragment --><p> <br />
+<p><b>Example</b> </p><div class="fragment"><div class="line">uint8_t MyCallback(<a class="code" href="structCpCanMsg__s.html">CpCanMsg_ts</a> * ptsCanMsgV, uint8_t ubBufferIdxV)</div><div class="line">{</div><div class="line">   <span class="comment">// Do something with IDs &lt; 100</span></div><div class="line">   <span class="keywordflow">if</span>( <a class="code" href="cp__msg_8h.html#a9d93471ce3b3d2ffe170868d889fe3f3">CpMsgGetStdId</a>(ptsCanMsgV) &lt; 100)</div><div class="line">   {</div><div class="line">      <span class="comment">//.....</span></div><div class="line">      <span class="keywordflow">return</span>(<a class="code" href="canpie_8h.html#a7891705c91cde48c26c7d1aafefc2790a7fe178bab816d830d71a699e5f3bb912">eCP_CALLBACK_PROCESSED</a>)</div><div class="line">   }</div><div class="line"></div><div class="line">   <span class="comment">// Put all other messages into the FIFO</span></div><div class="line">   <span class="keywordflow">return</span> (<a class="code" href="canpie_8h.html#a7891705c91cde48c26c7d1aafefc2790ac6edae190f4075ecaa9a61a9ea49a02f">eCP_CALLBACK_PUSH_FIFO</a>);</div><div class="line">}</div></div><!-- fragment --><p> <br />
  </p>
 <table class="fieldtable">
 <tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a7891705c91cde48c26c7d1aafefc2790a7fe178bab816d830d71a699e5f3bb912"></a>eCP_CALLBACK_PROCESSED&#160;</td><td class="fielddoc"><p>Message was processed by callback and is not inserted in the FIFO </p>
@@ -488,9 +486,11 @@ Enumerations</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Channel definition. </p>
-<p>The physical CAN interfaces are numbered from 0 .. N-1 (N: total number of physical CAN interfaces on the target system). The enumeration CpChannel_e lists up to 8 physical interfaces. </p>
+<p>The physical CAN interfaces are numbered from 1 .. N (N: total number of physical CAN interfaces on the target system). The enumeration CpChannel_e lists up to 8 physical interfaces. The enumeration value eCP_CHANNEL_NONE denotes an invalid channel value. </p>
 <table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a364ad643291389f2be3c52e7e0d5f0bfa6339424fe05aa422027f98daa81a5cce"></a>eCP_CHANNEL_1&#160;</td><td class="fielddoc"><p>CAN interface 1 </p>
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a364ad643291389f2be3c52e7e0d5f0bfa944a3fb5a143c7997c9e03990b645ae4"></a>eCP_CHANNEL_NONE&#160;</td><td class="fielddoc"><p>CAN interface invalid </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a364ad643291389f2be3c52e7e0d5f0bfa6339424fe05aa422027f98daa81a5cce"></a>eCP_CHANNEL_1&#160;</td><td class="fielddoc"><p>CAN interface 1 </p>
 </td></tr>
 <tr><td class="fieldname"><a id="a364ad643291389f2be3c52e7e0d5f0bfa26614fc016c4d703d11e39e5481d2ffd"></a>eCP_CHANNEL_2&#160;</td><td class="fielddoc"><p>CAN interface 2 </p>
 </td></tr>
@@ -600,6 +600,16 @@ Enumerations</h2></td></tr>
 </td></tr>
 <tr><td class="fieldname"><a id="a302c7829baa00e4f617928947c59db2ea0c9e0229e2f9704ad389893552090664"></a>eCP_ERR_TYPE_BIT0&#160;</td><td class="fielddoc"><p>Bit 0 error </p>
 </td></tr>
+<tr><td class="fieldname"><a id="a302c7829baa00e4f617928947c59db2eaec6c3e87f14164c94be211cfea26ee73"></a>eCP_ERR_TYPE_BIT1&#160;</td><td class="fielddoc"><p>Bit 1 error </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a302c7829baa00e4f617928947c59db2ea6e9d865432e783b823a9d237c97182e2"></a>eCP_ERR_TYPE_STUFF&#160;</td><td class="fielddoc"><p>Stuff error </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a302c7829baa00e4f617928947c59db2ea9b4752cbc20ac8bad7cd063bbc58fdde"></a>eCP_ERR_TYPE_FORM&#160;</td><td class="fielddoc"><p>Format error </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a302c7829baa00e4f617928947c59db2eaabb6bcd0f6d8192f087c281fc57a46e1"></a>eCP_ERR_TYPE_CRC&#160;</td><td class="fielddoc"><p>CRC error </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a302c7829baa00e4f617928947c59db2ea91e4851a4b6ae149a96f6a225c58da7c"></a>eCP_ERR_TYPE_ACK&#160;</td><td class="fielddoc"><p>Acknowledge error </p>
+</td></tr>
 </table>
 
 </div>
@@ -625,7 +635,9 @@ Enumerations</h2></td></tr>
 </td></tr>
 <tr><td class="fieldname"><a id="a6b769a64b2ac853a0ca92d49bba9f66aacc795d5a3049aafc3a50e0b452d137d8"></a>eCP_MODE_LISTEN_ONLY&#160;</td><td class="fielddoc"><p>Set controller into listen-only mode </p>
 </td></tr>
-<tr><td class="fieldname"><a id="a6b769a64b2ac853a0ca92d49bba9f66aae9c379a5535f149a907ab5f17c1110cb"></a>eCP_MODE_SLEEP&#160;</td><td class="fielddoc"><p>Set controller into Sleep mode </p>
+<tr><td class="fieldname"><a id="a6b769a64b2ac853a0ca92d49bba9f66aae9c379a5535f149a907ab5f17c1110cb"></a>eCP_MODE_SLEEP&#160;</td><td class="fielddoc"><p>Set controller into sleep (power-down) mode </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a6b769a64b2ac853a0ca92d49bba9f66aa2ba9f31fcb3d70d84901b8651de3d386"></a>eCP_MODE_SELF_TEST&#160;</td><td class="fielddoc"><p>Set controller into self-test mode </p>
 </td></tr>
 </table>
 

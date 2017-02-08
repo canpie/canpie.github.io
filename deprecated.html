@@ -6,7 +6,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.13"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>CANpie FD: CANpie version information</title>
+<title>CANpie FD: Deprecated List</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -46,7 +46,6 @@ $(function() {
 });
 </script>
 <div id="main-nav"></div>
-</div><!-- top -->
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -61,55 +60,25 @@ $(function() {
 </iframe>
 </div>
 
+</div><!-- top -->
 <div class="header">
-  <div class="summary">
-<a href="#define-members">Macros</a>  </div>
   <div class="headertitle">
-<div class="title">CANpie version information</div>  </div>
+<div class="title">Deprecated List </div>  </div>
 </div><!--header-->
 <div class="contents">
-<table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
-Macros</h2></td></tr>
-<tr class="memitem:gac02132b57a51a1c26ff6fb11dc046c04"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__CP__VERSION.html#gac02132b57a51a1c26ff6fb11dc046c04">CP_VERSION_MAJOR</a>&#160;&#160;&#160;((uint8_t) 3)</td></tr>
-<tr class="separator:gac02132b57a51a1c26ff6fb11dc046c04"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga015d989acd6a013e84ea8696953172a8"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__CP__VERSION.html#ga015d989acd6a013e84ea8696953172a8">CP_VERSION_MINOR</a>&#160;&#160;&#160;((uint8_t) 0)</td></tr>
-<tr class="separator:ga015d989acd6a013e84ea8696953172a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table>
-<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<p>The CANpie FD version information read dunring run-time via the function <a class="el" href="cp__core_8h.html#a04886a0761d58a28387fa79258b39ebf" title="Get hardware description information. ">CpCoreHDI()</a>. </p>
-<h2 class="groupheader">Macro Definition Documentation</h2>
-<a id="gac02132b57a51a1c26ff6fb11dc046c04"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gac02132b57a51a1c26ff6fb11dc046c04">&#9670;&nbsp;</a></span>CP_VERSION_MAJOR</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define CP_VERSION_MAJOR&#160;&#160;&#160;((uint8_t) 3)</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>This symbol defines if the driver version major value. </p>
-
-</div>
-</div>
-<a id="ga015d989acd6a013e84ea8696953172a8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga015d989acd6a013e84ea8696953172a8">&#9670;&nbsp;</a></span>CP_VERSION_MINOR</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define CP_VERSION_MINOR&#160;&#160;&#160;((uint8_t) 0)</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>This symbol defines if the driver version minor value. </p>
-
-</div>
-</div>
-</div><!-- contents -->
+<div class="textblock"><dl class="reflist">
+<dt><a class="anchor" id="_deprecated000001"></a>Global <a class="el" href="cp__msg_8h.html#a6b2b3b41056f41237142ecc47151b3b9">CpMsgClear</a>  (CpCanMsg_ts *ptsCanMsgV)</dt>
+<dd>It is advised to use <a class="el" href="cp__msg_8h.html#a26324d9c511e7ee8815f86aa6dbe3d07" title="Initialise message structure. ">CpMsgInit()</a> for new applications. </dd>
+<dt><a class="anchor" id="_deprecated000002"></a>Global <a class="el" href="cp__msg_8h.html#aa2be7146d7d9e58a379c5457bcc551f9">CpMsgGetExtId</a>  (const CpCanMsg_ts *ptsCanMsgV)</dt>
+<dd>It is advised to use <a class="el" href="cp__msg_8h.html#ade1383c687076fd3c034a43fe30d71a7" title="Get Identifier Value. ">CpMsgGetIdentifier()</a> for new applications. </dd>
+<dt><a class="anchor" id="_deprecated000003"></a>Global <a class="el" href="cp__msg_8h.html#a9d93471ce3b3d2ffe170868d889fe3f3">CpMsgGetStdId</a>  (const CpCanMsg_ts *ptsCanMsgV)</dt>
+<dd>It is advised to use <a class="el" href="cp__msg_8h.html#ade1383c687076fd3c034a43fe30d71a7" title="Get Identifier Value. ">CpMsgGetIdentifier()</a> for new applications. </dd>
+<dt><a class="anchor" id="_deprecated000004"></a>Global <a class="el" href="cp__msg_8h.html#a4cce2feeb23fd915262a13c905017568">CpMsgSetExtId</a>  (CpCanMsg_ts *ptsCanMsgV, uint32_t ulExtIdV)</dt>
+<dd>It is advised to use <a class="el" href="cp__msg_8h.html#a8be6e1c686419b01dc45e37d3fbe7240" title="Set Identifier Value. ">CpMsgSetIdentifier()</a> for new applications.  </dd>
+<dt><a class="anchor" id="_deprecated000005"></a>Global <a class="el" href="cp__msg_8h.html#ae77d572ec31801181a76b53efc742f0e">CpMsgSetStdId</a>  (CpCanMsg_ts *ptsCanMsgV, uint16_t uwStdIdV)</dt>
+<dd>It is advised to use <a class="el" href="cp__msg_8h.html#a8be6e1c686419b01dc45e37d3fbe7240" title="Set Identifier Value. ">CpMsgSetIdentifier()</a> for new applications. </dd>
+</dl>
+</div></div><!-- contents -->
 <!-- HTML footer for doxygen 1.8.9.1-->
 <!-- start footer part -->
 <hr class="footer"/>

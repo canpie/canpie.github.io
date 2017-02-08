@@ -4,6 +4,7 @@ var searchData=
   ['datasize',['dataSize',['../classCpFrame.html#a6224cd4483fa977fa4a91295ecfbd92d',1,'CpFrame']]],
   ['datauint16',['dataUInt16',['../classCpFrame.html#ac66409cdaf062dc55ba55c34b05c4b17',1,'CpFrame']]],
   ['datauint32',['dataUInt32',['../classCpFrame.html#aafd4431581aa9395fb1631c63f5c8209',1,'CpFrame']]],
+  ['deprecated_20list',['Deprecated List',['../deprecated.html',1,'']]],
   ['disconnect',['disconnect',['../classQCanInterface.html#abc5acc0fc0345eb83779991cfa98380c',1,'QCanInterface']]],
   ['disconnected',['disconnected',['../classQCanSocket.html#a22b0c610e7309512bdc8fa24444d76d5',1,'QCanSocket']]],
   ['disconnectnetwork',['disconnectNetwork',['../classQCanSocket.html#a2e7f603fabf7d753d3d6e85e57610ae1',1,'QCanSocket']]],
