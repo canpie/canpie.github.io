@@ -69,9 +69,9 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>The <a class="el" href="classCpTimeStamp.html" title="CAN frame time-stamp. ">CpTimeStamp</a> class provides the functionality for setting a time-stamp with a 1 ns (nano-seconds) resolution to a CAN frame (refer to <a class="el" href="classCpFrame.html#afc89c9353c3958df160180559d18f278">CpFrame::clMsgTimeP</a>). The time-stamp has two data fields: </p><ul>
-<li>A nanoseconds field with a valid value range from 0 to <a class="el" href="canpie__timestamp_8hpp.html#aca4b31ceec1ec117610e67a83854b5b3">TIME_STAMP_NSEC_LIMIT</a> </li>
-<li>A seconds field with a valid value range from 0 to <a class="el" href="canpie__timestamp_8hpp.html#ae42142770d280301b0b0b5cf1630ad5e">TIME_STAMP_SECS_LIMIT</a></li>
+<div class="textblock"><p>The <a class="el" href="classCpTimeStamp.html" title="CAN frame time-stamp. ">CpTimeStamp</a> class provides the functionality for setting a time-stamp with a 1 ns (nano-seconds) resolution to a CAN frame (refer to #CpFrame::clMsgTimeP). The time-stamp has two data fields: </p><ul>
+<li>A nanoseconds field with a valid value range from 0 to <a class="el" href="qcan__timestamp_8hpp.html#aca4b31ceec1ec117610e67a83854b5b3">TIME_STAMP_NSEC_LIMIT</a> </li>
+<li>A seconds field with a valid value range from 0 to <a class="el" href="qcan__timestamp_8hpp.html#ae42142770d280301b0b0b5cf1630ad5e">TIME_STAMP_SECS_LIMIT</a></li>
 </ul>
 <p>The time-stamp covers a time-period of more than 49652 days (136 years). The value of a time-stamp can be set from a counter value by means of the functions <a class="el" href="classCpTimeStamp.html#aa52fec904611c644a00cf70cab7405d3">fromMicroSeconds()</a> or <a class="el" href="classCpTimeStamp.html#a21c73df365944faf702e8bd4ff4b44ea">fromMilliSeconds()</a>. </p>
 </div><table class="memberdecls">
@@ -239,7 +239,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <dl class="section return"><dt>Returns</dt><dd><code>true</code> if time-stamp value is valid</dd></dl>
-<p>Returns <code>true</code> if this time-stamp is within the valid value range. The limit for the data fields are defined by <a class="el" href="canpie__timestamp_8hpp.html#ae42142770d280301b0b0b5cf1630ad5e">TIME_STAMP_SECS_LIMIT</a> and <a class="el" href="canpie__timestamp_8hpp.html#aca4b31ceec1ec117610e67a83854b5b3">TIME_STAMP_NSEC_LIMIT</a>. </p>
+<p>Returns <code>true</code> if this time-stamp is within the valid value range. The limit for the data fields are defined by <a class="el" href="qcan__timestamp_8hpp.html#ae42142770d280301b0b0b5cf1630ad5e">TIME_STAMP_SECS_LIMIT</a> and <a class="el" href="qcan__timestamp_8hpp.html#aca4b31ceec1ec117610e67a83854b5b3">TIME_STAMP_NSEC_LIMIT</a>. </p>
 
 </div>
 </div>
@@ -268,7 +268,7 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <dl class="section return"><dt>Returns</dt><dd>Nanoseconds part of time-stamp value </dd></dl>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="classCpTimeStamp.html#a937acdb678f0e374403604df4aeda93c">setNanoSeconds()</a></dd></dl>
-<p>Returns the nanoseconds part of this time-stamp. A return value of <a class="el" href="canpie__timestamp_8hpp.html#afb2801750005ba73f66e75cdef7d3682">TIME_STAMP_INVALID_VALUE</a> marks the time-stamp value as invalid. The validity of a time-stamp can be tested with <a class="el" href="classCpTimeStamp.html#a9aa5cbaf8f2382ca1d9ccc4dce8ebe26">isValid()</a>. </p>
+<p>Returns the nanoseconds part of this time-stamp. A return value of <a class="el" href="qcan__timestamp_8hpp.html#afb2801750005ba73f66e75cdef7d3682">TIME_STAMP_INVALID_VALUE</a> marks the time-stamp value as invalid. The validity of a time-stamp can be tested with <a class="el" href="classCpTimeStamp.html#a9aa5cbaf8f2382ca1d9ccc4dce8ebe26">isValid()</a>. </p>
 
 </div>
 </div>
@@ -577,7 +577,7 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <dl class="section return"><dt>Returns</dt><dd>Seconds part of time-stamp value </dd></dl>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="classCpTimeStamp.html#a554ee83483a4c7adc65e7282f620afac">setSeconds()</a></dd></dl>
-<p>Returns the seconds part of this time-stamp. A return value of <a class="el" href="canpie__timestamp_8hpp.html#afb2801750005ba73f66e75cdef7d3682">TIME_STAMP_INVALID_VALUE</a> marks the time-stamp value as invalid. The validity of a time-stamp can be tested with <a class="el" href="classCpTimeStamp.html#a9aa5cbaf8f2382ca1d9ccc4dce8ebe26">isValid()</a>. </p>
+<p>Returns the seconds part of this time-stamp. A return value of <a class="el" href="qcan__timestamp_8hpp.html#afb2801750005ba73f66e75cdef7d3682">TIME_STAMP_INVALID_VALUE</a> marks the time-stamp value as invalid. The validity of a time-stamp can be tested with <a class="el" href="classCpTimeStamp.html#a9aa5cbaf8f2382ca1d9ccc4dce8ebe26">isValid()</a>. </p>
 
 <p class="reference">References <a class="el" href="classCpTimeStamp.html#a57fd82a714a07d3557a314c609bcd758">operator!=()</a>, <a class="el" href="classCpTimeStamp.html#a11dcfae6797af8714fc8c46dcb153b45">operator+()</a>, <a class="el" href="classCpTimeStamp.html#a24729cac2ef4ea3fe7c91dc14faed6a9">operator+=()</a>, <a class="el" href="classCpTimeStamp.html#a6e08acd90a12e510646712cbd238b298">operator-()</a>, <a class="el" href="classCpTimeStamp.html#a61ad048e2acf8f05015313cc688804c9">operator-=()</a>, <a class="el" href="classCpTimeStamp.html#a9f8bc1307186e5df1f56e287d0e6dd1b">operator&lt;()</a>, <a class="el" href="classCpTimeStamp.html#a75fe3fed6608e915e1a32a20bffb28b9">operator&lt;=()</a>, <a class="el" href="classCpTimeStamp.html#ab4e039e6e0fc0d705e1bd8af96ff58a5">operator==()</a>, <a class="el" href="classCpTimeStamp.html#ac7d2187c52cb15468b3b85d0cfac03b7">operator&gt;()</a>, <a class="el" href="classCpTimeStamp.html#ad0f67b8ee4ded3a4ec82079aa1afeef0">operator&gt;=()</a>, <a class="el" href="classCpTimeStamp.html#a937acdb678f0e374403604df4aeda93c">setNanoSeconds()</a>, and <a class="el" href="classCpTimeStamp.html#a554ee83483a4c7adc65e7282f620afac">setSeconds()</a>.</p>
 
@@ -605,7 +605,7 @@ Public Member Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="classCpTimeStamp.html#a3c51af9c48c35ddd28ffa7af772125bd">nanoSeconds()</a></dd></dl>
-<p>Set the nanoseconds part of this time-stamp. The value of <em>ulNanoSecondsV</em> must be in the range from 0 to <a class="el" href="canpie__timestamp_8hpp.html#aca4b31ceec1ec117610e67a83854b5b3">TIME_STAMP_NSEC_LIMIT</a>. If passing a value greater than <a class="el" href="canpie__timestamp_8hpp.html#aca4b31ceec1ec117610e67a83854b5b3">TIME_STAMP_NSEC_LIMIT</a> the value is limited to <a class="el" href="canpie__timestamp_8hpp.html#aca4b31ceec1ec117610e67a83854b5b3">TIME_STAMP_NSEC_LIMIT</a>. </p>
+<p>Set the nanoseconds part of this time-stamp. The value of <em>ulNanoSecondsV</em> must be in the range from 0 to <a class="el" href="qcan__timestamp_8hpp.html#aca4b31ceec1ec117610e67a83854b5b3">TIME_STAMP_NSEC_LIMIT</a>. If passing a value greater than <a class="el" href="qcan__timestamp_8hpp.html#aca4b31ceec1ec117610e67a83854b5b3">TIME_STAMP_NSEC_LIMIT</a> the value is limited to <a class="el" href="qcan__timestamp_8hpp.html#aca4b31ceec1ec117610e67a83854b5b3">TIME_STAMP_NSEC_LIMIT</a>. </p>
 
 <p class="reference">Referenced by <a class="el" href="classCpTimeStamp.html#a0407ae83efa79c0025e1e66e29a8febc">seconds()</a>.</p>
 
@@ -633,7 +633,7 @@ Public Member Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="classCpTimeStamp.html#a0407ae83efa79c0025e1e66e29a8febc">seconds()</a></dd></dl>
-<p>Set the seconds part of this time-stamp. The value of <em>ulSecondsV</em> must be in the range from 0 to <a class="el" href="canpie__timestamp_8hpp.html#ae42142770d280301b0b0b5cf1630ad5e">TIME_STAMP_SECS_LIMIT</a>. If passing a value greater than <a class="el" href="canpie__timestamp_8hpp.html#ae42142770d280301b0b0b5cf1630ad5e">TIME_STAMP_SECS_LIMIT</a> the value is limited to <a class="el" href="canpie__timestamp_8hpp.html#ae42142770d280301b0b0b5cf1630ad5e">TIME_STAMP_SECS_LIMIT</a>. </p>
+<p>Set the seconds part of this time-stamp. The value of <em>ulSecondsV</em> must be in the range from 0 to <a class="el" href="qcan__timestamp_8hpp.html#ae42142770d280301b0b0b5cf1630ad5e">TIME_STAMP_SECS_LIMIT</a>. If passing a value greater than <a class="el" href="qcan__timestamp_8hpp.html#ae42142770d280301b0b0b5cf1630ad5e">TIME_STAMP_SECS_LIMIT</a> the value is limited to <a class="el" href="qcan__timestamp_8hpp.html#ae42142770d280301b0b0b5cf1630ad5e">TIME_STAMP_SECS_LIMIT</a>. </p>
 
 <p class="reference">Referenced by <a class="el" href="classCpTimeStamp.html#a0407ae83efa79c0025e1e66e29a8febc">seconds()</a>.</p>
 

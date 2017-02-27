@@ -105,6 +105,8 @@ Functions</h2></td></tr>
 <tr class="separator:ade1383c687076fd3c034a43fe30d71a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9d93471ce3b3d2ffe170868d889fe3f3"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cp__msg_8h.html#a9d93471ce3b3d2ffe170868d889fe3f3">CpMsgGetStdId</a> (const <a class="el" href="structCpCanMsg__s.html">CpCanMsg_ts</a> *ptsCanMsgV)</td></tr>
 <tr class="separator:a9d93471ce3b3d2ffe170868d889fe3f3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeb4e2c263a1f74d2b0e82faf138682ab"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structCpTime__s.html">CpTime_ts</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cp__msg_8h.html#aeb4e2c263a1f74d2b0e82faf138682ab">CpMsgGetTime</a> (<a class="el" href="structCpCanMsg__s.html">CpCanMsg_ts</a> *ptsCanMsgV)</td></tr>
+<tr class="separator:aeb4e2c263a1f74d2b0e82faf138682ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a26324d9c511e7ee8815f86aa6dbe3d07"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cp__msg_8h.html#a26324d9c511e7ee8815f86aa6dbe3d07">CpMsgInit</a> (<a class="el" href="structCpCanMsg__s.html">CpCanMsg_ts</a> *ptsCanMsgV, uint8_t ubFormatV)</td></tr>
 <tr class="separator:a26324d9c511e7ee8815f86aa6dbe3d07"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5a0595867d5d41d4255d0ba4c42cfff2"><td class="memItemLeft" align="right" valign="top">bool_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cp__msg_8h.html#a5a0595867d5d41d4255d0ba4c42cfff2">CpMsgIsBitrateSwitch</a> (const <a class="el" href="structCpCanMsg__s.html">CpCanMsg_ts</a> *ptsCanMsgV)</td></tr>
@@ -374,6 +376,35 @@ Functions</h2></td></tr>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="cp__msg_8h.html#aa2be7146d7d9e58a379c5457bcc551f9" title="Get 29 Bit Identifier Value. ">CpMsgGetExtId()</a></dd></dl>
 <p>This macro retrieves the value for the identifier of an standard frame (CAN 2.0A). The frame format of the CAN message can be tested with the <a class="el" href="cp__msg_8h.html#af36342954da6c555a2c1137521d9481b" title="Check for Extended CAN frame. ">CpMsgIsExtended()</a> function.</p>
 <dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000003">Deprecated:</a></b></dt><dd>It is advised to use <a class="el" href="cp__msg_8h.html#ade1383c687076fd3c034a43fe30d71a7" title="Get Identifier Value. ">CpMsgGetIdentifier()</a> for new applications.</dd></dl>
+
+</div>
+</div>
+<a id="aeb4e2c263a1f74d2b0e82faf138682ab"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aeb4e2c263a1f74d2b0e82faf138682ab">&#9670;&nbsp;</a></span>CpMsgGetTime()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structCpTime__s.html">CpTime_ts</a>* CpMsgGetTime </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structCpCanMsg__s.html">CpCanMsg_ts</a> *&#160;</td>
+          <td class="paramname"><em>ptsCanMsgV</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get time-stamp value. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">ptsCanMsgV</td><td>Pointer to a CpCanMsg_ts message </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Pointer to time-stamp structure </dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="cp__msg_8h.html#a3908a4d4e38cf707639393d8cf6b5931" title="Set time-stamp value. ">CpMsgSetTime</a></dd></dl>
+<p>This function returns the time-stamp value for a CAN frame. </p>
 
 </div>
 </div>

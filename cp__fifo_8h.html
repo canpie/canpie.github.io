@@ -68,141 +68,182 @@ $(function() {
 <div class="header">
   <div class="summary">
 <a href="#nested-classes">Data Structures</a> &#124;
-<a href="#define-members">Macros</a>  </div>
+<a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
 <div class="title">cp_fifo.h File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-<table class="memberdecls">
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>A CAN message FIFO can be assigned to every message message buffer by calling <a class="el" href="cp__core_8h.html#a4125ce5aeaa3ff54553567a463ea44e0" title="Assign FIFO to message buffer. ">CpCoreFifoConfig()</a>. This file defines the structure of a CAN message FIFO (<a class="el" href="structCpFifo__s.html" title="Administration variables of a CAN message FIFO. ">CpFifo_s</a>) and inline functions to access the FIFO. </p>
+</div><div class="textblock"><div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Include dependency graph for cp_fifo.h:</div>
+<div id="dynsection-0-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-0-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="cp__fifo_8h__incl.png" border="0" usemap="#cp__fifo_8h" alt=""/></div>
+<map name="cp__fifo_8h" id="cp__fifo_8h">
+<area shape="rect" id="node2" href="canpie_8h.html" title="CANpie constants, structures and enumerations " alt="" coords="70,80,142,107"/>
+<area shape="rect" id="node3" href="compiler_8h.html" title="Definition of compiler independent data types. " alt="" coords="5,155,89,181"/>
+<area shape="rect" id="node5" href="cp__platform_8h.html" title="CANpie platform configuration. " alt="" coords="113,155,216,181"/>
+</map>
+</div>
+</div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Data Structures</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structCpFifo__s.html">CpFifo_s</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
-Macros</h2></td></tr>
-<tr class="memitem:a254da291f7264a7d5cd5da4e253c4916"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cp__fifo_8h.html#a254da291f7264a7d5cd5da4e253c4916">CpFifoDataInPtr</a>(FIFO_PTR)&#160;&#160;&#160;(((FIFO_PTR)-&gt;ptsCanMsg) + ((FIFO_PTR)-&gt;ulIndexIn))</td></tr>
-<tr class="separator:a254da291f7264a7d5cd5da4e253c4916"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0e12fecc9a768e031ed54cc8b6cb9432"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cp__fifo_8h.html#a0e12fecc9a768e031ed54cc8b6cb9432">CpFifoDataOutPtr</a>(FIFO_PTR)&#160;&#160;&#160;(((FIFO_PTR)-&gt;ptsCanMsg) + ((FIFO_PTR)-&gt;ulIndexOut))</td></tr>
-<tr class="separator:a0e12fecc9a768e031ed54cc8b6cb9432"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a881e3afe20a7534dbd4176941e44e711"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cp__fifo_8h.html#a881e3afe20a7534dbd4176941e44e711">CpFifoIsEmpty</a>(FIFO_PTR)&#160;&#160;&#160;(((FIFO_PTR)-&gt;ulIndexIn == (FIFO_PTR)-&gt;ulIndexOut) ? 1 : 0)</td></tr>
-<tr class="separator:a881e3afe20a7534dbd4176941e44e711"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a42ac16814ea1cc5bee23607074e434e1"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cp__fifo_8h.html#a42ac16814ea1cc5bee23607074e434e1">CpFifoIsFull</a>(FIFO_PTR)</td></tr>
-<tr class="separator:a42ac16814ea1cc5bee23607074e434e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa304bc6f5b4049a5bd09230bd1f13f9a"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cp__fifo_8h.html#aa304bc6f5b4049a5bd09230bd1f13f9a">CpFifoIncIn</a>(FIFO_PTR)</td></tr>
-<tr class="separator:aa304bc6f5b4049a5bd09230bd1f13f9a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af1537f248db8b67ba2d90254590e1975"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cp__fifo_8h.html#af1537f248db8b67ba2d90254590e1975">CpFifoIncOut</a>(FIFO_PTR)</td></tr>
-<tr class="separator:af1537f248db8b67ba2d90254590e1975"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a95edc87e7f0b1b29f28b6d0431ad0cbf"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cp__fifo_8h.html#a95edc87e7f0b1b29f28b6d0431ad0cbf">CpFifoInit</a>(FIFO_PTR,  MSG_PTR,  SIZE)</td></tr>
-<tr class="separator:a95edc87e7f0b1b29f28b6d0431ad0cbf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+Functions</h2></td></tr>
+<tr class="memitem:aa33d99a60e692e9aeef50d22b88212ac"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structCpCanMsg__s.html">CpCanMsg_ts</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cp__fifo_8h.html#aa33d99a60e692e9aeef50d22b88212ac">CpFifoDataInPtr</a> (<a class="el" href="structCpFifo__s.html">CpFifo_ts</a> *ptsFifoV)</td></tr>
+<tr class="separator:aa33d99a60e692e9aeef50d22b88212ac"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4560052da9a041b3ec29112b7ca257b5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structCpCanMsg__s.html">CpCanMsg_ts</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cp__fifo_8h.html#a4560052da9a041b3ec29112b7ca257b5">CpFifoDataOutPtr</a> (<a class="el" href="structCpFifo__s.html">CpFifo_ts</a> *ptsFifoV)</td></tr>
+<tr class="separator:a4560052da9a041b3ec29112b7ca257b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a554529ee6b7586470aba9bd7faf1f753"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cp__fifo_8h.html#a554529ee6b7586470aba9bd7faf1f753">CpFifoIncIn</a> (<a class="el" href="structCpFifo__s.html">CpFifo_ts</a> *ptsFifoV)</td></tr>
+<tr class="separator:a554529ee6b7586470aba9bd7faf1f753"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a25cce93902c3621e69f63c8029c87717"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cp__fifo_8h.html#a25cce93902c3621e69f63c8029c87717">CpFifoIncOut</a> (<a class="el" href="structCpFifo__s.html">CpFifo_ts</a> *ptsFifoV)</td></tr>
+<tr class="separator:a25cce93902c3621e69f63c8029c87717"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8762da3077e09c3c22dc068eca0b369e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cp__fifo_8h.html#a8762da3077e09c3c22dc068eca0b369e">CpFifoInit</a> (<a class="el" href="structCpFifo__s.html">CpFifo_ts</a> *ptsFifoV, <a class="el" href="structCpCanMsg__s.html">CpCanMsg_ts</a> *ptsCanMsgV, uint32_t ulSizeV)</td></tr>
+<tr class="separator:a8762da3077e09c3c22dc068eca0b369e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af860e2fc3c99eaa318f998ffab384e37"><td class="memItemLeft" align="right" valign="top">bool_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cp__fifo_8h.html#af860e2fc3c99eaa318f998ffab384e37">CpFifoIsEmpty</a> (<a class="el" href="structCpFifo__s.html">CpFifo_ts</a> *ptsFifoV)</td></tr>
+<tr class="separator:af860e2fc3c99eaa318f998ffab384e37"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af3d8c14081728a50ba8db9e2749acb4d"><td class="memItemLeft" align="right" valign="top">bool_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cp__fifo_8h.html#af3d8c14081728a50ba8db9e2749acb4d">CpFifoIsFull</a> (<a class="el" href="structCpFifo__s.html">CpFifo_ts</a> *ptsFifoV)</td></tr>
+<tr class="separator:af3d8c14081728a50ba8db9e2749acb4d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Macro Definition Documentation</h2>
-<a id="a254da291f7264a7d5cd5da4e253c4916"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a254da291f7264a7d5cd5da4e253c4916">&#9670;&nbsp;</a></span>CpFifoDataInPtr</h2>
+<h2 class="groupheader">Function Documentation</h2>
+<a id="aa33d99a60e692e9aeef50d22b88212ac"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa33d99a60e692e9aeef50d22b88212ac">&#9670;&nbsp;</a></span>CpFifoDataInPtr()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define CpFifoDataInPtr</td>
+          <td class="memname"><a class="el" href="structCpCanMsg__s.html">CpCanMsg_ts</a>* CpFifoDataInPtr </td>
           <td>(</td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname">FIFO_PTR</td><td>)</td>
-          <td>&#160;&#160;&#160;(((FIFO_PTR)-&gt;ptsCanMsg) + ((FIFO_PTR)-&gt;ulIndexIn))</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<dl class="section return"><dt>Returns</dt><dd>Pointer to next empty FIFO element.</dd></dl>
-<p>Value ctrl have to be a (static) variable from type of McFifoCtrl_ts structure. Value pdata is pointer to the FIFO array.</p>
-<div class="fragment"><div class="line"><span class="keyword">static</span> <a class="code" href="structCpFifo__s.html">CpFifo_ts</a>  tsCanFifoS;</div><div class="line"><a class="code" href="structCpCanMsg__s.html">CpCanMsg_ts</a> *     ptsCanMsgT</div><div class="line"></div><div class="line"></div><div class="line"><span class="keywordflow">if</span> (!(<a class="code" href="cp__fifo_8h.html#a42ac16814ea1cc5bee23607074e434e1">CpFifoIsFull</a>(&amp;tsCanFifoS)))</div><div class="line">{</div><div class="line">   ptsCanMsgT = <a class="code" href="cp__fifo_8h.html#a254da291f7264a7d5cd5da4e253c4916">CpFifoDataInPtr</a>(&amp;tsCanFifoS);</div><div class="line"></div><div class="line">   memcpy(ptsFifoInEntryT, ptsFifoNewEntryT, <span class="keyword">sizeof</span>(<a class="code" href="structCpCanMsg__s.html">CpCanMsg_ts</a>));</div><div class="line"></div><div class="line">   <a class="code" href="cp__fifo_8h.html#aa304bc6f5b4049a5bd09230bd1f13f9a">CpFifoIncIn</a>(&amp;tsCanFifoS);</div><div class="line">}</div></div><!-- fragment --> 
-</div>
-</div>
-<a id="a0e12fecc9a768e031ed54cc8b6cb9432"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0e12fecc9a768e031ed54cc8b6cb9432">&#9670;&nbsp;</a></span>CpFifoDataOutPtr</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define CpFifoDataOutPtr</td>
-          <td>(</td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname">FIFO_PTR</td><td>)</td>
-          <td>&#160;&#160;&#160;(((FIFO_PTR)-&gt;ptsCanMsg) + ((FIFO_PTR)-&gt;ulIndexOut))</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>This macro returns pointer to next FIFO out element. </p>
-<p>Value ctrl have to be a (static) variable from type of McFifoCtrl_ts structure. Value pdata is pointer to the FIFO array.</p>
-<div class="fragment"><div class="line">UserFifoEntry_ts * ptsFifoOutEntryT;</div><div class="line"></div><div class="line"><span class="keywordflow">if</span> (!(MC_FIFO_EMPTY(tsFifoCntrlS)))</div><div class="line">{</div><div class="line">   ptsFifoOutEntryT = MC_FIFO_DATA_OUT_PTR(tsFifoCntrlS,&amp;atsFifoDataS[0]);</div><div class="line"></div><div class="line">   memcpy(ptsUserDataT, ptsFifoOutEntryT, <span class="keyword">sizeof</span>(UserFifoEntry_ts));</div><div class="line"></div><div class="line">   <span class="comment">// handle ptsUserDataT data from FIFO</span></div><div class="line">   ...</div><div class="line"></div><div class="line">   MC_FIFO_INC_OUT(tsFifoCntrlS);</div><div class="line">}</div></div><!-- fragment --> 
-</div>
-</div>
-<a id="aa304bc6f5b4049a5bd09230bd1f13f9a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa304bc6f5b4049a5bd09230bd1f13f9a">&#9670;&nbsp;</a></span>CpFifoIncIn</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define CpFifoIncIn</td>
-          <td>(</td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname">FIFO_PTR</td><td>)</td>
+          <td class="paramtype"><a class="el" href="structCpFifo__s.html">CpFifo_ts</a> *&#160;</td>
+          <td class="paramname"><em>ptsFifoV</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line"><span class="keywordflow">do</span> {                                                        \</div><div class="line">            (FIFO_PTR)-&gt;ulIndexIn++;                                 \</div><div class="line">            if ((FIFO_PTR)-&gt;ulIndexIn &gt;= (FIFO_PTR)-&gt;ulIndexMax)     \</div><div class="line">            {                                                        \</div><div class="line">               (FIFO_PTR)-&gt;ulIndexIn = 0;                            \</div><div class="line">            }                                                        \</div><div class="line">         } <span class="keywordflow">while</span> (0)</div></div><!-- fragment -->
-<p>This macro have to be execute when data was written to the FIFO. </p>
-<p>Value ctrl have to be a (static) variable from type of McFifoCtrl_ts structure. </p>
 
+<p>Get next free entry from FIFO. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">ptsFifoV</td><td>- Pointer to CAN message FIFO </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Pointer to CAN message</dd></dl>
+<p>This function returns a pointer to the next free CAN message entry inside the FIFO. Please make sure to call <a class="el" href="cp__fifo_8h.html#af3d8c14081728a50ba8db9e2749acb4d" title="Test for FIFO full. ">CpFifoIsFull()</a> in advance. After writing to the FIFO the index has to adjusted by calling <a class="el" href="cp__fifo_8h.html#a554529ee6b7586470aba9bd7faf1f753" title="Increment data in pointer. ">CpFifoIncIn()</a>, like shown in this code example:</p>
+<div class="fragment"><div class="line"><span class="keyword">static</span> <a class="code" href="structCpFifo__s.html">CpFifo_ts</a>  tsCanFifoS;</div><div class="line"><a class="code" href="structCpCanMsg__s.html">CpCanMsg_ts</a> *     ptsCanNewMsgT;</div><div class="line"><a class="code" href="structCpCanMsg__s.html">CpCanMsg_ts</a> *     ptsCanInEntryT;</div><div class="line"></div><div class="line"></div><div class="line"></div><div class="line"><span class="keywordflow">if</span> (!(<a class="code" href="cp__fifo_8h.html#af3d8c14081728a50ba8db9e2749acb4d">CpFifoIsFull</a>(&amp;tsCanFifoS)))</div><div class="line">{</div><div class="line">   ptsCanInEntryT = <a class="code" href="cp__fifo_8h.html#aa33d99a60e692e9aeef50d22b88212ac">CpFifoDataInPtr</a>(&amp;tsCanFifoS);</div><div class="line"></div><div class="line">   memcpy(ptsCanInEntryT, ptsCanNewMsgT, <span class="keyword">sizeof</span>(<a class="code" href="structCpCanMsg__s.html">CpCanMsg_ts</a>));</div><div class="line"></div><div class="line">   <a class="code" href="cp__fifo_8h.html#a554529ee6b7586470aba9bd7faf1f753">CpFifoIncIn</a>(&amp;tsCanFifoS);</div><div class="line">}</div></div><!-- fragment --> 
 </div>
 </div>
-<a id="af1537f248db8b67ba2d90254590e1975"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af1537f248db8b67ba2d90254590e1975">&#9670;&nbsp;</a></span>CpFifoIncOut</h2>
+<a id="a4560052da9a041b3ec29112b7ca257b5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4560052da9a041b3ec29112b7ca257b5">&#9670;&nbsp;</a></span>CpFifoDataOutPtr()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define CpFifoIncOut</td>
+          <td class="memname"><a class="el" href="structCpCanMsg__s.html">CpCanMsg_ts</a>* CpFifoDataOutPtr </td>
           <td>(</td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname">FIFO_PTR</td><td>)</td>
+          <td class="paramtype"><a class="el" href="structCpFifo__s.html">CpFifo_ts</a> *&#160;</td>
+          <td class="paramname"><em>ptsFifoV</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line"><span class="keywordflow">do</span> {                                                        \</div><div class="line">            (FIFO_PTR)-&gt;ulIndexOut++;                                \</div><div class="line">            if ((FIFO_PTR)-&gt;ulIndexOut &gt;= (FIFO_PTR)-&gt;ulIndexMax)    \</div><div class="line">            {                                                        \</div><div class="line">               (FIFO_PTR)-&gt;ulIndexOut = 0;                           \</div><div class="line">            }                                                        \</div><div class="line">         } <span class="keywordflow">while</span> (0)</div></div><!-- fragment -->
-<p>This macro have to be execute when data was read from the FIFO. </p>
-<p>Value ctrl have to be a (static) variable from type of McFifoCtrl_ts structure. </p>
 
+<p>Get first element of FIFO. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">ptsFifoV</td><td>- Pointer to CAN message FIFO </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Pointer to CAN message</dd></dl>
+<p>This function returns a pointer to the first CAN message entry inside the FIFO. Please make sure to call <a class="el" href="cp__fifo_8h.html#af860e2fc3c99eaa318f998ffab384e37" title="Test for FIFO empty. ">CpFifoIsEmpty()</a> in advance. After reading from the FIFO the index has to adjusted by calling <a class="el" href="cp__fifo_8h.html#a25cce93902c3621e69f63c8029c87717" title="Increment data out pointer. ">CpFifoIncOut()</a>, like shown in this code example:</p>
+<div class="fragment"><div class="line"><span class="keyword">static</span> <a class="code" href="structCpFifo__s.html">CpFifo_ts</a>  tsCanFifoS;</div><div class="line"><a class="code" href="structCpCanMsg__s.html">CpCanMsg_ts</a> *     ptsCanNewMsgT;</div><div class="line"><a class="code" href="structCpCanMsg__s.html">CpCanMsg_ts</a> *     ptsCanOutEntryT;</div><div class="line"></div><div class="line"></div><div class="line"></div><div class="line"><span class="keywordflow">if</span> (!(<a class="code" href="cp__fifo_8h.html#af860e2fc3c99eaa318f998ffab384e37">CpFifoIsEmpty</a>(&amp;tsCanFifoS)))</div><div class="line">{</div><div class="line">   ptsCanOutEntryT = <a class="code" href="cp__fifo_8h.html#a4560052da9a041b3ec29112b7ca257b5">CpFifoDataOutPtr</a>(&amp;tsCanFifoS);</div><div class="line"></div><div class="line">   memcpy(ptsCanNewMsgT, ptsCanOutEntryT, <span class="keyword">sizeof</span>(<a class="code" href="structCpCanMsg__s.html">CpCanMsg_ts</a>));</div><div class="line"></div><div class="line">   CpFifoIncout(&amp;tsCanFifoS);</div><div class="line">}</div></div><!-- fragment --> 
 </div>
 </div>
-<a id="a95edc87e7f0b1b29f28b6d0431ad0cbf"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a95edc87e7f0b1b29f28b6d0431ad0cbf">&#9670;&nbsp;</a></span>CpFifoInit</h2>
+<a id="a554529ee6b7586470aba9bd7faf1f753"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a554529ee6b7586470aba9bd7faf1f753">&#9670;&nbsp;</a></span>CpFifoIncIn()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define CpFifoInit</td>
+          <td class="memname">void CpFifoIncIn </td>
           <td>(</td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname">FIFO_PTR, </td>
+          <td class="paramtype"><a class="el" href="structCpFifo__s.html">CpFifo_ts</a> *&#160;</td>
+          <td class="paramname"><em>ptsFifoV</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Increment data in pointer. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">ptsFifoV</td><td>- Pointer to CAN message FIFO</td></tr>
+  </table>
+  </dd>
+</dl>
+<p>This function increments the <a class="el" href="structCpFifo__s.html#a7a6491527a7952c42481e72549f4e9f1">CpFifo_ts::ulIndexIn</a> element of the CAN message FIFO. </p>
+
+</div>
+</div>
+<a id="a25cce93902c3621e69f63c8029c87717"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a25cce93902c3621e69f63c8029c87717">&#9670;&nbsp;</a></span>CpFifoIncOut()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void CpFifoIncOut </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structCpFifo__s.html">CpFifo_ts</a> *&#160;</td>
+          <td class="paramname"><em>ptsFifoV</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Increment data out pointer. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">ptsFifoV</td><td>- Pointer to CAN message FIFO</td></tr>
+  </table>
+  </dd>
+</dl>
+<p>This function increments the <a class="el" href="structCpFifo__s.html#ab5b819924cf972d33f0f447786ebad21">CpFifo_ts::ulIndexOut</a> element of the CAN message FIFO. </p>
+
+</div>
+</div>
+<a id="a8762da3077e09c3c22dc068eca0b369e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8762da3077e09c3c22dc068eca0b369e">&#9670;&nbsp;</a></span>CpFifoInit()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void CpFifoInit </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structCpFifo__s.html">CpFifo_ts</a> *&#160;</td>
+          <td class="paramname"><em>ptsFifoV</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname">MSG_PTR, </td>
+          <td class="paramtype"><a class="el" href="structCpCanMsg__s.html">CpCanMsg_ts</a> *&#160;</td>
+          <td class="paramname"><em>ptsCanMsgV</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname">SIZE&#160;</td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>ulSizeV</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -211,49 +252,74 @@ Macros</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line"><span class="keywordflow">do</span> {                                                        \</div><div class="line">            (FIFO_PTR)-&gt;ulIndexIn  = 0;                              \</div><div class="line">            (FIFO_PTR)-&gt;ulIndexOut = 0;                              \</div><div class="line">            (FIFO_PTR)-&gt;ulIndexMax = (SIZE);                         \</div><div class="line">            (FIFO_PTR)-&gt;ptsCanMsg  = (MSG_PTR);                      \</div><div class="line">         } <span class="keywordflow">while</span> (0)</div></div><!-- fragment -->
-<p>Initialise FIFO. </p>
-<p>Value ctrl have to be a (static) variable from type of a McFifoCtrl_ts. Value size gives number of entries the FIFO contains.</p>
-<p>Here is an example for initialisation of FIFO: </p><div class="fragment"><div class="line">...</div><div class="line"><span class="comment">// define example FIFO</span></div><div class="line">#define NUMBER_OF_FIFO_ENTRIES   20</div><div class="line"><span class="keyword">static</span> McFifoCtrl_ts tsMcFifoCtrlS;</div><div class="line"><span class="keyword">static</span> uint32_t      aulUserFifoDataS[NUMBER_OF_FIFO_ENTRIES]; <span class="comment">// can be an array of struct</span></div><div class="line">...</div><div class="line"><span class="comment">// initialise example FIFO</span></div><div class="line">MC_FIFO_INIT(tsMcFifoCtrlS,NUMBER_OF_FIFO_ENTRIES);</div></div><!-- fragment --><dl class="section attention"><dt>Attention</dt><dd>It is important that NUMBER_OF_FIFO_ENTRIES value that was used for atsUserFifoDataS declaration is the same as value that is used with MC_FIFO_INIT(); </dd></dl>
 
+<p>Initialise CAN message FIFO. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">ptsFifoV</td><td>- Pointer to CAN message FIFO </td></tr>
+    <tr><td class="paramname">ptsCanMsgV</td><td>- Pointer to array of CAN messages </td></tr>
+    <tr><td class="paramname">ulSizeV</td><td>- Size if CAN message array</td></tr>
+  </table>
+  </dd>
+</dl>
+<p>This function initialises a CA message FIFO. The paramter <em>ptsCanMsgV</em> points to an array of CpCanMsg_ts elements. The number of messages which can be stored inside the array is determined by the paramter <em>ulSizeV</em>.</p>
+<p>Here is an example for initialisation of a CAN message FIFO: </p><div class="fragment"><div class="line">...</div><div class="line">#define NUMBER_OF_FIFO_ENTRIES   20</div><div class="line"><span class="keyword">static</span> <a class="code" href="structCpFifo__s.html">CpFifo_ts</a>     tsCanFifoS;</div><div class="line"><span class="keyword">static</span> <a class="code" href="structCpCanMsg__s.html">CpCanMsg_ts</a>   atsCanMsgS[NUMBER_OF_FIFO_ENTRIES];</div><div class="line"></div><div class="line"><a class="code" href="cp__fifo_8h.html#a8762da3077e09c3c22dc068eca0b369e">CpFifoInit</a>(&amp;tsCanFifoS, &amp;atsCanMsgS, NUMBER_OF_FIFO_ENTRIES);</div></div><!-- fragment --> 
 </div>
 </div>
-<a id="a881e3afe20a7534dbd4176941e44e711"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a881e3afe20a7534dbd4176941e44e711">&#9670;&nbsp;</a></span>CpFifoIsEmpty</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define CpFifoIsEmpty</td>
-          <td>(</td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname">FIFO_PTR</td><td>)</td>
-          <td>&#160;&#160;&#160;(((FIFO_PTR)-&gt;ulIndexIn == (FIFO_PTR)-&gt;ulIndexOut) ? 1 : 0)</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<dl class="section return"><dt>Returns</dt><dd>1 if FIFO is empty, otherwise 0</dd></dl>
-<p>Value x have to be a (static) variable from type of McFifoCtrl_ts structure. e.g : </p><div class="fragment"><div class="line">uint32_t * pulFifoElementT;</div><div class="line">...</div><div class="line">if (MC_FIFO_EMPTY(tsMcFifoCtrlS))</div><div class="line">{</div><div class="line">   <span class="keywordflow">return</span> CpErr_FIFO_EMPTY;</div><div class="line">}</div><div class="line"></div><div class="line"><span class="comment">// access to next data of FIFO</span></div><div class="line">pulFifoElementT = (uint32_t *) MC_FIFO_DATA_OUT_PTR(tsMcFifoCtrlS);</div><div class="line"></div><div class="line">Dummy = *pulFifoElementT;</div><div class="line">...</div><div class="line">MC_FIFO_INC_OUT(tsMcFifoCtrlS);</div></div><!-- fragment --> 
-</div>
-</div>
-<a id="a42ac16814ea1cc5bee23607074e434e1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a42ac16814ea1cc5bee23607074e434e1">&#9670;&nbsp;</a></span>CpFifoIsFull</h2>
+<a id="af860e2fc3c99eaa318f998ffab384e37"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af860e2fc3c99eaa318f998ffab384e37">&#9670;&nbsp;</a></span>CpFifoIsEmpty()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define CpFifoIsFull</td>
+          <td class="memname">bool_t CpFifoIsEmpty </td>
           <td>(</td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname">FIFO_PTR</td><td>)</td>
+          <td class="paramtype"><a class="el" href="structCpFifo__s.html">CpFifo_ts</a> *&#160;</td>
+          <td class="paramname"><em>ptsFifoV</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line">( (((FIFO_PTR)-&gt;ulIndexIn+1 == (FIFO_PTR)-&gt;ulIndexOut) ||       \</div><div class="line">              (((FIFO_PTR)-&gt;ulIndexOut  == 0) &amp;&amp;                             \</div><div class="line">               ((FIFO_PTR)-&gt;ulIndexIn+1 == (FIFO_PTR)-&gt;ulIndexMax) )) ? 1 : 0)</div></div><!-- fragment --><dl class="section return"><dt>Returns</dt><dd>1 if FIFO is full, otherwise 0</dd></dl>
-<p>Value ctrl have to be a (static) variable from type of McFifoCtrl_ts structure. e.g : </p><div class="fragment"><div class="line">uint32_t * pulFifoElementT;</div><div class="line">...</div><div class="line">if (MC_FIFO_FULL(tsMcFifoCtrlS))</div><div class="line">{</div><div class="line">   <span class="keywordflow">return</span> CpErr_FIFO_FULL;</div><div class="line">}</div><div class="line"></div><div class="line"><span class="comment">// access to data of FIFO</span></div><div class="line">pulFifoElementT = (uint32_t *) MC_FIFO_DATA_IN_PTR(tsMcFifoCtrlS);</div><div class="line"></div><div class="line">*pulFifoElementT = Dummy;</div><div class="line">...</div><div class="line">MC_FIFO_INC_IN(tsMcFifoCtrlS);</div></div><!-- fragment --> 
+
+<p>Test for FIFO empty. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">ptsFifoV</td><td>- Pointer to CAN message FIFO </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>true if FIFO is empty, otherwise false</dd></dl>
+<p>The function returns <em>true</em> if the FIFO is empty, otherwise it will return <em>false</em>. </p>
+
+</div>
+</div>
+<a id="af3d8c14081728a50ba8db9e2749acb4d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af3d8c14081728a50ba8db9e2749acb4d">&#9670;&nbsp;</a></span>CpFifoIsFull()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool_t CpFifoIsFull </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structCpFifo__s.html">CpFifo_ts</a> *&#160;</td>
+          <td class="paramname"><em>ptsFifoV</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Test for FIFO full. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">ptsFifoV</td><td>- Pointer to CAN message FIFO </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>true if FIFO is full, otherwise false</dd></dl>
+<p>The function returns <em>true</em> if the FIFO is full, otherwise it will return <em>false</em>. </p>
+
 </div>
 </div>
 </div><!-- contents -->

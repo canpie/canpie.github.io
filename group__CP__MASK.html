@@ -75,6 +75,8 @@ Macros</h2></td></tr>
 <tr class="separator:gada1cad88f6070db2ce1c15502af60b8f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gac383aefe7f5d11387ae1c77a9aaa5acf"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__CP__MASK.html#gac383aefe7f5d11387ae1c77a9aaa5acf">CP_MASK_EXT_FRAME</a>&#160;&#160;&#160;((uint32_t) 0x1FFFFFFF)</td></tr>
 <tr class="separator:gac383aefe7f5d11387ae1c77a9aaa5acf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga8fe563701744e5fd282b9d201a98ed75"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__CP__MASK.html#ga8fe563701744e5fd282b9d201a98ed75">CP_MASK_MSG_FORMAT</a>&#160;&#160;&#160;((uint8_t) 0x03)</td></tr>
+<tr class="separator:ga8fe563701744e5fd282b9d201a98ed75"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <p>The following definitions are used in combination with the structure <a class="el" href="structCpCanMsg__s.html" title="CAN message structure. ">CpCanMsg_s</a>. </p>
@@ -90,7 +92,22 @@ Macros</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Mask for extended frame (29 bits), used in combination with the CpCanMsg_s::ulExt. </p>
+<p>Mask for extended frame (29 bits), used in combination with the <a class="el" href="structCpCanMsg__s.html#a34b06ff26b36e8dc803061c1964917b5">CpCanMsg_s::ulIdentifier</a>. </p>
+
+</div>
+</div>
+<a id="ga8fe563701744e5fd282b9d201a98ed75"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga8fe563701744e5fd282b9d201a98ed75">&#9670;&nbsp;</a></span>CP_MASK_MSG_FORMAT</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define CP_MASK_MSG_FORMAT&#160;&#160;&#160;((uint8_t) 0x03)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Mask for message format, used in combination with <code>ubMsgCtrl</code> field of the CpCanMsg_ts structure (<a class="el" href="structCpCanMsg__s.html#aaf6c9f49d0a30c389c19ee62d8f37c3e">CpCanMsg_s::ubMsgCtrl</a>). This mask covers <a class="el" href="group__CP__MSG__CTRL.html#ga048baffc0f9875ee387bf4ad151d1f34">CP_MSG_FORMAT_CBFF</a>, <a class="el" href="group__CP__MSG__CTRL.html#ga8ba48ed3fee2c9581f89bde6a6a30bb7">CP_MSG_FORMAT_CEFF</a>, <a class="el" href="group__CP__MSG__CTRL.html#ga8d5d6919820f47d0bb021ffe5d1eaa8e">CP_MSG_FORMAT_FBFF</a> and <a class="el" href="group__CP__MSG__CTRL.html#gab4fe68b0f4adfd4c062af7c034804d70">CP_MSG_FORMAT_FEFF</a> control flags. </p>
 
 </div>
 </div>
@@ -105,7 +122,7 @@ Macros</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Mask for standard frame (11 bits), used in combination with the CpCanMsg_s::uwStd. </p>
+<p>Mask for standard frame (11 bits), used in combination with the <a class="el" href="structCpCanMsg__s.html#a34b06ff26b36e8dc803061c1964917b5">CpCanMsg_s::ulIdentifier</a>. </p>
 
 </div>
 </div>

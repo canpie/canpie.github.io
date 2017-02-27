@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['write',['write',['../classQCanInterface.html#aa18ec743fe91e01b89bf52b196af3b19',1,'QCanInterface']]],
-  ['writeframe',['writeFrame',['../classQCanSocket.html#accf31c03b5b2d075fdb62c2efa760784',1,'QCanSocket::writeFrame(const QCanFrame &amp;clFrameR)'],['../classQCanSocket.html#a150766348fe36474ab56d24c283a5f24',1,'QCanSocket::writeFrame(const QCanFrameApi &amp;clFrameR)']]]
+  ['timestamp',['timeStamp',['../classCpFrame.html#a846baf71ae45da58b7530c955835db17',1,'CpFrame::timeStamp()'],['../classQCanFrame.html#a5aa26a9b7ee55a9bff5aacad6e765bf9',1,'QCanFrame::timeStamp()']]],
+  ['tostring',['toString',['../classQCanFrame.html#acb770e2471b0d3d58be01b44ca9211dd',1,'QCanFrame']]]
 ];

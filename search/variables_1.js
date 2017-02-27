@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['clmsgtimep',['clMsgTimeP',['../classCpFrame.html#afc89c9353c3958df160180559d18f278',1,'CpFrame']]]
+  ['clmsgtimep',['clMsgTimeP',['../classQCanData.html#ab5c042156ea6a3b988485203d8439e4e',1,'QCanData']]]
 ];

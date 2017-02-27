@@ -137,6 +137,8 @@ Macros</h2></td></tr>
 <tr class="separator:gada1cad88f6070db2ce1c15502af60b8f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gac383aefe7f5d11387ae1c77a9aaa5acf"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__CP__MASK.html#gac383aefe7f5d11387ae1c77a9aaa5acf">CP_MASK_EXT_FRAME</a>&#160;&#160;&#160;((uint32_t) 0x1FFFFFFF)</td></tr>
 <tr class="separator:gac383aefe7f5d11387ae1c77a9aaa5acf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga8fe563701744e5fd282b9d201a98ed75"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__CP__MASK.html#ga8fe563701744e5fd282b9d201a98ed75">CP_MASK_MSG_FORMAT</a>&#160;&#160;&#160;((uint8_t) 0x03)</td></tr>
+<tr class="separator:ga8fe563701744e5fd282b9d201a98ed75"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gad5ada83cf8e4114bb040f89f59ec2bfe"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__CP__MSG__CTRL.html#gad5ada83cf8e4114bb040f89f59ec2bfe">CP_MSG_CTRL_EXT_BIT</a>&#160;&#160;&#160;((uint8_t) 0x01)</td></tr>
 <tr class="separator:gad5ada83cf8e4114bb040f89f59ec2bfe"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gad4409df6e98bae28376e83f1b5563223"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__CP__MSG__CTRL.html#gad4409df6e98bae28376e83f1b5563223">CP_MSG_CTRL_FDF_BIT</a>&#160;&#160;&#160;((uint8_t) 0x02)</td></tr>
@@ -322,7 +324,7 @@ Enumerations</h2></td></tr>
  }</td></tr>
 <tr class="separator:a302c7829baa00e4f617928947c59db2e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1caf27851701fe290669e728e26ae04c"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="canpie_8h.html#a1caf27851701fe290669e728e26ae04c">CpBuffer_e</a> { <br />
-&#160;&#160;<a class="el" href="canpie_8h.html#a1caf27851701fe290669e728e26ae04ca4cd5c90f776b5a4afcccf31cbd9c1a8f">eCP_BUFFER_1</a> = 1, 
+&#160;&#160;<a class="el" href="canpie_8h.html#a1caf27851701fe290669e728e26ae04ca4cd5c90f776b5a4afcccf31cbd9c1a8f">eCP_BUFFER_1</a> = 0, 
 <br />
 &#160;&#160;<a class="el" href="canpie_8h.html#a1caf27851701fe290669e728e26ae04caae03e04aa3f6a90b7de01f37ed52c201">eCP_BUFFER_2</a>, 
 <br />
@@ -370,7 +372,7 @@ Enumerations</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Fixed bit-rates. </p>
-<p>The values of the enumeration CpBitrate_e are used as parameter for the function <a class="el" href="cp__core_8h.html#a23cb8c502d0c9c62156e12b40c3298e2" title="Set bitrate of CAN controller. ">CpCoreBitrate()</a>. </p>
+<p>The values of the enumeration CpBitrate_e are used as parameter for the function <a class="el" href="cp__core_8h.html#ada098fdaa69a362b5a2fb241b1a034ea" title="Set bitrate of CAN controller. ">CpCoreBitrate()</a>. </p>
 <table class="fieldtable">
 <tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a1701ab116f6fb6d511dfc34e5115de2baad510570f0bc89dc1101adbce0434771"></a>eCP_BITRATE_NONE&#160;</td><td class="fielddoc"><p>No bit-rate defined </p>
 </td></tr>
@@ -411,7 +413,7 @@ Enumerations</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Buffer definition. </p>
-<p>The enumeration CpBuffer_e is used to define a message buffer inside a FullCAN controller. The index for the first buffer starts at 1. </p>
+<p>The enumeration CpBuffer_e is used to define a message buffer inside a FullCAN controller. The index for the first buffer starts at 0. </p>
 <table class="fieldtable">
 <tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a1caf27851701fe290669e728e26ae04ca4cd5c90f776b5a4afcccf31cbd9c1a8f"></a>eCP_BUFFER_1&#160;</td><td class="fielddoc"><p>Buffer number 1 </p>
 </td></tr>
@@ -438,7 +440,7 @@ Enumerations</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Buffer direction definition. </p>
-<p>The enumeration CpBufferDir_e is used to define the direction of a message buffer (transmit or receive). The enumeration values are used by the function <a class="el" href="cp__core_8h.html#a9008afd4e151fdc0eeec7ec13410d174" title="Initialise message buffer. ">CpCoreBufferConfig()</a>. </p>
+<p>The enumeration CpBufferDir_e is used to define the direction of a message buffer (transmit or receive). The enumeration values are used by the function <a class="el" href="cp__core_8h.html#af197d9a10cd3f3c3506ae228c28e6567" title="Initialise message buffer. ">CpCoreBufferConfig()</a>. </p>
 <table class="fieldtable">
 <tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a78a23096456fe5765bd338f252c4898ea2950dd325e42596eb61d97260a8bea5f"></a>eCP_BUFFER_DIR_RCV&#160;</td><td class="fielddoc"><p>Message buffer direction is receive </p>
 </td></tr>
@@ -461,8 +463,8 @@ Enumerations</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Callback Return Codes. </p>
-<p>These return values are used by the callback functions that can be installed by the function <a class="el" href="cp__core_8h.html#a2936dcc6b4368d10bbba90db996cc9d9" title="Install callback functions. ">CpCoreIntFunctions()</a>. </p>
-<p><b>Example</b> </p><div class="fragment"><div class="line">uint8_t MyCallback(<a class="code" href="structCpCanMsg__s.html">CpCanMsg_ts</a> * ptsCanMsgV, uint8_t ubBufferIdxV)</div><div class="line">{</div><div class="line">   <span class="comment">// Do something with IDs &lt; 100</span></div><div class="line">   <span class="keywordflow">if</span>( <a class="code" href="cp__msg_8h.html#a9d93471ce3b3d2ffe170868d889fe3f3">CpMsgGetStdId</a>(ptsCanMsgV) &lt; 100)</div><div class="line">   {</div><div class="line">      <span class="comment">//.....</span></div><div class="line">      <span class="keywordflow">return</span>(<a class="code" href="canpie_8h.html#a7891705c91cde48c26c7d1aafefc2790a7fe178bab816d830d71a699e5f3bb912">eCP_CALLBACK_PROCESSED</a>)</div><div class="line">   }</div><div class="line"></div><div class="line">   <span class="comment">// Put all other messages into the FIFO</span></div><div class="line">   <span class="keywordflow">return</span> (<a class="code" href="canpie_8h.html#a7891705c91cde48c26c7d1aafefc2790ac6edae190f4075ecaa9a61a9ea49a02f">eCP_CALLBACK_PUSH_FIFO</a>);</div><div class="line">}</div></div><!-- fragment --><p> <br />
+<p>These return values are used by the callback functions that can be installed by the function <a class="el" href="cp__core_8h.html#a49e0cae4732c3bd753a4a481111a3cc9" title="Install callback functions. ">CpCoreIntFunctions()</a>. </p>
+<p><b>Example</b> </p><div class="fragment"><div class="line">uint8_t MyCallback(<a class="code" href="structCpCanMsg__s.html">CpCanMsg_ts</a> * ptsCanMsgV, uint8_t ubBufferIdxV)</div><div class="line">{</div><div class="line">   <span class="comment">// Do something with IDs &lt; 100</span></div><div class="line">   <span class="keywordflow">if</span>( <a class="code" href="cp__msg_8h.html#ade1383c687076fd3c034a43fe30d71a7">CpMsgGetIdentifier</a>(ptsCanMsgV) &lt; 100)</div><div class="line">   {</div><div class="line">      <span class="comment">//.....</span></div><div class="line">      <span class="keywordflow">return</span>(<a class="code" href="canpie_8h.html#a7891705c91cde48c26c7d1aafefc2790a7fe178bab816d830d71a699e5f3bb912">eCP_CALLBACK_PROCESSED</a>)</div><div class="line">   }</div><div class="line"></div><div class="line">   <span class="comment">// Put all other messages into the FIFO</span></div><div class="line">   <span class="keywordflow">return</span> (<a class="code" href="canpie_8h.html#a7891705c91cde48c26c7d1aafefc2790ac6edae190f4075ecaa9a61a9ea49a02f">eCP_CALLBACK_PUSH_FIFO</a>);</div><div class="line">}</div></div><!-- fragment --><p> <br />
  </p>
 <table class="fieldtable">
 <tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a7891705c91cde48c26c7d1aafefc2790a7fe178bab816d830d71a699e5f3bb912"></a>eCP_CALLBACK_PROCESSED&#160;</td><td class="fielddoc"><p>Message was processed by callback and is not inserted in the FIFO </p>
@@ -594,7 +596,7 @@ Enumerations</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Error type. </p>
-<p>These values are used as return value for the function <a class="el" href="cp__core_8h.html#a2c3c6a5c289f1aebf7fb9641eed23623" title="Retrieve status of CAN controller. ">CpCoreCanState()</a>. </p>
+<p>These values are used as return value for the function <a class="el" href="cp__core_8h.html#a65e2d4911724a605f8949fb789825dc1" title="Retrieve status of CAN controller. ">CpCoreCanState()</a>. </p>
 <table class="fieldtable">
 <tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a302c7829baa00e4f617928947c59db2eaa54ca0933548e7c8652964b748e8b9ac"></a>eCP_ERR_TYPE_NONE&#160;</td><td class="fielddoc"><p>No error </p>
 </td></tr>
@@ -627,7 +629,7 @@ Enumerations</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Mode of CAN controller. </p>
-<p>These values are used as parameter for the function <a class="el" href="cp__core_8h.html#a046f36439aaa71a345c7c892a295e755" title="Set state of CAN controller. ">CpCoreCanMode()</a> in order to change the state of the CAN controller. </p>
+<p>These values are used as parameter for the function <a class="el" href="cp__core_8h.html#a95ed35f9dc6a69f998f6258e141d944e" title="Set state of CAN controller. ">CpCoreCanMode()</a> in order to change the state of the CAN controller. </p>
 <table class="fieldtable">
 <tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a6b769a64b2ac853a0ca92d49bba9f66aa2b3bf4a358c876fdd52d2a4406d6510c"></a>eCP_MODE_STOP&#160;</td><td class="fielddoc"><p>Set controller in Stop mode (no reception / transmission possible) </p>
 </td></tr>
@@ -656,7 +658,7 @@ Enumerations</h2></td></tr>
 </div><div class="memdoc">
 
 <p>State of CAN controller. </p>
-<p>These values are used as return value for the function <a class="el" href="cp__core_8h.html#a2c3c6a5c289f1aebf7fb9641eed23623" title="Retrieve status of CAN controller. ">CpCoreCanState()</a>. </p>
+<p>These values are used as return value for the function <a class="el" href="cp__core_8h.html#a65e2d4911724a605f8949fb789825dc1" title="Retrieve status of CAN controller. ">CpCoreCanState()</a>. </p>
 <table class="fieldtable">
 <tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a0a0281489faa5bfb282f4b5692ec5044a97728f80f3959315abd79af64a8b5c80"></a>eCP_STATE_STOPPED&#160;</td><td class="fielddoc"><p>CAN controller is in stopped mode </p>
 </td></tr>
