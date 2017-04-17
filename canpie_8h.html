@@ -129,9 +129,9 @@ Macros</h2></td></tr>
 <tr class="separator:gacc8fd10c9c8b39a1c4e53a3cde341b29"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga724e98df59c0e38f2e711c3d24f1eb95"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__CP__CONF.html#ga724e98df59c0e38f2e711c3d24f1eb95">CP_STATISTIC</a>&#160;&#160;&#160;0</td></tr>
 <tr class="separator:ga724e98df59c0e38f2e711c3d24f1eb95"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gac02132b57a51a1c26ff6fb11dc046c04"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__CP__VERSION.html#gac02132b57a51a1c26ff6fb11dc046c04">CP_VERSION_MAJOR</a>&#160;&#160;&#160;((uint8_t) 3)</td></tr>
+<tr class="memitem:gac02132b57a51a1c26ff6fb11dc046c04"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__CP__VERSION.html#gac02132b57a51a1c26ff6fb11dc046c04">CP_VERSION_MAJOR</a>&#160;&#160;&#160;3</td></tr>
 <tr class="separator:gac02132b57a51a1c26ff6fb11dc046c04"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga015d989acd6a013e84ea8696953172a8"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__CP__VERSION.html#ga015d989acd6a013e84ea8696953172a8">CP_VERSION_MINOR</a>&#160;&#160;&#160;((uint8_t) 0)</td></tr>
+<tr class="memitem:ga015d989acd6a013e84ea8696953172a8"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__CP__VERSION.html#ga015d989acd6a013e84ea8696953172a8">CP_VERSION_MINOR</a>&#160;&#160;&#160;0</td></tr>
 <tr class="separator:ga015d989acd6a013e84ea8696953172a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gada1cad88f6070db2ce1c15502af60b8f"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__CP__MASK.html#gada1cad88f6070db2ce1c15502af60b8f">CP_MASK_STD_FRAME</a>&#160;&#160;&#160;((uint32_t) 0x000007FF)</td></tr>
 <tr class="separator:gada1cad88f6070db2ce1c15502af60b8f"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -179,7 +179,7 @@ Enumerations</h2></td></tr>
 <br />
 &#160;&#160;<a class="el" href="canpie_8h.html#a692d8909c2da35a13c0f6ed1c74905d9a51948ccd09c9eafecaff80c47175cf8a">eCP_ERR_RCV_EMPTY</a> = 6, 
 <br />
-&#160;&#160;<a class="el" href="canpie_8h.html#a692d8909c2da35a13c0f6ed1c74905d9aaf3962e09f26ef5836dd0587793ffee0">eCP_ERR_OVERRUN</a> = 7, 
+&#160;&#160;<a class="el" href="canpie_8h.html#a692d8909c2da35a13c0f6ed1c74905d9acea146d7b8a33437feb3665532516c5d">eCP_ERR_RCV_OVERRUN</a> = 7, 
 <br />
 &#160;&#160;<a class="el" href="canpie_8h.html#a692d8909c2da35a13c0f6ed1c74905d9a1b72e3cb797283514962083f61c526d7">eCP_ERR_TRM_FULL</a> = 8, 
 <br />
@@ -197,7 +197,7 @@ Enumerations</h2></td></tr>
 <br />
 &#160;&#160;<a class="el" href="canpie_8h.html#a692d8909c2da35a13c0f6ed1c74905d9a95319bf81c9f1703320a58e33be62e70">eCP_ERR_FIFO_SIZE</a> = 23, 
 <br />
-&#160;&#160;<a class="el" href="canpie_8h.html#a692d8909c2da35a13c0f6ed1c74905d9aaa5eda97266b81a32501f64e9e0b99c5">eCP_ERR_FIFO_PARM</a> = 24, 
+&#160;&#160;<a class="el" href="canpie_8h.html#a692d8909c2da35a13c0f6ed1c74905d9a1717adfb6a2110118e5ee331349516fb">eCP_ERR_FIFO_PARAM</a> = 24, 
 <br />
 &#160;&#160;<a class="el" href="canpie_8h.html#a692d8909c2da35a13c0f6ed1c74905d9a9bdd8ba44c3c2128dd0cdc57101ae3ce">eCP_ERR_BUS_PASSIVE</a> = 30, 
 <br />
@@ -247,6 +247,12 @@ Enumerations</h2></td></tr>
 <br />
 &#160;&#160;<a class="el" href="canpie_8h.html#a1701ab116f6fb6d511dfc34e5115de2badb5fffdd62c8828945ad6ba1ddda09fb">eCP_BITRATE_1M</a> = 8, 
 <br />
+&#160;&#160;<a class="el" href="canpie_8h.html#a1701ab116f6fb6d511dfc34e5115de2ba9b8b12bb1d7278221f52cc526e0c359e">eCP_BITRATE_2M</a> = 10, 
+<br />
+&#160;&#160;<a class="el" href="canpie_8h.html#a1701ab116f6fb6d511dfc34e5115de2baedfff6a0dfb13a108eef71b19fcc7e3b">eCP_BITRATE_4M</a> = 11, 
+<br />
+&#160;&#160;<a class="el" href="canpie_8h.html#a1701ab116f6fb6d511dfc34e5115de2bad7c42fb01749c1074e2b9542e3b3ef07">eCP_BITRATE_5M</a> = 12, 
+<br />
 &#160;&#160;<a class="el" href="canpie_8h.html#a1701ab116f6fb6d511dfc34e5115de2ba94f6fda71b7296aa4ba21b6a77bfcbfa">eCP_BITRATE_AUTO</a> = 9
 <br />
  }</td></tr>
@@ -273,21 +279,21 @@ Enumerations</h2></td></tr>
  }</td></tr>
 <tr class="separator:a364ad643291389f2be3c52e7e0d5f0bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6b769a64b2ac853a0ca92d49bba9f66a"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="canpie_8h.html#a6b769a64b2ac853a0ca92d49bba9f66a">CpMode_e</a> { <br />
-&#160;&#160;<a class="el" href="canpie_8h.html#a6b769a64b2ac853a0ca92d49bba9f66aa2b3bf4a358c876fdd52d2a4406d6510c">eCP_MODE_STOP</a> = 0, 
+&#160;&#160;<a class="el" href="canpie_8h.html#a6b769a64b2ac853a0ca92d49bba9f66aa021578923d47ae55e50aa745ed14d6a4">eCP_MODE_INIT</a> = 0
+, <br />
+&#160;&#160;<a class="el" href="canpie_8h.html#a6b769a64b2ac853a0ca92d49bba9f66aa1a632141d295f5ee2f754dd782c81cac">eCP_MODE_OPERATION</a> = 1
+, <br />
+&#160;&#160;<a class="el" href="canpie_8h.html#a6b769a64b2ac853a0ca92d49bba9f66aacc795d5a3049aafc3a50e0b452d137d8">eCP_MODE_LISTEN_ONLY</a> = 2, 
 <br />
-&#160;&#160;<a class="el" href="canpie_8h.html#a6b769a64b2ac853a0ca92d49bba9f66aa467bed80f7d8935ec79beb160cf9020d">eCP_MODE_START</a>, 
+&#160;&#160;<a class="el" href="canpie_8h.html#a6b769a64b2ac853a0ca92d49bba9f66aae9c379a5535f149a907ab5f17c1110cb">eCP_MODE_SLEEP</a> = 3, 
 <br />
-&#160;&#160;<a class="el" href="canpie_8h.html#a6b769a64b2ac853a0ca92d49bba9f66aacc795d5a3049aafc3a50e0b452d137d8">eCP_MODE_LISTEN_ONLY</a>, 
-<br />
-&#160;&#160;<a class="el" href="canpie_8h.html#a6b769a64b2ac853a0ca92d49bba9f66aae9c379a5535f149a907ab5f17c1110cb">eCP_MODE_SLEEP</a>, 
-<br />
-&#160;&#160;<a class="el" href="canpie_8h.html#a6b769a64b2ac853a0ca92d49bba9f66aa2ba9f31fcb3d70d84901b8651de3d386">eCP_MODE_SELF_TEST</a>
+&#160;&#160;<a class="el" href="canpie_8h.html#a6b769a64b2ac853a0ca92d49bba9f66aa2ba9f31fcb3d70d84901b8651de3d386">eCP_MODE_SELF_TEST</a> = 4
 <br />
  }</td></tr>
 <tr class="separator:a6b769a64b2ac853a0ca92d49bba9f66a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0a0281489faa5bfb282f4b5692ec5044"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="canpie_8h.html#a0a0281489faa5bfb282f4b5692ec5044">CpState_e</a> { <br />
-&#160;&#160;<a class="el" href="canpie_8h.html#a0a0281489faa5bfb282f4b5692ec5044a97728f80f3959315abd79af64a8b5c80">eCP_STATE_STOPPED</a> = 0, 
-<br />
+&#160;&#160;<a class="el" href="canpie_8h.html#a0a0281489faa5bfb282f4b5692ec5044a1aa197be3183ea1d7ce40b1372c52115">eCP_STATE_INIT</a> = 0
+, <br />
 &#160;&#160;<a class="el" href="canpie_8h.html#a0a0281489faa5bfb282f4b5692ec5044a887efbbfc50e42e598efdba37ffae5ff">eCP_STATE_SLEEPING</a> = 1, 
 <br />
 &#160;&#160;<a class="el" href="canpie_8h.html#a0a0281489faa5bfb282f4b5692ec5044a0389a5237088bdc953a57f8d990c4ac1">eCP_STATE_BUS_ACTIVE</a> = 2, 
@@ -372,7 +378,7 @@ Enumerations</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Fixed bit-rates. </p>
-<p>The values of the enumeration CpBitrate_e are used as parameter for the function <a class="el" href="cp__core_8h.html#ada098fdaa69a362b5a2fb241b1a034ea" title="Set bitrate of CAN controller. ">CpCoreBitrate()</a>. </p>
+<p>The values of the enumeration CpBitrate_e are used as parameter for the function <a class="el" href="cp__core_8h.html#a23cb8c502d0c9c62156e12b40c3298e2" title="Set bitrate of CAN controller. ">CpCoreBitrate()</a>. </p>
 <table class="fieldtable">
 <tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a1701ab116f6fb6d511dfc34e5115de2baad510570f0bc89dc1101adbce0434771"></a>eCP_BITRATE_NONE&#160;</td><td class="fielddoc"><p>No bit-rate defined </p>
 </td></tr>
@@ -393,6 +399,12 @@ Enumerations</h2></td></tr>
 <tr><td class="fieldname"><a id="a1701ab116f6fb6d511dfc34e5115de2bad0079171bf2596cffb5989adede8cd64"></a>eCP_BITRATE_800K&#160;</td><td class="fielddoc"><p>bit-rate 800 kBit/s </p>
 </td></tr>
 <tr><td class="fieldname"><a id="a1701ab116f6fb6d511dfc34e5115de2badb5fffdd62c8828945ad6ba1ddda09fb"></a>eCP_BITRATE_1M&#160;</td><td class="fielddoc"><p>bit-rate 1 MBit/s </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a1701ab116f6fb6d511dfc34e5115de2ba9b8b12bb1d7278221f52cc526e0c359e"></a>eCP_BITRATE_2M&#160;</td><td class="fielddoc"><p>bit-rate 2 MBit/s (ISO CAN FD, data phase) </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a1701ab116f6fb6d511dfc34e5115de2baedfff6a0dfb13a108eef71b19fcc7e3b"></a>eCP_BITRATE_4M&#160;</td><td class="fielddoc"><p>bit-rate 4 MBit/s (ISO CAN FD, data phase) </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a1701ab116f6fb6d511dfc34e5115de2bad7c42fb01749c1074e2b9542e3b3ef07"></a>eCP_BITRATE_5M&#160;</td><td class="fielddoc"><p>bit-rate 5 MBit/s (ISO CAN FD, data phase) </p>
 </td></tr>
 <tr><td class="fieldname"><a id="a1701ab116f6fb6d511dfc34e5115de2ba94f6fda71b7296aa4ba21b6a77bfcbfa"></a>eCP_BITRATE_AUTO&#160;</td><td class="fielddoc"><p>Use automatic bit-rate detection </p>
 </td></tr>
@@ -440,7 +452,7 @@ Enumerations</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Buffer direction definition. </p>
-<p>The enumeration CpBufferDir_e is used to define the direction of a message buffer (transmit or receive). The enumeration values are used by the function <a class="el" href="cp__core_8h.html#af197d9a10cd3f3c3506ae228c28e6567" title="Initialise message buffer. ">CpCoreBufferConfig()</a>. </p>
+<p>The enumeration CpBufferDir_e is used to define the direction of a message buffer (transmit or receive). The enumeration values are used by the function <a class="el" href="cp__core_8h.html#a9008afd4e151fdc0eeec7ec13410d174" title="Initialise message buffer. ">CpCoreBufferConfig()</a>. </p>
 <table class="fieldtable">
 <tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a78a23096456fe5765bd338f252c4898ea2950dd325e42596eb61d97260a8bea5f"></a>eCP_BUFFER_DIR_RCV&#160;</td><td class="fielddoc"><p>Message buffer direction is receive </p>
 </td></tr>
@@ -463,7 +475,7 @@ Enumerations</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Callback Return Codes. </p>
-<p>These return values are used by the callback functions that can be installed by the function <a class="el" href="cp__core_8h.html#a49e0cae4732c3bd753a4a481111a3cc9" title="Install callback functions. ">CpCoreIntFunctions()</a>. </p>
+<p>These return values are used by the callback functions that can be installed by the function <a class="el" href="cp__core_8h.html#a2936dcc6b4368d10bbba90db996cc9d9" title="Install callback functions. ">CpCoreIntFunctions()</a>. </p>
 <p><b>Example</b> </p><div class="fragment"><div class="line">uint8_t MyCallback(<a class="code" href="structCpCanMsg__s.html">CpCanMsg_ts</a> * ptsCanMsgV, uint8_t ubBufferIdxV)</div><div class="line">{</div><div class="line">   <span class="comment">// Do something with IDs &lt; 100</span></div><div class="line">   <span class="keywordflow">if</span>( <a class="code" href="cp__msg_8h.html#ade1383c687076fd3c034a43fe30d71a7">CpMsgGetIdentifier</a>(ptsCanMsgV) &lt; 100)</div><div class="line">   {</div><div class="line">      <span class="comment">//.....</span></div><div class="line">      <span class="keywordflow">return</span>(<a class="code" href="canpie_8h.html#a7891705c91cde48c26c7d1aafefc2790a7fe178bab816d830d71a699e5f3bb912">eCP_CALLBACK_PROCESSED</a>)</div><div class="line">   }</div><div class="line"></div><div class="line">   <span class="comment">// Put all other messages into the FIFO</span></div><div class="line">   <span class="keywordflow">return</span> (<a class="code" href="canpie_8h.html#a7891705c91cde48c26c7d1aafefc2790ac6edae190f4075ecaa9a61a9ea49a02f">eCP_CALLBACK_PUSH_FIFO</a>);</div><div class="line">}</div></div><!-- fragment --><p> <br />
  </p>
 <table class="fieldtable">
@@ -541,7 +553,7 @@ Enumerations</h2></td></tr>
 </td></tr>
 <tr><td class="fieldname"><a id="a692d8909c2da35a13c0f6ed1c74905d9a51948ccd09c9eafecaff80c47175cf8a"></a>eCP_ERR_RCV_EMPTY&#160;</td><td class="fielddoc"><p>Receive buffer is empty (06dec / 06hex) </p>
 </td></tr>
-<tr><td class="fieldname"><a id="a692d8909c2da35a13c0f6ed1c74905d9aaf3962e09f26ef5836dd0587793ffee0"></a>eCP_ERR_OVERRUN&#160;</td><td class="fielddoc"><p>Receive buffer overrun (07dec / 07hex) </p>
+<tr><td class="fieldname"><a id="a692d8909c2da35a13c0f6ed1c74905d9acea146d7b8a33437feb3665532516c5d"></a>eCP_ERR_RCV_OVERRUN&#160;</td><td class="fielddoc"><p>Receive buffer overrun (07dec / 07hex) </p>
 </td></tr>
 <tr><td class="fieldname"><a id="a692d8909c2da35a13c0f6ed1c74905d9a1b72e3cb797283514962083f61c526d7"></a>eCP_ERR_TRM_FULL&#160;</td><td class="fielddoc"><p>Transmit buffer is full (08dec / 08hex) </p>
 </td></tr>
@@ -559,7 +571,7 @@ Enumerations</h2></td></tr>
 </td></tr>
 <tr><td class="fieldname"><a id="a692d8909c2da35a13c0f6ed1c74905d9a95319bf81c9f1703320a58e33be62e70"></a>eCP_ERR_FIFO_SIZE&#160;</td><td class="fielddoc"><p>FIFO size is out of range (23dec / 17hex) </p>
 </td></tr>
-<tr><td class="fieldname"><a id="a692d8909c2da35a13c0f6ed1c74905d9aaa5eda97266b81a32501f64e9e0b99c5"></a>eCP_ERR_FIFO_PARM&#160;</td><td class="fielddoc"><p>Parameter of FIFO function is out of range (24dec / 18hex) </p>
+<tr><td class="fieldname"><a id="a692d8909c2da35a13c0f6ed1c74905d9a1717adfb6a2110118e5ee331349516fb"></a>eCP_ERR_FIFO_PARAM&#160;</td><td class="fielddoc"><p>Parameter of FIFO function is out of range (24dec / 18hex) </p>
 </td></tr>
 <tr><td class="fieldname"><a id="a692d8909c2da35a13c0f6ed1c74905d9a9bdd8ba44c3c2128dd0cdc57101ae3ce"></a>eCP_ERR_BUS_PASSIVE&#160;</td><td class="fielddoc"><p>Controller is in error passive (30dec / 1Ehex) </p>
 </td></tr>
@@ -596,7 +608,7 @@ Enumerations</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Error type. </p>
-<p>These values are used as return value for the function <a class="el" href="cp__core_8h.html#a65e2d4911724a605f8949fb789825dc1" title="Retrieve status of CAN controller. ">CpCoreCanState()</a>. </p>
+<p>These values are used as return value for the function <a class="el" href="cp__core_8h.html#a2c3c6a5c289f1aebf7fb9641eed23623" title="Retrieve state of CAN controller. ">CpCoreCanState()</a>. </p>
 <table class="fieldtable">
 <tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a302c7829baa00e4f617928947c59db2eaa54ca0933548e7c8652964b748e8b9ac"></a>eCP_ERR_TYPE_NONE&#160;</td><td class="fielddoc"><p>No error </p>
 </td></tr>
@@ -629,17 +641,17 @@ Enumerations</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Mode of CAN controller. </p>
-<p>These values are used as parameter for the function <a class="el" href="cp__core_8h.html#a95ed35f9dc6a69f998f6258e141d944e" title="Set state of CAN controller. ">CpCoreCanMode()</a> in order to change the state of the CAN controller. </p>
+<p>These values are used as parameter for the function <a class="el" href="cp__core_8h.html#a046f36439aaa71a345c7c892a295e755" title="Set state of CAN controller. ">CpCoreCanMode()</a> in order to change the state of the CAN controller. </p>
 <table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a6b769a64b2ac853a0ca92d49bba9f66aa2b3bf4a358c876fdd52d2a4406d6510c"></a>eCP_MODE_STOP&#160;</td><td class="fielddoc"><p>Set controller in Stop mode (no reception / transmission possible) </p>
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a6b769a64b2ac853a0ca92d49bba9f66aa021578923d47ae55e50aa745ed14d6a4"></a>eCP_MODE_INIT&#160;</td><td class="fielddoc"><p>Set controller in 'Initialization' mode (no reception or transmission possible) </p>
 </td></tr>
-<tr><td class="fieldname"><a id="a6b769a64b2ac853a0ca92d49bba9f66aa467bed80f7d8935ec79beb160cf9020d"></a>eCP_MODE_START&#160;</td><td class="fielddoc"><p>Set controller into normal operation </p>
+<tr><td class="fieldname"><a id="a6b769a64b2ac853a0ca92d49bba9f66aa1a632141d295f5ee2f754dd782c81cac"></a>eCP_MODE_OPERATION&#160;</td><td class="fielddoc"><p>Set controller into 'Operation' mode </p>
 </td></tr>
-<tr><td class="fieldname"><a id="a6b769a64b2ac853a0ca92d49bba9f66aacc795d5a3049aafc3a50e0b452d137d8"></a>eCP_MODE_LISTEN_ONLY&#160;</td><td class="fielddoc"><p>Set controller into listen-only mode </p>
+<tr><td class="fieldname"><a id="a6b769a64b2ac853a0ca92d49bba9f66aacc795d5a3049aafc3a50e0b452d137d8"></a>eCP_MODE_LISTEN_ONLY&#160;</td><td class="fielddoc"><p>Set controller into 'Listen-only' mode </p>
 </td></tr>
-<tr><td class="fieldname"><a id="a6b769a64b2ac853a0ca92d49bba9f66aae9c379a5535f149a907ab5f17c1110cb"></a>eCP_MODE_SLEEP&#160;</td><td class="fielddoc"><p>Set controller into sleep (power-down) mode </p>
+<tr><td class="fieldname"><a id="a6b769a64b2ac853a0ca92d49bba9f66aae9c379a5535f149a907ab5f17c1110cb"></a>eCP_MODE_SLEEP&#160;</td><td class="fielddoc"><p>Set controller into 'Sleep' (power-down) mode </p>
 </td></tr>
-<tr><td class="fieldname"><a id="a6b769a64b2ac853a0ca92d49bba9f66aa2ba9f31fcb3d70d84901b8651de3d386"></a>eCP_MODE_SELF_TEST&#160;</td><td class="fielddoc"><p>Set controller into self-test mode </p>
+<tr><td class="fieldname"><a id="a6b769a64b2ac853a0ca92d49bba9f66aa2ba9f31fcb3d70d84901b8651de3d386"></a>eCP_MODE_SELF_TEST&#160;</td><td class="fielddoc"><p>Set controller into 'Self-test' mode </p>
 </td></tr>
 </table>
 
@@ -658,9 +670,9 @@ Enumerations</h2></td></tr>
 </div><div class="memdoc">
 
 <p>State of CAN controller. </p>
-<p>These values are used as return value for the function <a class="el" href="cp__core_8h.html#a65e2d4911724a605f8949fb789825dc1" title="Retrieve status of CAN controller. ">CpCoreCanState()</a>. </p>
+<p>These values are used as return value for the function <a class="el" href="cp__core_8h.html#a2c3c6a5c289f1aebf7fb9641eed23623" title="Retrieve state of CAN controller. ">CpCoreCanState()</a>. </p>
 <table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a0a0281489faa5bfb282f4b5692ec5044a97728f80f3959315abd79af64a8b5c80"></a>eCP_STATE_STOPPED&#160;</td><td class="fielddoc"><p>CAN controller is in stopped mode </p>
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a0a0281489faa5bfb282f4b5692ec5044a1aa197be3183ea1d7ce40b1372c52115"></a>eCP_STATE_INIT&#160;</td><td class="fielddoc"><p>CAN controller is in stopped mode </p>
 </td></tr>
 <tr><td class="fieldname"><a id="a0a0281489faa5bfb282f4b5692ec5044a887efbbfc50e42e598efdba37ffae5ff"></a>eCP_STATE_SLEEPING&#160;</td><td class="fielddoc"><p>CAN controller is in Sleep mode </p>
 </td></tr>

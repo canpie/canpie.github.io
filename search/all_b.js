@@ -22,7 +22,5 @@ var searchData=
   ['qcanplugin',['QCanPlugin',['../classQCanPlugin.html',1,'']]],
   ['qcanserver',['QCanServer',['../classQCanServer.html',1,'']]],
   ['qcansocket',['QCanSocket',['../classQCanSocket.html',1,'QCanSocket'],['../classQCanSocket.html#adb61caef05f95014c58f4e2d76beacaa',1,'QCanSocket::QCanSocket()']]],
-  ['qcansocketcp2',['QCanSocketCp2',['../classQCanSocketCp2.html',1,'']]],
-  ['qcansocketcp3',['QCanSocketCp3',['../classQCanSocketCp3.html',1,'']]],
   ['qcantimestamp',['QCanTimeStamp',['../classQCanTimeStamp.html',1,'QCanTimeStamp'],['../classQCanTimeStamp.html#a81fa54ac3c2a3eb0c17ee90821bf893b',1,'QCanTimeStamp::QCanTimeStamp()']]]
 ];
