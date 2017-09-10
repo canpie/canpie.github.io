@@ -26,7 +26,7 @@
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">CANpie FD
    </div>
-   <div id="projectbrief">CAN programming interface environment - Version 3.00</div>
+   <div id="projectbrief">CAN programming interface environment - Version 3.02</div>
   </td>
  </tr>
  </tbody>
@@ -86,57 +86,55 @@ $(function() {
 </td></tr>
 </table>
 </div><h2>Programming in C++</h2>
-<p>The CANpie FD API provides classes for manipulation of CAN frames. The base classes do not rely on any C++ library and have the prefix <b>Cp</b>. The following table gives an overview.</p>
+<p>The CANpie FD API provides classes for manipulation of CAN frames and passing these frames via a socket interface (<a class="el" href="classQCanSocket.html" title="CAN socket. ">QCanSocket</a>) between applications.</p>
+<p>The classes are using the <a href="https://doc.qt.io">Qt Library</a> and have the prefix <b><a class="el" href="namespaceQCan.html">QCan</a></b>. The following table gives an overview.</p>
 <div class="function" style="width:800px"> <table class="function" style="width:800px">
 <tr class="odd">
-<td class="entry" style="width:25%"><a class="el" href="classCpFrame.html">CpFrame</a> </td><td class="desc"><p class="starttd">Base class of a CAN frame, covering both classic CAN frames and CAN FD frames. </p>
+<td class="entry" style="width:25%"><a class="el" href="classQCanData.html">QCanData</a> </td><td class="desc"><p class="starttd">Base class for CAN data structure. </p>
 <p class="endtd"></p>
 </td></tr>
 <tr>
-<td class="entry" style="width:25%"><a class="el" href="classCpFrameApi.html">CpFrameApi</a> </td><td class="desc"><p class="starttd">Class defining an API frame </p>
+<td class="entry" style="width:25%"><a class="el" href="classQCanFrame.html">QCanFrame</a> </td><td class="desc"><p class="starttd">Class defining a CAN data frame, derived from <a class="el" href="classQCanData.html" title="CAN data. ">QCanData</a>. </p>
 <p class="endtd"></p>
 </td></tr>
 <tr class="odd">
-<td class="entry" style="width:25%"><a class="el" href="classCpFrameError.html">CpFrameError</a> </td><td class="desc"><p class="starttd">Class defining a CAN error frame </p>
+<td class="entry" style="width:25%"><a class="el" href="classQCanFrameApi.html">QCanFrameApi</a> </td><td class="desc"><p class="starttd">Class defining an API frame, derived from <a class="el" href="classQCanData.html" title="CAN data. ">QCanData</a>. </p>
 <p class="endtd"></p>
 </td></tr>
 <tr>
-<td class="entry" style="width:25%"><a class="el" href="classCpTimeStamp.html">CpTimeStamp</a> </td><td class="desc"><p class="starttd">Time-stamp with a resolution of 1 nanosecond </p>
-<p class="endtd"></p>
-</td></tr>
-</table>
-</div><p>Derived classes are using the <a href="https://doc.qt.io">Qt Library</a> and have the prefix <b><a class="el" href="namespaceQCan.html">QCan</a></b>.</p>
-<div class="function" style="width:800px"> <table class="function" style="width:800px">
-<tr class="odd">
-<td class="entry" style="width:25%"><a class="el" href="classQCanFrame.html">QCanFrame</a> </td><td class="desc"><p class="starttd">CAN frame with Qt extensions, derived from <a class="el" href="classCpFrame.html" title="CAN frame. ">CpFrame</a> </p>
-<p class="endtd"></p>
-</td></tr>
-<tr>
-<td class="entry" style="width:25%"><a class="el" href="classQCanFrameApi.html">QCanFrameApi</a> </td><td class="desc"><p class="starttd">Class defining an API frame, derived from <a class="el" href="classCpFrameApi.html" title="CAN API frame. ">CpFrameApi</a> </p>
+<td class="entry" style="width:25%"><a class="el" href="classQCanFrameError.html">QCanFrameError</a> </td><td class="desc"><p class="starttd">Class defining a CAN error frame, derived from <a class="el" href="classQCanData.html" title="CAN data. ">QCanData</a>. </p>
 <p class="endtd"></p>
 </td></tr>
 <tr class="odd">
-<td class="entry" style="width:25%"><a class="el" href="classQCanFrameError.html">QCanFrameError</a> </td><td class="desc"><p class="starttd">Class defining a CAN error frame, derived from <a class="el" href="classCpFrameError.html" title="CAN error frame. ">CpFrameError</a> </p>
-<p class="endtd"></p>
-</td></tr>
-<tr>
 <td class="entry" style="width:25%"><a class="el" href="classQCanInterface.html">QCanInterface</a> </td><td class="desc"><p class="starttd">Class defining a physical CAN interface </p>
 <p class="endtd"></p>
 </td></tr>
-<tr class="odd">
+<tr>
 <td class="entry" style="width:25%"><a class="el" href="classQCanNetwork.html">QCanNetwork</a> </td><td class="desc"><p class="starttd">Class defining a CAN network </p>
 <p class="endtd"></p>
 </td></tr>
-<tr>
+<tr class="odd">
 <td class="entry" style="width:25%"><a class="el" href="classQCanPlugin.html">QCanPlugin</a> </td><td class="desc"><p class="starttd">Class for a CAN plugin, used by the <a class="el" href="classQCanServer.html" title="CAN server. ">QCanServer</a> </p>
 <p class="endtd"></p>
 </td></tr>
-<tr class="odd">
+<tr>
 <td class="entry" style="width:25%"><a class="el" href="classQCanServer.html">QCanServer</a> </td><td class="desc"><p class="starttd">CANpie server class, managing multiple CAN networks </p>
 <p class="endtd"></p>
 </td></tr>
-<tr>
+<tr class="odd">
 <td class="entry" style="width:25%"><a class="el" href="classQCanSocket.html">QCanSocket</a> </td><td class="desc"><p class="starttd">Class defining a CAN socket, which connects to a <a class="el" href="classQCanNetwork.html" title="CAN network representation. ">QCanNetwork</a> </p>
+<p class="endtd"></p>
+</td></tr>
+<tr>
+<td class="entry" style="width:25%"><a class="el" href="classQCanSocketCpFD.html">QCanSocketCpFD</a> </td><td class="desc"><p class="starttd">CANpie FD interface for <a class="el" href="classQCanSocket.html" title="CAN socket. ">QCanSocket</a> class </p>
+<p class="endtd"></p>
+</td></tr>
+<tr class="odd">
+<td class="entry" style="width:25%"><a class="el" href="classQCanSocketDialog.html">QCanSocketDialog</a> </td><td class="desc"><p class="starttd">Dialog for <a class="el" href="classQCanSocket.html" title="CAN socket. ">QCanSocket</a> class </p>
+<p class="endtd"></p>
+</td></tr>
+<tr>
+<td class="entry" style="width:25%"><a class="el" href="classQCanTimeStamp.html">QCanTimeStamp</a> </td><td class="desc"><p class="starttd">Time-stamp with a resolution of 1 nanosecond. </p>
 <p class="endtd"></p>
 </td></tr>
 </table>

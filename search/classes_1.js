@@ -9,5 +9,7 @@ var searchData=
   ['qcanplugin',['QCanPlugin',['../classQCanPlugin.html',1,'']]],
   ['qcanserver',['QCanServer',['../classQCanServer.html',1,'']]],
   ['qcansocket',['QCanSocket',['../classQCanSocket.html',1,'']]],
+  ['qcansocketcpfd',['QCanSocketCpFD',['../classQCanSocketCpFD.html',1,'']]],
+  ['qcansocketdialog',['QCanSocketDialog',['../classQCanSocketDialog.html',1,'']]],
   ['qcantimestamp',['QCanTimeStamp',['../classQCanTimeStamp.html',1,'']]]
 ];

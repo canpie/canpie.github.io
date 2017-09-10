@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['canpie',['CANpie',['../namespaceCANpie.html',1,'']]]
+  ['qcan',['QCan',['../namespaceQCan.html',1,'']]]
 ];

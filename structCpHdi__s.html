@@ -26,7 +26,7 @@
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">CANpie FD
    </div>
-   <div id="projectbrief">CAN programming interface environment - Version 3.00</div>
+   <div id="projectbrief">CAN programming interface environment - Version 3.02</div>
   </td>
  </tr>
  </tbody>
@@ -93,12 +93,42 @@ Data Fields</h2></td></tr>
 <tr class="separator:a5f6e435a215d865a713c38d600f532f7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1b76402d68d3d76b4a3ce54e8d770a61"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structCpHdi__s.html#a1b76402d68d3d76b4a3ce54e8d770a61">ulBitRateMax</a></td></tr>
 <tr class="separator:a1b76402d68d3d76b4a3ce54e8d770a61"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a39f92c2ae88432c0cd97d2b485789a15"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structCpHdi__s.html#a39f92c2ae88432c0cd97d2b485789a15">ulNomBitRate</a></td></tr>
-<tr class="separator:a39f92c2ae88432c0cd97d2b485789a15"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a79cf4a7d091c5901c0431b9dfc4c333e"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structCpHdi__s.html#a79cf4a7d091c5901c0431b9dfc4c333e">ulDatBitRate</a></td></tr>
-<tr class="separator:a79cf4a7d091c5901c0431b9dfc4c333e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a028744948c35628b50f394e30b699522"><td class="memItemLeft" align="right" valign="top">int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structCpHdi__s.html#a028744948c35628b50f394e30b699522">slNomBitRate</a></td></tr>
+<tr class="separator:a028744948c35628b50f394e30b699522"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8743f82067a0fcd66594e6fbacadabfe"><td class="memItemLeft" align="right" valign="top">int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structCpHdi__s.html#a8743f82067a0fcd66594e6fbacadabfe">slDatBitRate</a></td></tr>
+<tr class="separator:a8743f82067a0fcd66594e6fbacadabfe"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Field Documentation</h2>
+<a id="a8743f82067a0fcd66594e6fbacadabfe"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8743f82067a0fcd66594e6fbacadabfe">&#9670;&nbsp;</a></span>slDatBitRate</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int32_t CpHdi_s::slDatBitRate</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>The element slDatBitRate is only valid for ISO CAN FD controller. The value defines the actual configured bit-rate of the data phase in bits-per-second (bps). </p>
+
+</div>
+</div>
+<a id="a028744948c35628b50f394e30b699522"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a028744948c35628b50f394e30b699522">&#9670;&nbsp;</a></span>slNomBitRate</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int32_t CpHdi_s::slNomBitRate</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>The element <em>slNomBitRate</em> defines the actual configured bit-rate of the CAN controller in bits-per-second (bps). For ISO CAN FD the value defines the bit-rate of the arbitration phase. </p>
+
+</div>
+</div>
 <a id="a9da5fc597f00d8af98cbd8987f90caa5"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a9da5fc597f00d8af98cbd8987f90caa5">&#9670;&nbsp;</a></span>ubBufferMax</h2>
 
@@ -189,7 +219,7 @@ Bit 7: reserved </li>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Major version number of <a class="el" href="namespaceCANpie.html">CANpie</a> driver </p>
+<p>Major version number of CANpie driver </p>
 
 </div>
 </div>
@@ -204,7 +234,7 @@ Bit 7: reserved </li>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Minor version number of <a class="el" href="namespaceCANpie.html">CANpie</a> driver </p>
+<p>Minor version number of CANpie driver </p>
 
 </div>
 </div>
@@ -250,36 +280,6 @@ Bit 7: reserved </li>
       </table>
 </div><div class="memdoc">
 <p>Clock rate of CAN controller in Hertz. </p>
-
-</div>
-</div>
-<a id="a79cf4a7d091c5901c0431b9dfc4c333e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a79cf4a7d091c5901c0431b9dfc4c333e">&#9670;&nbsp;</a></span>ulDatBitRate</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">uint32_t CpHdi_s::ulDatBitRate</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>The element ulDatBitRate is only valid for ISO CAN FD controller. The value defines the actual configured bit-rate of the data phase in bits-per-second (bps). </p>
-
-</div>
-</div>
-<a id="a39f92c2ae88432c0cd97d2b485789a15"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a39f92c2ae88432c0cd97d2b485789a15">&#9670;&nbsp;</a></span>ulNomBitRate</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">uint32_t CpHdi_s::ulNomBitRate</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>The element <em>ulNomBitRate</em> defines the actual configured bit-rate of the CAN controller in bits-per-second (bps). For ISO CAN FD the value defines the bit-rate of the arbitration phase. </p>
 
 </div>
 </div>

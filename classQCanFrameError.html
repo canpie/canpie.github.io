@@ -26,7 +26,7 @@
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">CANpie FD
    </div>
-   <div id="projectbrief">CAN programming interface environment - Version 3.00</div>
+   <div id="projectbrief">CAN programming interface environment - Version 3.02</div>
   </td>
  </tr>
  </tbody>
@@ -63,6 +63,7 @@ $(function() {
 </div><!-- top -->
 <div class="header">
   <div class="summary">
+<a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a>  </div>
   <div class="headertitle">
 <div class="title">QCanFrameError Class Reference</div>  </div>
@@ -82,6 +83,26 @@ $(function() {
 </map>
 <center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
+Public Types</h2></td></tr>
+<tr class="memitem:a5b1c0a89c26695ec971a4f197c473f07"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQCanFrameError.html#a5b1c0a89c26695ec971a4f197c473f07">ErrorType_e</a> { <br />
+&#160;&#160;<a class="el" href="classQCanFrameError.html#a5b1c0a89c26695ec971a4f197c473f07a4bde4a948703a247c5f437a0f89643bb">eERROR_TYPE_NONE</a> = 0, 
+<br />
+&#160;&#160;<a class="el" href="classQCanFrameError.html#a5b1c0a89c26695ec971a4f197c473f07a1127d7edb49ca909583c31f1bc0991d5">eERROR_TYPE_BIT0</a>, 
+<br />
+&#160;&#160;<a class="el" href="classQCanFrameError.html#a5b1c0a89c26695ec971a4f197c473f07a91b31564fb4ea7051f61f8e42fec4937">eERROR_TYPE_BIT1</a>, 
+<br />
+&#160;&#160;<a class="el" href="classQCanFrameError.html#a5b1c0a89c26695ec971a4f197c473f07a614058eb9446c73a87673c7f5f76463f">eERROR_TYPE_STUFF</a>, 
+<br />
+&#160;&#160;<a class="el" href="classQCanFrameError.html#a5b1c0a89c26695ec971a4f197c473f07ae2f0ff048c7bb500059e9377d32ba3b8">eERROR_TYPE_FORM</a>, 
+<br />
+&#160;&#160;<a class="el" href="classQCanFrameError.html#a5b1c0a89c26695ec971a4f197c473f07ac65e70ff9ac3038b2d62c9d93e550223">eERROR_TYPE_CRC</a>, 
+<br />
+&#160;&#160;<a class="el" href="classQCanFrameError.html#a5b1c0a89c26695ec971a4f197c473f07a613fbb8adc78fcf28663e30525e5d10a">eERROR_TYPE_ACK</a>
+<br />
+ }</td></tr>
+<tr class="separator:a5b1c0a89c26695ec971a4f197c473f07"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:ac0691dd37f937be1f330b97fe7be064e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQCanFrameError.html#ac0691dd37f937be1f330b97fe7be064e">QCanFrameError</a> ()</td></tr>
@@ -102,6 +123,10 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a54b4901ce48725e1cdbf9457b425700a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa3374202848133f589a804bfbbbc4253"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQCanFrameError.html#aa3374202848133f589a804bfbbbc4253">setErrorType</a> (<a class="el" href="classQCanFrameError.html#a5b1c0a89c26695ec971a4f197c473f07">ErrorType_e</a> ubTypeV)</td></tr>
 <tr class="separator:aa3374202848133f589a804bfbbbc4253"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4795cbadd31e4914bcf88543cd144bb3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQCanFrameError.html#a4795cbadd31e4914bcf88543cd144bb3">setTimeStamp</a> (const <a class="el" href="classQCanTimeStamp.html">QCanTimeStamp</a> &amp;clTimeStampR)</td></tr>
+<tr class="separator:a4795cbadd31e4914bcf88543cd144bb3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0b001f32c93a80d9f8c229cdd99850d3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classQCanTimeStamp.html">QCanTimeStamp</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQCanFrameError.html#a0b001f32c93a80d9f8c229cdd99850d3">timeStamp</a> (void) const</td></tr>
+<tr class="separator:a0b001f32c93a80d9f8c229cdd99850d3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Member Enumeration Documentation</h2>
 <a id="a5b1c0a89c26695ec971a4f197c473f07"></a>
@@ -115,6 +140,7 @@ Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>The enumeration ErrorType_e defines CAN error types. </p>
 <table class="fieldtable">
 <tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a5b1c0a89c26695ec971a4f197c473f07a4bde4a948703a247c5f437a0f89643bb"></a>eERROR_TYPE_NONE&#160;</td><td class="fielddoc"><p>no error </p>
 </td></tr>
@@ -192,7 +218,7 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <dl class="section return"><dt>Returns</dt><dd>Value of transmit error counter </dd></dl>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="classQCanFrameError.html#ac5d62922a805404ad65343580fe97880">setErrorCounterTransmit()</a></dd></dl>
-<p>This functions returns the current value of the transmit error counter. A value of 255 leads to a bus-off condition (<a class="el" href="namespaceCANpie.html#aa0e68861bae204f3ed2df6e61367f9aea68f170a802d5053fc156a219edad4cfe">CANpie::eCAN_STATE_BUS_OFF</a>). </p>
+<p>This functions returns the current value of the transmit error counter. A value of 255 leads to a bus-off condition (CANpie::eCAN_STATE_BUS_OFF). </p>
 
 </div>
 </div>
@@ -213,7 +239,7 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <dl class="section return"><dt>Returns</dt><dd>Current error state </dd></dl>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="classQCanFrameError.html#a54b4901ce48725e1cdbf9457b425700a">setErrorState()</a></dd></dl>
-<p>This functions returns the current error state, defined by the enumeration <a class="el" href="namespaceCANpie.html#aa0e68861bae204f3ed2df6e61367f9ae">CANpie::CAN_State_e</a>. </p>
+<p>This functions returns the current error state, defined by the enumeration CANpie::CAN_State_e. </p>
 
 </div>
 </div>
@@ -260,7 +286,7 @@ Public Member Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="classQCanFrameError.html#a520b902aaf6f9f3dc3fd993b438c4485">errorCounterReceive()</a></dd></dl>
-<p>This functions sets the receive error counter. Passing a value greater than 127 will set the error state to error passive (<a class="el" href="namespaceCANpie.html#aa0e68861bae204f3ed2df6e61367f9aea25109e7963d12c898c6dfc2eb06573e5">CANpie::eCAN_STATE_BUS_PASSIVE</a>). </p>
+<p>This functions sets the receive error counter. Passing a value greater than 127 will set the error state to error passive (CANpie::eCAN_STATE_BUS_PASSIVE). </p>
 
 </div>
 </div>
@@ -286,7 +312,7 @@ Public Member Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="classQCanFrameError.html#a5c499014cc61b0eadca5555c09a5db6a">errorCounterTransmit()</a></dd></dl>
-<p>This functions sets the transmit error counter. Passing a value greater than 127 will set the error state to error passive (<a class="el" href="namespaceCANpie.html#aa0e68861bae204f3ed2df6e61367f9aea25109e7963d12c898c6dfc2eb06573e5">CANpie::eCAN_STATE_BUS_PASSIVE</a>). A value of 255 will set the error state to bus-off (<a class="el" href="namespaceCANpie.html#aa0e68861bae204f3ed2df6e61367f9aea68f170a802d5053fc156a219edad4cfe">CANpie::eCAN_STATE_BUS_OFF</a>). </p>
+<p>This functions sets the transmit error counter. Passing a value greater than 127 will set the error state to error passive (CANpie::eCAN_STATE_BUS_PASSIVE). A value of 255 will set the error state to bus-off (CANpie::eCAN_STATE_BUS_OFF). </p>
 
 </div>
 </div>
@@ -312,7 +338,7 @@ Public Member Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="classQCanFrameError.html#ac0f812c58f54f336a7ab678cefe57d38">errorState()</a></dd></dl>
-<p>This functions sets the current error state, defined by the enumeration <a class="el" href="namespaceCANpie.html#aa0e68861bae204f3ed2df6e61367f9ae">CANpie::CAN_State_e</a>. </p>
+<p>This functions sets the current error state, defined by the enumeration CANpie::CAN_State_e. </p>
 
 </div>
 </div>
@@ -339,6 +365,69 @@ Public Member Functions</h2></td></tr>
 </dl>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="classQCanFrameError.html#ac1f41478f5c917d33c2b1272658dd2d1">errorType()</a></dd></dl>
 <p>This functions sets the error type which caused the last error condition. </p>
+
+</div>
+</div>
+<a id="a4795cbadd31e4914bcf88543cd144bb3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4795cbadd31e4914bcf88543cd144bb3">&#9670;&nbsp;</a></span>setTimeStamp()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void QCanFrameError::setTimeStamp </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classQCanTimeStamp.html">QCanTimeStamp</a> &amp;&#160;</td>
+          <td class="paramname"><em>clTimeStampR</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">clTimeStampR</td><td>Time-stamp </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="classQCanFrameError.html#a0b001f32c93a80d9f8c229cdd99850d3">timeStamp()</a></dd></dl>
+<p>The function sets the time-stamp of the CAN frame. </p>
+
+</div>
+</div>
+<a id="a0b001f32c93a80d9f8c229cdd99850d3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0b001f32c93a80d9f8c229cdd99850d3">&#9670;&nbsp;</a></span>timeStamp()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classQCanTimeStamp.html">QCanTimeStamp</a> QCanFrameError::timeStamp </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<dl class="section return"><dt>Returns</dt><dd>Time-stamp </dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="classQCanFrameError.html#a4795cbadd31e4914bcf88543cd144bb3">setTimeStamp()</a></dd></dl>
+<p>The function returns the time-stamp value of the CAN frame. </p>
 
 </div>
 </div>

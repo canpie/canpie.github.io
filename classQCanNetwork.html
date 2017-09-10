@@ -26,7 +26,7 @@
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">CANpie FD
    </div>
-   <div id="projectbrief">CAN programming interface environment - Version 3.00</div>
+   <div id="projectbrief">CAN programming interface environment - Version 3.02</div>
   </td>
  </tr>
  </tbody>
@@ -91,8 +91,14 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a223557c71714a99eca2af7cf4abfea84"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a179aada1459a2cf7d304e8f2753b863a"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQCanNetwork.html#a179aada1459a2cf7d304e8f2753b863a">addInterface</a> (<a class="el" href="classQCanInterface.html">QCanInterface</a> *pclCanIfV)</td></tr>
 <tr class="separator:a179aada1459a2cf7d304e8f2753b863a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afad429d850e6fd56445a48680c91db3d"><td class="memItemLeft" align="right" valign="top">int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQCanNetwork.html#afad429d850e6fd56445a48680c91db3d">bitrate</a> (void)</td></tr>
-<tr class="separator:afad429d850e6fd56445a48680c91db3d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9ee3a0e7932a96b821ded6e9d7fd53c9"><td class="memItemLeft" align="right" valign="top">int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQCanNetwork.html#a9ee3a0e7932a96b821ded6e9d7fd53c9">nominalBitrate</a> (void)</td></tr>
+<tr class="separator:a9ee3a0e7932a96b821ded6e9d7fd53c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acdd24efec2ba0a596326b4441793ef55"><td class="memItemLeft" align="right" valign="top">QString&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQCanNetwork.html#acdd24efec2ba0a596326b4441793ef55">nominalBitrateString</a> (void)</td></tr>
+<tr class="separator:acdd24efec2ba0a596326b4441793ef55"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a254bec7df29ba6bf91d112c62af82ba3"><td class="memItemLeft" align="right" valign="top">int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQCanNetwork.html#a254bec7df29ba6bf91d112c62af82ba3">dataBitrate</a> (void)</td></tr>
+<tr class="separator:a254bec7df29ba6bf91d112c62af82ba3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a95e3b776ceca4252c6443c78028dd07b"><td class="memItemLeft" align="right" valign="top">QString&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQCanNetwork.html#a95e3b776ceca4252c6443c78028dd07b">dataBitrateString</a> (void)</td></tr>
+<tr class="separator:a95e3b776ceca4252c6443c78028dd07b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab76fa7ea4102f4f0358897da0f487b2f"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQCanNetwork.html#ab76fa7ea4102f4f0358897da0f487b2f">dispatcherTime</a> (void)</td></tr>
 <tr class="separator:ab76fa7ea4102f4f0358897da0f487b2f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aabe8a9ee36edee29a138431add62a903"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQCanNetwork.html#aabe8a9ee36edee29a138431add62a903">isNetworkEnabled</a> (void)</td></tr>
@@ -174,8 +180,8 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="afad429d850e6fd56445a48680c91db3d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#afad429d850e6fd56445a48680c91db3d">&#9670;&nbsp;</a></span>bitrate()</h2>
+<a id="a254bec7df29ba6bf91d112c62af82ba3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a254bec7df29ba6bf91d112c62af82ba3">&#9670;&nbsp;</a></span>dataBitrate()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -184,7 +190,7 @@ Public Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">int32_t QCanNetwork::bitrate </td>
+          <td class="memname">int32_t QCanNetwork::dataBitrate </td>
           <td>(</td>
           <td class="paramtype">void&#160;</td>
           <td class="paramname"></td><td>)</td>
@@ -197,10 +203,31 @@ Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<dl class="section return"><dt>Returns</dt><dd>Bit-rate value for Nominal Bit Timing </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>Bit-rate value for Data Bit Timing </dd></dl>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="classQCanNetwork.html#a4995c3cf91d127d97f36ca7e8b744ddd">setBitrate()</a></dd></dl>
-<p>This function returns the current bit-rate of the CAN network. For <b>classic CAN</b>, the return value defines the bit-rate for the complete frame. For <b>CAN FD</b> the return value defines the bit-rate for the arbitration phase. </p>
-<p>If no bit-rate is configured, the function will return <a class="el" href="namespaceCANpie.html#a262175a63968f3e552b08c804d848470a510b259e85f3053bc354f6c3b928f162">CANpie::eCAN_BITRATE_NONE</a>. </p>
+<p>This function returns the data bit-rate of the CAN network. For <b>classical CAN</b>, the return value is always CANpie::eCAN_BITRATE_NONE For <b>CAN FD</b> the return value defines the bit-rate for the data phase. </p>
+<p>If no bit-rate is configured, the function will return CANpie::eCAN_BITRATE_NONE. </p>
+
+</div>
+</div>
+<a id="a95e3b776ceca4252c6443c78028dd07b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a95e3b776ceca4252c6443c78028dd07b">&#9670;&nbsp;</a></span>dataBitrateString()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">QString QCanNetwork::dataBitrateString </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="section return"><dt>Returns</dt><dd>Bit-rate value for Data Bit Timing</dd></dl>
+<p>This function returns the data bit-rate of the CAN network as QString. </p>
+<p>If no bit-rate is configured, the function will return "None". </p>
 
 </div>
 </div>
@@ -264,6 +291,57 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="a9ee3a0e7932a96b821ded6e9d7fd53c9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9ee3a0e7932a96b821ded6e9d7fd53c9">&#9670;&nbsp;</a></span>nominalBitrate()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int32_t QCanNetwork::nominalBitrate </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<dl class="section return"><dt>Returns</dt><dd>Bit-rate value for Nominal Bit Timing </dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="classQCanNetwork.html#a4995c3cf91d127d97f36ca7e8b744ddd">setBitrate()</a></dd></dl>
+<p>This function returns the nominal bit-rate of the CAN network. For <b>classical CAN</b>, the return value defines the bit-rate for the complete frame. For <b>CAN FD</b> the return value defines the bit-rate for the arbitration phase. </p>
+<p>If no bit-rate is configured, the function will return CANpie::eCAN_BITRATE_NONE. </p>
+
+</div>
+</div>
+<a id="acdd24efec2ba0a596326b4441793ef55"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acdd24efec2ba0a596326b4441793ef55">&#9670;&nbsp;</a></span>nominalBitrateString()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">QString QCanNetwork::nominalBitrateString </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="section return"><dt>Returns</dt><dd>Bit-rate value for Nominal Bit Timing</dd></dl>
+<p>This function returns the nominal bit-rate of the CAN network as QString. </p>
+<p>If no bit-rate is configured, the function will return "None". </p>
+
+</div>
+</div>
 <a id="a667b3daad9407c30ca2d55c44d21efe5"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a667b3daad9407c30ca2d55c44d21efe5">&#9670;&nbsp;</a></span>removeInterface()</h2>
 
@@ -316,9 +394,9 @@ Public Member Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="classQCanNetwork.html#afad429d850e6fd56445a48680c91db3d">bitrate()</a></dd></dl>
-<p>This function sets the bit-rate for the CAN network. For <b>classic CAN</b>, the parameter <code>slBitrateV</code> defines the bit-rate for the complete frame, the parameter <code>slBrsClockV</code> is not evaluated in that case. For <b>CAN FD</b> the parameter <code>slBitrateV</code> defines the bit-rate for the arbitration phase, the parameter <code>slBrsClockV</code> defines the bit-rate for the data phase. </p>
-<p>For selection of predefined bit-rates the value can be taken from the enumeration <a class="el" href="namespaceCANpie.html#a262175a63968f3e552b08c804d848470">CANpie::CAN_Bitrate_e</a>. </p>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="classQCanNetwork.html#a254bec7df29ba6bf91d112c62af82ba3">dataBitrate()</a>, <a class="el" href="classQCanNetwork.html#a9ee3a0e7932a96b821ded6e9d7fd53c9">nominalBitrate()</a></dd></dl>
+<p>This function sets the bit-rate for the CAN network. For <b>Classical CAN</b>, the parameter <code>slBitrateV</code> defines the bit-rate for the complete frame, the parameter <code>slBrsClockV</code> is not evaluated in that case. For <b>CAN FD</b> the parameter <code>slBitrateV</code> defines the bit-rate for the arbitration phase, the parameter <code>slBrsClockV</code> defines the bit-rate for the data phase. </p>
+<p>For selection of predefined bit-rates the value can be taken from the enumeration CANpie::CAN_Bitrate_e. </p>
 
 </div>
 </div>

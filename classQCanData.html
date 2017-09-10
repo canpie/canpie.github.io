@@ -26,7 +26,7 @@
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">CANpie FD
    </div>
-   <div id="projectbrief">CAN programming interface environment - Version 3.00</div>
+   <div id="projectbrief">CAN programming interface environment - Version 3.02</div>
   </td>
  </tr>
  </tbody>
@@ -63,6 +63,7 @@ $(function() {
 </div><!-- top -->
 <div class="header">
   <div class="summary">
+<a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pro-attribs">Protected Attributes</a>  </div>
   <div class="headertitle">
@@ -84,6 +85,20 @@ $(function() {
 </map>
 <center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
+Public Types</h2></td></tr>
+<tr class="memitem:ac2f3910e27e44314bb0d9d29db8b4a19"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQCanData.html#ac2f3910e27e44314bb0d9d29db8b4a19">Type_e</a> { <br />
+&#160;&#160;<a class="el" href="classQCanData.html#ac2f3910e27e44314bb0d9d29db8b4a19ad31d24d408ba9cb15322cc7f95640ffa">eTYPE_API</a> = 0, 
+<br />
+&#160;&#160;<a class="el" href="classQCanData.html#ac2f3910e27e44314bb0d9d29db8b4a19a563f0b02beb48127a96c25de4027b793">eTYPE_CAN</a>, 
+<br />
+&#160;&#160;<a class="el" href="classQCanData.html#ac2f3910e27e44314bb0d9d29db8b4a19aeb043ac661c55eb950fc9fc627f93033">eTYPE_ERROR</a>, 
+<br />
+&#160;&#160;<a class="el" href="classQCanData.html#ac2f3910e27e44314bb0d9d29db8b4a19aed8b8970750d3dc33234f75ba36c686d">eTYPE_UNKNOWN</a>
+<br />
+ }</td></tr>
+<tr class="separator:ac2f3910e27e44314bb0d9d29db8b4a19"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:af0b8a7bd34e692c03c32d1bf8c72adef"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQCanData.html#af0b8a7bd34e692c03c32d1bf8c72adef">QCanData</a> (const <a class="el" href="classQCanData.html#ac2f3910e27e44314bb0d9d29db8b4a19">Type_e</a> &amp;ubTypeR)</td></tr>
@@ -126,12 +141,15 @@ Protected Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>The enumeration Type_e defines frame types. </p>
 <table class="fieldtable">
 <tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="ac2f3910e27e44314bb0d9d29db8b4a19ad31d24d408ba9cb15322cc7f95640ffa"></a>eTYPE_API&#160;</td><td class="fielddoc"><p>API frame, refer to <a class="el" href="classQCanFrameApi.html" title="CAN API frame. ">QCanFrameApi</a> </p>
 </td></tr>
 <tr><td class="fieldname"><a id="ac2f3910e27e44314bb0d9d29db8b4a19a563f0b02beb48127a96c25de4027b793"></a>eTYPE_CAN&#160;</td><td class="fielddoc"><p>CAN frame, refer to <a class="el" href="classQCanFrame.html" title="CAN frame. ">QCanFrame</a> </p>
 </td></tr>
 <tr><td class="fieldname"><a id="ac2f3910e27e44314bb0d9d29db8b4a19aeb043ac661c55eb950fc9fc627f93033"></a>eTYPE_ERROR&#160;</td><td class="fielddoc"><p>Error frame, refer to <a class="el" href="classQCanFrameError.html" title="CAN error frame. ">QCanFrameError</a> </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ac2f3910e27e44314bb0d9d29db8b4a19aed8b8970750d3dc33234f75ba36c686d"></a>eTYPE_UNKNOWN&#160;</td><td class="fielddoc"><p>Unknown frame type </p>
 </td></tr>
 </table>
 

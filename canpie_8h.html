@@ -26,7 +26,7 @@
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">CANpie FD
    </div>
-   <div id="projectbrief">CAN programming interface environment - Version 3.00</div>
+   <div id="projectbrief">CAN programming interface environment - Version 3.02</div>
   </td>
  </tr>
  </tbody>
@@ -97,8 +97,8 @@ $(function() {
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="canpie_8h__incl.png" border="0" usemap="#canpie_8h" alt=""/></div>
 <map name="canpie_8h" id="canpie_8h">
-<area shape="rect" id="node2" href="compiler_8h.html" title="Definition of compiler independent data types. " alt="" coords="5,80,89,107"/>
-<area shape="rect" id="node4" href="cp__platform_8h.html" title="CANpie platform configuration. " alt="" coords="113,80,216,107"/>
+<area shape="rect" id="node2" href="compiler_8h.html" title="Definition of compiler independent data types. " alt="" coords="48,80,132,107"/>
+<area shape="rect" id="node5" href="cp__platform_8h.html" title="CANpie platform configuration. " alt="" coords="156,80,259,107"/>
 </map>
 </div>
 </div><table class="memberdecls">
@@ -131,7 +131,7 @@ Macros</h2></td></tr>
 <tr class="separator:ga724e98df59c0e38f2e711c3d24f1eb95"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gac02132b57a51a1c26ff6fb11dc046c04"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__CP__VERSION.html#gac02132b57a51a1c26ff6fb11dc046c04">CP_VERSION_MAJOR</a>&#160;&#160;&#160;3</td></tr>
 <tr class="separator:gac02132b57a51a1c26ff6fb11dc046c04"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga015d989acd6a013e84ea8696953172a8"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__CP__VERSION.html#ga015d989acd6a013e84ea8696953172a8">CP_VERSION_MINOR</a>&#160;&#160;&#160;0</td></tr>
+<tr class="memitem:ga015d989acd6a013e84ea8696953172a8"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__CP__VERSION.html#ga015d989acd6a013e84ea8696953172a8">CP_VERSION_MINOR</a>&#160;&#160;&#160;2</td></tr>
 <tr class="separator:ga015d989acd6a013e84ea8696953172a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gada1cad88f6070db2ce1c15502af60b8f"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__CP__MASK.html#gada1cad88f6070db2ce1c15502af60b8f">CP_MASK_STD_FRAME</a>&#160;&#160;&#160;((uint32_t) 0x000007FF)</td></tr>
 <tr class="separator:gada1cad88f6070db2ce1c15502af60b8f"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -479,9 +479,9 @@ Enumerations</h2></td></tr>
 <p><b>Example</b> </p><div class="fragment"><div class="line">uint8_t MyCallback(<a class="code" href="structCpCanMsg__s.html">CpCanMsg_ts</a> * ptsCanMsgV, uint8_t ubBufferIdxV)</div><div class="line">{</div><div class="line">   <span class="comment">// Do something with IDs &lt; 100</span></div><div class="line">   <span class="keywordflow">if</span>( <a class="code" href="cp__msg_8h.html#ade1383c687076fd3c034a43fe30d71a7">CpMsgGetIdentifier</a>(ptsCanMsgV) &lt; 100)</div><div class="line">   {</div><div class="line">      <span class="comment">//.....</span></div><div class="line">      <span class="keywordflow">return</span>(<a class="code" href="canpie_8h.html#a7891705c91cde48c26c7d1aafefc2790a7fe178bab816d830d71a699e5f3bb912">eCP_CALLBACK_PROCESSED</a>)</div><div class="line">   }</div><div class="line"></div><div class="line">   <span class="comment">// Put all other messages into the FIFO</span></div><div class="line">   <span class="keywordflow">return</span> (<a class="code" href="canpie_8h.html#a7891705c91cde48c26c7d1aafefc2790ac6edae190f4075ecaa9a61a9ea49a02f">eCP_CALLBACK_PUSH_FIFO</a>);</div><div class="line">}</div></div><!-- fragment --><p> <br />
  </p>
 <table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a7891705c91cde48c26c7d1aafefc2790a7fe178bab816d830d71a699e5f3bb912"></a>eCP_CALLBACK_PROCESSED&#160;</td><td class="fielddoc"><p>Message was processed by callback and is not inserted in the FIFO </p>
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a7891705c91cde48c26c7d1aafefc2790a7fe178bab816d830d71a699e5f3bb912"></a>eCP_CALLBACK_PROCESSED&#160;</td><td class="fielddoc"><p>Message was processed by callback and should not inserted in the FIFO </p>
 </td></tr>
-<tr><td class="fieldname"><a id="a7891705c91cde48c26c7d1aafefc2790ac6edae190f4075ecaa9a61a9ea49a02f"></a>eCP_CALLBACK_PUSH_FIFO&#160;</td><td class="fielddoc"><p>Message was processed by callback and is inserted in the FIFO </p>
+<tr><td class="fieldname"><a id="a7891705c91cde48c26c7d1aafefc2790ac6edae190f4075ecaa9a61a9ea49a02f"></a>eCP_CALLBACK_PUSH_FIFO&#160;</td><td class="fielddoc"><p>Message was not processed by callback and must be inserted in the FIFO </p>
 </td></tr>
 </table>
 
@@ -536,8 +536,8 @@ Enumerations</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p><a class="el" href="namespaceCANpie.html">CANpie</a> Error codes. </p>
-<p>All functions that may cause an error condition will return an error code. The <a class="el" href="namespaceCANpie.html">CANpie</a> error codes are within the value range from 0 to 127. The designer of the core functions might extend the error code table with hardware specific error codes, which must be in the range from 128 to 255. </p>
+<p>CANpie Error codes. </p>
+<p>All functions that may cause an error condition will return an error code. The CANpie error codes are within the value range from 0 to 127. The designer of the core functions might extend the error code table with hardware specific error codes, which must be in the range from 128 to 255. </p>
 <table class="fieldtable">
 <tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a692d8909c2da35a13c0f6ed1c74905d9a31d4d8fc5ccf3c9239b68b000950aae1"></a>eCP_ERR_NONE&#160;</td><td class="fielddoc"><p>No error (00dec / 00hex) </p>
 </td></tr>

@@ -26,7 +26,7 @@
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">CANpie FD
    </div>
-   <div id="projectbrief">CAN programming interface environment - Version 3.00</div>
+   <div id="projectbrief">CAN programming interface environment - Version 3.02</div>
   </td>
  </tr>
  </tbody>
@@ -63,6 +63,7 @@ $(function() {
 </div><!-- top -->
 <div class="header">
   <div class="summary">
+<a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a>  </div>
   <div class="headertitle">
 <div class="title">QCanFrame Class Reference</div>  </div>
@@ -79,6 +80,20 @@ $(function() {
 </map>
 <center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
+Public Types</h2></td></tr>
+<tr class="memitem:aab25c8665d04c055d6109f26eb9ff5ae"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQCanFrame.html#aab25c8665d04c055d6109f26eb9ff5ae">Format_e</a> { <br />
+&#160;&#160;<a class="el" href="classQCanFrame.html#aab25c8665d04c055d6109f26eb9ff5aea22e955e5f0ad76ce8e3149894d316a33">eFORMAT_CAN_STD</a> = 0, 
+<br />
+&#160;&#160;<a class="el" href="classQCanFrame.html#aab25c8665d04c055d6109f26eb9ff5aeaf1fb82bee66ab47b319e87435b3a35d6">eFORMAT_CAN_EXT</a>, 
+<br />
+&#160;&#160;<a class="el" href="classQCanFrame.html#aab25c8665d04c055d6109f26eb9ff5aeaa6328c8ee425364ecdcee174d1d8f971">eFORMAT_FD_STD</a>, 
+<br />
+&#160;&#160;<a class="el" href="classQCanFrame.html#aab25c8665d04c055d6109f26eb9ff5aeaa313b37ae02900307a1c04908e0070c9">eFORMAT_FD_EXT</a>
+<br />
+ }</td></tr>
+<tr class="separator:aab25c8665d04c055d6109f26eb9ff5ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a40713e67c24b8a8b982fd920eb421826"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQCanFrame.html#a40713e67c24b8a8b982fd920eb421826">QCanFrame</a> ()</td></tr>
@@ -152,6 +167,7 @@ Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>This enumeration defines the CAN frame formats for classical CAN and CAN FD. </p>
 <table class="fieldtable">
 <tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="aab25c8665d04c055d6109f26eb9ff5aea22e955e5f0ad76ce8e3149894d316a33"></a>eFORMAT_CAN_STD&#160;</td><td class="fielddoc"><p>Classic CAN, Standard frame format </p>
 </td></tr>
@@ -215,6 +231,14 @@ Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">ubFormatR</td><td>CAN frame format </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">ulIdentifierR</td><td>CAN frame identifier </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">ubDlcR</td><td>CAN frame data length code</td></tr>
+  </table>
+  </dd>
+</dl>
 <p>Constructs a CAN frame of type <code>ubTypeR</code> with an identifier value of <code>ulIdentifierR</code> and a DLC value of <code>ubDlcR</code>. </p>
 
 </div>
@@ -263,7 +287,7 @@ Public Member Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<p>The function returns the data stored at payload position <em>ubPosR</em>. The first position starts at index 0. If the index position is out of range, the function will return 0. The maximum index position for a CAN frame is <a class="el" href="classQCanFrame.html#a4f92526acb63e6d91d95169a9262311d">dataSize()</a> - 1, as depicted in the following code example. </p><div class="fragment"><div class="line"><a class="code" href="classCpFrame.html">CpFrame</a>  clCanFrameT;</div><div class="line">..</div><div class="line"><span class="keywordflow">for</span>(uint8_t ubPosT = 0; ubPosT &lt; clCanFrameT.<a class="code" href="classCpFrame.html#a6224cd4483fa977fa4a91295ecfbd92d">dataSize</a>(); ubPosT++)</div><div class="line">{</div><div class="line">   <span class="comment">//------------------------------------------------</span></div><div class="line">   <span class="comment">// print payload of CAN frame</span></div><div class="line">   <span class="comment">//</span></div><div class="line">   cout &lt;&lt; hex &lt;&lt; clCanFrameT.<a class="code" href="classCpFrame.html#a674945bb50375428ee2f24e3bd5b9533">data</a>(ubPosT);</div><div class="line">}</div></div><!-- fragment --> 
+<p>The function returns the data stored at payload position <em>ubPosR</em>. The first position starts at index 0. If the index position is out of range, the function will return 0. The maximum index position for a CAN frame is <a class="el" href="classQCanFrame.html#a4f92526acb63e6d91d95169a9262311d">dataSize()</a> - 1, as depicted in the following code example. </p><div class="fragment"><div class="line">CpFrame  clCanFrameT;</div><div class="line">..</div><div class="line"><span class="keywordflow">for</span>(uint8_t ubPosT = 0; ubPosT &lt; clCanFrameT.dataSize(); ubPosT++)</div><div class="line">{</div><div class="line">   <span class="comment">//------------------------------------------------</span></div><div class="line">   <span class="comment">// print payload of CAN frame</span></div><div class="line">   <span class="comment">//</span></div><div class="line">   cout &lt;&lt; hex &lt;&lt; clCanFrameT.data(ubPosT);</div><div class="line">}</div></div><!-- fragment --> 
 </div>
 </div>
 <a id="aeb85891044c12f357421547e945ac705"></a>

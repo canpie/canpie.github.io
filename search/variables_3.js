@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['tsmsgtime',['tsMsgTime',['../structCpCanMsg__s.html#a7130a2685b2ddb4eb2c097758d4c934a',1,'CpCanMsg_s']]]
+  ['sldatbitrate',['slDatBitRate',['../structCpHdi__s.html#a8743f82067a0fcd66594e6fbacadabfe',1,'CpHdi_s']]],
+  ['slnombitrate',['slNomBitRate',['../structCpHdi__s.html#a028744948c35628b50f394e30b699522',1,'CpHdi_s']]]
 ];

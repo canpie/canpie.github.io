@@ -1,9 +1,9 @@
 var searchData=
 [
-  ['clear',['clear',['../classCpTimeStamp.html#af9274b50fe4063460ad3105348ee3760',1,'CpTimeStamp::clear()'],['../classQCanTimeStamp.html#ab9ec90bac87f40a64eaf7874045c94f8',1,'QCanTimeStamp::clear()']]],
+  ['clear',['clear',['../classQCanTimeStamp.html#ab9ec90bac87f40a64eaf7874045c94f8',1,'QCanTimeStamp']]],
   ['connect',['connect',['../classQCanInterface.html#abd3615e6d9aed92bac730966174a630d',1,'QCanInterface']]],
   ['connected',['connected',['../classQCanInterface.html#a8554b11c0456b5a4d8c8abd577f0d5ef',1,'QCanInterface::connected()'],['../classQCanSocket.html#a0da5f5ca4519590a6560bf967040cc07',1,'QCanSocket::connected()']]],
-  ['connectnetwork',['connectNetwork',['../classQCanSocket.html#a22135b71751dca2c12f5ea2fe631d43d',1,'QCanSocket']]],
+  ['connectnetwork',['connectNetwork',['../classQCanSocket.html#a14de5da84c93248ee90991d3a3c0143e',1,'QCanSocket']]],
   ['cpcorebitrate',['CpCoreBitrate',['../cp__core_8h.html#a23cb8c502d0c9c62156e12b40c3298e2',1,'cp_core.h']]],
   ['cpcorebufferconfig',['CpCoreBufferConfig',['../cp__core_8h.html#a9008afd4e151fdc0eeec7ec13410d174',1,'cp_core.h']]],
   ['cpcorebuffergetdata',['CpCoreBufferGetData',['../cp__core_8h.html#a02c004107e978ccfa06d6afce05c86ac',1,'cp_core.h']]],
@@ -30,9 +30,6 @@ var searchData=
   ['cpfifoinit',['CpFifoInit',['../cp__fifo_8h.html#a8762da3077e09c3c22dc068eca0b369e',1,'cp_fifo.h']]],
   ['cpfifoisempty',['CpFifoIsEmpty',['../cp__fifo_8h.html#af860e2fc3c99eaa318f998ffab384e37',1,'cp_fifo.h']]],
   ['cpfifoisfull',['CpFifoIsFull',['../cp__fifo_8h.html#af3d8c14081728a50ba8db9e2749acb4d',1,'cp_fifo.h']]],
-  ['cpframe',['CpFrame',['../classCpFrame.html#a875172aa840f158e019cf5e839bbd422',1,'CpFrame::CpFrame()'],['../classCpFrame.html#a80925588fce61dcedb54111fc32b1b43',1,'CpFrame::CpFrame(const Format_e &amp;ubFormatR, const uint32_t &amp;ulIdentifierR=0, const uint8_t &amp;ubDlcR=0)']]],
-  ['cpframeapi',['CpFrameApi',['../classCpFrameApi.html#a8b3f65d046e46828cb1aff4edbb3c069',1,'CpFrameApi']]],
-  ['cpframeerror',['CpFrameError',['../classCpFrameError.html#a681fed9301c8bbae15d8fe6263e927a5',1,'CpFrameError']]],
   ['cpmsgclear',['CpMsgClear',['../cp__msg_8h.html#a6b2b3b41056f41237142ecc47151b3b9',1,'cp_msg.h']]],
   ['cpmsgclroverrun',['CpMsgClrOverrun',['../cp__msg_8h.html#a86e7f568467e72ac016dfe56c13d7465',1,'cp_msg.h']]],
   ['cpmsgclrremote',['CpMsgClrRemote',['../cp__msg_8h.html#a11b356c7415355cbe4cfd5e9fc5dceba',1,'cp_msg.h']]],
@@ -56,6 +53,5 @@ var searchData=
   ['cpmsgsetoverrun',['CpMsgSetOverrun',['../cp__msg_8h.html#a5d197759d9d9deabdca599b51ed5d451',1,'cp_msg.h']]],
   ['cpmsgsetremote',['CpMsgSetRemote',['../cp__msg_8h.html#ae5e952245b9e8efef42cff7cd2e8b874',1,'cp_msg.h']]],
   ['cpmsgsetstdid',['CpMsgSetStdId',['../cp__msg_8h.html#ae77d572ec31801181a76b53efc742f0e',1,'cp_msg.h']]],
-  ['cpmsgsettime',['CpMsgSetTime',['../cp__msg_8h.html#a3908a4d4e38cf707639393d8cf6b5931',1,'cp_msg.h']]],
-  ['cptimestamp',['CpTimeStamp',['../classCpTimeStamp.html#a7bc917e74e539acf43f184f69089502f',1,'CpTimeStamp']]]
+  ['cpmsgsettime',['CpMsgSetTime',['../cp__msg_8h.html#a3908a4d4e38cf707639393d8cf6b5931',1,'cp_msg.h']]]
 ];
