@@ -1,5 +1,5 @@
 <map id="cp_msg.h" name="cp_msg.h">
-<area shape="rect" id="node2" href="$canpie_8h.html" title="CANpie constants, structures and enumerations " alt="" coords="113,80,185,107"/>
-<area shape="rect" id="node3" href="$compiler_8h.html" title="Definition of compiler independent data types. " alt="" coords="48,155,132,181"/>
-<area shape="rect" id="node6" href="$cp__platform_8h.html" title="CANpie platform configuration. " alt="" coords="156,155,259,181"/>
+<area shape="rect" id="node2" href="$canpie_8h.html" title="CANpie constants, structures and enumerations " alt="" coords="103,80,163,107"/>
+<area shape="rect" id="node3" href="$mc__compiler_8h.html" title="Definition of compiler independent data types. " alt="" coords="35,155,121,181"/>
+<area shape="rect" id="node6" href="$cp__platform_8h.html" title="CANpie platform configuration. " alt="" coords="146,155,229,181"/>
 </map>

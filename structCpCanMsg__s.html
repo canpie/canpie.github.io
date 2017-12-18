@@ -75,8 +75,17 @@ $(function() {
 Data Fields</h2></td></tr>
 <tr class="memitem:a34b06ff26b36e8dc803061c1964917b5"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structCpCanMsg__s.html#a34b06ff26b36e8dc803061c1964917b5">ulIdentifier</a></td></tr>
 <tr class="separator:a34b06ff26b36e8dc803061c1964917b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9af75fd63595e0326c09151eb30b07fd"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structCpCanMsg__s.html#a9af75fd63595e0326c09151eb30b07fd">aubData</a> [<a class="el" href="canpie_8h.html#a9c68a7db1319edf3516467a07b0da16f">CP_DATA_SIZE</a>]</td></tr>
-<tr class="separator:a9af75fd63595e0326c09151eb30b07fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8e4adc0d4c53f6685ad8da703f16724b"><td class="memItemLeft" >union {</td></tr>
+<tr class="memitem:abe6f82a73e5cd875f8d9ef0ab6b57fd6"><td class="memItemLeft" >&#160;&#160;&#160;uint8_t&#160;&#160;&#160;<a class="el" href="structCpCanMsg__s.html#ac5d233965540e681a75c98dec52a89a7">aubByte</a> [<a class="el" href="canpie_8h.html#a9c68a7db1319edf3516467a07b0da16f">CP_DATA_SIZE</a>]</td></tr>
+<tr class="separator:abe6f82a73e5cd875f8d9ef0ab6b57fd6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acf487a2d7d61e4b3a4165c34a4db8367"><td class="memItemLeft" >&#160;&#160;&#160;uint16_t&#160;&#160;&#160;<a class="el" href="structCpCanMsg__s.html#a42a787a95e742278d5d145bcb8e3d67d">auwWord</a> [<a class="el" href="canpie_8h.html#a9c68a7db1319edf3516467a07b0da16f">CP_DATA_SIZE</a>/2]</td></tr>
+<tr class="separator:acf487a2d7d61e4b3a4165c34a4db8367"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7acf717409b404203b0d68d48dc8e2c9"><td class="memItemLeft" >&#160;&#160;&#160;uint32_t&#160;&#160;&#160;<a class="el" href="structCpCanMsg__s.html#a8f5c666082fc71049eb1799f223d3a0f">aulLong</a> [<a class="el" href="canpie_8h.html#a9c68a7db1319edf3516467a07b0da16f">CP_DATA_SIZE</a>/4]</td></tr>
+<tr class="separator:a7acf717409b404203b0d68d48dc8e2c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a134d323f8481426151f40cce4eb7f519"><td class="memItemLeft" >&#160;&#160;&#160;uint64_t&#160;&#160;&#160;<a class="el" href="structCpCanMsg__s.html#a5e74c34dd00b4bb0dbf2a2a4e85f89b5">auqQuad</a> [<a class="el" href="canpie_8h.html#a9c68a7db1319edf3516467a07b0da16f">CP_DATA_SIZE</a>/8]</td></tr>
+<tr class="separator:a134d323f8481426151f40cce4eb7f519"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8e4adc0d4c53f6685ad8da703f16724b"><td class="memItemLeft" valign="top">}&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structCpCanMsg__s.html#a8e4adc0d4c53f6685ad8da703f16724b">tuMsgData</a></td></tr>
+<tr class="separator:a8e4adc0d4c53f6685ad8da703f16724b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4cc8d5b31595b806e0459560178e36ac"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structCpCanMsg__s.html#a4cc8d5b31595b806e0459560178e36ac">ubMsgDLC</a></td></tr>
 <tr class="separator:a4cc8d5b31595b806e0459560178e36ac"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aaf6c9f49d0a30c389c19ee62d8f37c3e"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structCpCanMsg__s.html#aaf6c9f49d0a30c389c19ee62d8f37c3e">ubMsgCtrl</a></td></tr>
@@ -89,18 +98,63 @@ Data Fields</h2></td></tr>
 <tr class="separator:aaa530afd5718ae55227c295558be3aee"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Field Documentation</h2>
-<a id="a9af75fd63595e0326c09151eb30b07fd"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9af75fd63595e0326c09151eb30b07fd">&#9670;&nbsp;</a></span>aubData</h2>
+<a id="ac5d233965540e681a75c98dec52a89a7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac5d233965540e681a75c98dec52a89a7">&#9670;&nbsp;</a></span>aubByte</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">uint8_t CpCanMsg_s::aubData[<a class="el" href="canpie_8h.html#a9c68a7db1319edf3516467a07b0da16f">CP_DATA_SIZE</a>]</td>
+          <td class="memname">uint8_t CpCanMsg_s::aubByte[<a class="el" href="canpie_8h.html#a9c68a7db1319edf3516467a07b0da16f">CP_DATA_SIZE</a>]</td>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>The data field has up to 8 bytes (for classic CAN) or 64 bytes (for ISO CAN FD) of message data. The number of used bytes is described via the structure member <code>ubMsgDLC</code>. </p>
+<p>byte access, array of bytes </p>
+
+</div>
+</div>
+<a id="a8f5c666082fc71049eb1799f223d3a0f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8f5c666082fc71049eb1799f223d3a0f">&#9670;&nbsp;</a></span>aulLong</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint32_t CpCanMsg_s::aulLong[<a class="el" href="canpie_8h.html#a9c68a7db1319edf3516467a07b0da16f">CP_DATA_SIZE</a>/4]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>32 bit access, array of longs </p>
+
+</div>
+</div>
+<a id="a5e74c34dd00b4bb0dbf2a2a4e85f89b5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5e74c34dd00b4bb0dbf2a2a4e85f89b5">&#9670;&nbsp;</a></span>auqQuad</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint64_t CpCanMsg_s::auqQuad[<a class="el" href="canpie_8h.html#a9c68a7db1319edf3516467a07b0da16f">CP_DATA_SIZE</a>/8]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>64 bit access, array of long longs </p>
+
+</div>
+</div>
+<a id="a42a787a95e742278d5d145bcb8e3d67d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a42a787a95e742278d5d145bcb8e3d67d">&#9670;&nbsp;</a></span>auwWord</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint16_t CpCanMsg_s::auwWord[<a class="el" href="canpie_8h.html#a9c68a7db1319edf3516467a07b0da16f">CP_DATA_SIZE</a>/2]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>16 bit access, array of words </p>
 
 </div>
 </div>
@@ -116,6 +170,21 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>The time stamp field defines the time when a CAN message was received by the CAN controller. This is an optional field (available if <a class="el" href="group__CP__CONF.html#gae4980b1bc9514983d269e8c678eb2a20">CP_CAN_MSG_TIME</a> is set to 1). </p>
+
+</div>
+</div>
+<a id="a8e4adc0d4c53f6685ad8da703f16724b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8e4adc0d4c53f6685ad8da703f16724b">&#9670;&nbsp;</a></span>tuMsgData</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">union { ... }   CpCanMsg_s::tuMsgData</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>The data field has up to 8 bytes (for classic CAN) or 64 bytes (for ISO CAN FD) of message data. The number of used bytes is described via the structure member <code>ubMsgDLC</code>. </p>
 
 </div>
 </div>
