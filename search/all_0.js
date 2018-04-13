@@ -1,6 +1,7 @@
 var searchData=
 [
   ['addinterface',['addInterface',['../classQCanNetwork.html#a179aada1459a2cf7d304e8f2753b863a',1,'QCanNetwork']]],
+  ['addlogmessage',['addLogMessage',['../classQCanInterface.html#af679ac462b37a1244b61b50f5d0559ad',1,'QCanInterface::addLogMessage()'],['../classQCanNetwork.html#a7593a67180ee3ae56cfbecb4a17e5107',1,'QCanNetwork::addLogMessage()']]],
   ['apifunc_5fe',['ApiFunc_e',['../classQCanFrameApi.html#a3a2b3e947db9b46fa513f322a72cf88f',1,'QCanFrameApi']]],
   ['aubbyte',['aubByte',['../structCpCanMsg__s.html#ac5d233965540e681a75c98dec52a89a7',1,'CpCanMsg_s']]],
   ['aubbytep',['aubByteP',['../classQCanData.html#a2ba9a045648d02cbfcd4eb384eb58402',1,'QCanData']]],

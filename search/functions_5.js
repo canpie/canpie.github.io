@@ -1,5 +1,7 @@
 var searchData=
 [
+  ['framecount',['frameCount',['../classQCanNetwork.html#a5b9f55cbb95102d07a7bb07a6af8d6d2',1,'QCanNetwork']]],
+  ['framecounterror',['frameCountError',['../classQCanNetwork.html#ae7c92ef0f5a659d7053d82c4f5effff2',1,'QCanNetwork']]],
   ['frameformat',['frameFormat',['../classQCanFrame.html#a581acb1e16889c11376ddbf38181033d',1,'QCanFrame']]],
   ['framesavailable',['framesAvailable',['../classQCanSocket.html#a16b4f39f4d74bca542304d9221206954',1,'QCanSocket']]],
   ['framesreceived',['framesReceived',['../classQCanSocket.html#ad5fe3bbe1a43cda86895f93c66156ad0',1,'QCanSocket']]],

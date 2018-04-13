@@ -89,6 +89,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:ac927d8883283318b8cc16969ee898fc7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab317372ebb6dbcca1d3bbeef004becaa"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQCanSocketDialog.html#ab317372ebb6dbcca1d3bbeef004becaa">QCanSocketDialog</a> (QWidget *pclParentV=Q_NULLPTR, const QString &amp;caption=QString())</td></tr>
 <tr class="separator:ab317372ebb6dbcca1d3bbeef004becaa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab9c76c944427c96e578b4083f63f516d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespaceQCan.html#abae21c9f603dfe532d8e943f58d9b903">CAN_Channel_e</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQCanSocketDialog.html#ab9c76c944427c96e578b4083f63f516d">channel</a> () const</td></tr>
+<tr class="separator:ab9c76c944427c96e578b4083f63f516d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad895a665c3c3b6b1fc169f6105f82cf0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQCanSocketDialog.html#ad895a665c3c3b6b1fc169f6105f82cf0">setHostAddress</a> (const QHostAddress clHostAddressV)</td></tr>
 <tr class="separator:ad895a665c3c3b6b1fc169f6105f82cf0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af13223123d4b3d808cb515b0bc573984"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQCanSocketDialog.html#af13223123d4b3d808cb515b0bc573984">setChannel</a> (const <a class="el" href="namespaceQCan.html#abae21c9f603dfe532d8e943f58d9b903">CAN_Channel_e</a> teChannelV)</td></tr>
@@ -168,6 +170,25 @@ Public Member Functions</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
+<a id="ab9c76c944427c96e578b4083f63f516d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab9c76c944427c96e578b4083f63f516d">&#9670;&nbsp;</a></span>channel()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespaceQCan.html#abae21c9f603dfe532d8e943f58d9b903">CAN_Channel_e</a> QCanSocketDialog::channel </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="section return"><dt>Returns</dt><dd>CAN channel number</dd></dl>
+<p>The function returns the selected CAN channel number. </p>
+
+</div>
+</div>
 <a id="af13223123d4b3d808cb515b0bc573984"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#af13223123d4b3d808cb515b0bc573984">&#9670;&nbsp;</a></span>setChannel()</h2>
 
@@ -210,10 +231,11 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">clHostAddressV</td><td>Server host address</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">clHostAddressV</td><td>Server host address </td></tr>
   </table>
   </dd>
 </dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="classQCanSocketDialog.html#ab9c76c944427c96e578b4083f63f516d">channel()</a></dd></dl>
 <p>Setup the CANpie server host address which should be displayed as default before the <a class="el" href="classQCanSocketDialog.html#a71aaf42c2c62817d5b2b6cefdf412adb">show()</a> method is called. </p>
 
 </div>

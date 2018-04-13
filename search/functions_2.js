@@ -1,6 +1,8 @@
 var searchData=
 [
+  ['channel',['channel',['../classQCanSocketDialog.html#ab9c76c944427c96e578b4083f63f516d',1,'QCanSocketDialog']]],
   ['clear',['clear',['../classQCanTimeStamp.html#ab9ec90bac87f40a64eaf7874045c94f8',1,'QCanTimeStamp']]],
+  ['configuredevice',['configureDevice',['../classQCanInterface.html#a15da52568dde0f79118fd2bdedb16af5',1,'QCanInterface']]],
   ['connect',['connect',['../classQCanInterface.html#abd3615e6d9aed92bac730966174a630d',1,'QCanInterface']]],
   ['connected',['connected',['../classQCanInterface.html#a8554b11c0456b5a4d8c8abd577f0d5ef',1,'QCanInterface::connected()'],['../classQCanSocket.html#a0da5f5ca4519590a6560bf967040cc07',1,'QCanSocket::connected()']]],
   ['connectnetwork',['connectNetwork',['../classQCanSocket.html#a14de5da84c93248ee90991d3a3c0143e',1,'QCanSocket']]],

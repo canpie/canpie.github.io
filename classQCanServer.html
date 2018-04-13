@@ -62,14 +62,88 @@ $(function() {
 
 </div><!-- top -->
 <div class="header">
+  <div class="summary">
+<a href="#pub-methods">Public Member Functions</a>  </div>
   <div class="headertitle">
 <div class="title">QCanServer Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>This class represents a CAN server, which incorporates up to QCAN_NETWORK_MAX number of CAN networks (<a class="el" href="classQCanNetwork.html" title="CAN network representation. ">QCanNetwork</a>). </p>
+<div class="textblock"><p>This class represents a CAN server, which incorporates up to <a class="el" href="group__QCAN__NW.html#ga837665f7f5fd3f2c076203e8335ebaa7" title="Maximum number of networks. ">QCAN_NETWORK_MAX</a> number of CAN networks (<a class="el" href="classQCanNetwork.html" title="CAN network representation. ">QCanNetwork</a>). </p>
+<p>The QCanServerDialog class provides an example application. </p>
 </div>
 <p>Inherits QObject.</p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public Member Functions</h2></td></tr>
+<tr class="memitem:a3b4ab89279bace48223fbcd95f875e8f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQCanServer.html#a3b4ab89279bace48223fbcd95f875e8f">QCanServer</a> (QObject *pclParentV=Q_NULLPTR, uint16_t uwPortStartV=<a class="el" href="group__QCAN__NW.html#gad9e2893fa0d8727586f10ed4f5ff035d">QCAN_TCP_DEFAULT_PORT</a>, uint8_t ubNetworkNumV=<a class="el" href="group__QCAN__NW.html#ga837665f7f5fd3f2c076203e8335ebaa7">QCAN_NETWORK_MAX</a>)</td></tr>
+<tr class="separator:a3b4ab89279bace48223fbcd95f875e8f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a36e71bfb8a6997e3cef1d56d80f93bb1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classQCanNetwork.html">QCanNetwork</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQCanServer.html#a36e71bfb8a6997e3cef1d56d80f93bb1">network</a> (uint8_t ubNetworkIndexV)</td></tr>
+<tr class="separator:a36e71bfb8a6997e3cef1d56d80f93bb1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="a3b4ab89279bace48223fbcd95f875e8f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3b4ab89279bace48223fbcd95f875e8f">&#9670;&nbsp;</a></span>QCanServer()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">QCanServer::QCanServer </td>
+          <td>(</td>
+          <td class="paramtype">QObject *&#160;</td>
+          <td class="paramname"><em>pclParentV</em> = <code>Q_NULLPTR</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint16_t&#160;</td>
+          <td class="paramname"><em>uwPortStartV</em> = <code><a class="el" href="group__QCAN__NW.html#gad9e2893fa0d8727586f10ed4f5ff035d">QCAN_TCP_DEFAULT_PORT</a></code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramname"><em>ubNetworkNumV</em> = <code><a class="el" href="group__QCAN__NW.html#ga837665f7f5fd3f2c076203e8335ebaa7">QCAN_NETWORK_MAX</a></code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Construct a <a class="el" href="classQCanServer.html" title="CAN server. ">QCanServer</a> object </p>
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="a36e71bfb8a6997e3cef1d56d80f93bb1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a36e71bfb8a6997e3cef1d56d80f93bb1">&#9670;&nbsp;</a></span>network()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classQCanNetwork.html">QCanNetwork</a>* QCanServer::network </td>
+          <td>(</td>
+          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramname"><em>ubNetworkIndexV</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="section return"><dt>Returns</dt><dd>Pointer to <a class="el" href="classQCanNetwork.html" title="CAN network representation. ">QCanNetwork</a> </dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">ubNetworkIndexV</td><td>- Network index</td></tr>
+  </table>
+  </dd>
+</dl>
+<p>The function returns a pointer to a <a class="el" href="classQCanNetwork.html" title="CAN network representation. ">QCanNetwork</a> class stored at index <em>ubNetworkIndexV</em>. The first networl ist stored at index value 0. </p>
+
+</div>
+</div>
 </div><!-- contents -->
 <!-- HTML footer for doxygen 1.8.9.1-->
 <!-- start footer part -->

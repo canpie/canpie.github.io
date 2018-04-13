@@ -118,6 +118,7 @@ var searchData=
   ['ecp_5fstate_5fphy_5fl',['eCP_STATE_PHY_L',['../canpie_8h.html#a0a0281489faa5bfb282f4b5692ec5044ac160bdeac281942f0294fbdc0298f454',1,'canpie.h']]],
   ['ecp_5fstate_5fsleeping',['eCP_STATE_SLEEPING',['../canpie_8h.html#a0a0281489faa5bfb282f4b5692ec5044a887efbbfc50e42e598efdba37ffae5ff',1,'canpie.h']]],
   ['eerror_5fbitrate',['eERROR_BITRATE',['../classQCanInterface.html#af3eeaedd518850aff168100c183a73d2af469e3fc8a3de6060910bfe58696ffc9',1,'QCanInterface']]],
+  ['eerror_5fdevice',['eERROR_DEVICE',['../classQCanInterface.html#af3eeaedd518850aff168100c183a73d2a3da3c214e795d61162f0cacf8c991cd7',1,'QCanInterface']]],
   ['eerror_5ffifo_5frcv_5fempty',['eERROR_FIFO_RCV_EMPTY',['../classQCanInterface.html#af3eeaedd518850aff168100c183a73d2a21f26300d1843fcadb4ffd67f12b6b1a',1,'QCanInterface']]],
   ['eerror_5ffifo_5ftrm_5ffull',['eERROR_FIFO_TRM_FULL',['../classQCanInterface.html#af3eeaedd518850aff168100c183a73d2ae2be99f1071c0b920d93cd40faa75c78',1,'QCanInterface']]],
   ['eerror_5flibrary',['eERROR_LIBRARY',['../classQCanInterface.html#af3eeaedd518850aff168100c183a73d2a7a3566692f529fbd46ad7d69a47b42ab',1,'QCanInterface']]],

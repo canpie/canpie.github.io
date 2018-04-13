@@ -33,6 +33,5 @@ var searchData=
   ['ultimestampres',['ulTimeStampRes',['../structCpHdi__s.html#a06918a0549c59b635b94ae47ee5b459a',1,'CpHdi_s']]],
   ['ultrmmsgcount',['ulTrmMsgCount',['../structCpStatistic__s.html#a471c8c6af8f5e1f03ee69b7b54a91c4b',1,'CpStatistic_s']]],
   ['ulvalue',['ulValue',['../unionFloat__u.html#a19a88481ee666e59e597727c94fb023d',1,'Float_u']]],
-  ['uuidstring',['uuidString',['../classQCanSocket.html#ad827115b7e8115f7ba864eba65790cca',1,'QCanSocket']]],
   ['uwreserved',['uwReserved',['../structCpHdi__s.html#a23cdbeabce662beec6e50ec55e97f501',1,'CpHdi_s']]]
 ];

@@ -70,20 +70,28 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>This class represents a CAN network with a unique bit-rate. It supports one physical CAN interface (<a class="el" href="classQCanInterface.html" title="CAN interface. ">QCanInterface</a>), which can be assigned during run-time to the CAN network and a limited number of virtual CAN interfaces (sockets). Clients can connect to a <a class="el" href="classQCanNetwork.html" title="CAN network representation. ">QCanNetwork</a> via the <a class="el" href="classQCanSocket.html" title="CAN socket. ">QCanSocket</a> class. </p>
-</div>
+<div class="textblock"><p>This class represents a CAN network with a unique bit-rate. It supports one physical CAN interface (see class <a class="el" href="classQCanInterface.html" title="CAN interface. ">QCanInterface</a>), which can be attached during run-time to the CAN network and a limited number of virtual CAN interfaces (sockets). Clients can connect to a <a class="el" href="classQCanNetwork.html" title="CAN network representation. ">QCanNetwork</a> via the <a class="el" href="classQCanSocket.html" title="CAN socket. ">QCanSocket</a> class. </p>
+<h3>Sockets</h3>
+<p>It is only possible to connect to a network when it is enabled (see <a class="el" href="classQCanNetwork.html#a7eefacc722e47053cb03ee2b2d7156e3">setNetworkEnabled()</a> and <a class="el" href="classQCanNetwork.html#aabe8a9ee36edee29a138431add62a903">isNetworkEnabled()</a>).</p>
+<h3>CAN Interface</h3>
+<p>A physical CAN interface is attached to the network using the <a class="el" href="classQCanNetwork.html#a179aada1459a2cf7d304e8f2753b863a">addInterface()</a> function. It is started by calling <a class="el" href="classQCanNetwork.html#aa6bc50d877827636facf25057e824be9">startInterface()</a>, which configures the actual bit-rate settings. </p>
+<p>A physical CAN interface is stopped by calling <a class="el" href="classQCanNetwork.html#abdf6bf6373ae717937ff8df84de7593f">stopInterface()</a>, it can be removed from the network by calling <a class="el" href="classQCanNetwork.html#a667b3daad9407c30ca2d55c44d21efe5">removeInterface()</a>.</p>
+<hr/>
+ </div>
 <p>Inherits QObject.</p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="signals"></a>
 Signals</h2></td></tr>
-<tr class="memitem:afef98cbd746270b2e486e74443ac9280"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQCanNetwork.html#afef98cbd746270b2e486e74443ac9280">showApiFrames</a> (uint32_t ulFrameTotalV)</td></tr>
-<tr class="separator:afef98cbd746270b2e486e74443ac9280"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a43f77cda0c5473c4df41dc8eb2fe082a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQCanNetwork.html#a43f77cda0c5473c4df41dc8eb2fe082a">showCanFrames</a> (uint32_t ulFrameTotalV)</td></tr>
-<tr class="separator:a43f77cda0c5473c4df41dc8eb2fe082a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7f5a5a34ca4f276caec7311dd3f671aa"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQCanNetwork.html#a7f5a5a34ca4f276caec7311dd3f671aa">showErrFrames</a> (uint32_t ulFrameTotalV)</td></tr>
-<tr class="separator:a7f5a5a34ca4f276caec7311dd3f671aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a96c4d0a3ab88bb426565d8b8839bc099"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQCanNetwork.html#a96c4d0a3ab88bb426565d8b8839bc099">showLoad</a> (uint8_t ubLoadV, uint32_t ulMsgPerSecV)</td></tr>
-<tr class="separator:a96c4d0a3ab88bb426565d8b8839bc099"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7593a67180ee3ae56cfbecb4a17e5107"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQCanNetwork.html#a7593a67180ee3ae56cfbecb4a17e5107">addLogMessage</a> (const <a class="el" href="namespaceQCan.html#abae21c9f603dfe532d8e943f58d9b903">CAN_Channel_e</a> &amp;ubChannelR, const QString &amp;clMessageR, const LogLevel_e &amp;teLogLevelR=eLOG_LEVEL_NOTICE)</td></tr>
+<tr class="separator:a7593a67180ee3ae56cfbecb4a17e5107"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac12235158ddae50140e985263e9f40c4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQCanNetwork.html#ac12235158ddae50140e985263e9f40c4">showApiFrames</a> (const <a class="el" href="namespaceQCan.html#abae21c9f603dfe532d8e943f58d9b903">CAN_Channel_e</a> &amp;ubChannelR, const uint32_t &amp;ulFrameTotalR)</td></tr>
+<tr class="separator:ac12235158ddae50140e985263e9f40c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a220b0151396aded0487b805ea9e84299"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQCanNetwork.html#a220b0151396aded0487b805ea9e84299">showCanFrames</a> (const <a class="el" href="namespaceQCan.html#abae21c9f603dfe532d8e943f58d9b903">CAN_Channel_e</a> &amp;ubChannelR, const uint32_t &amp;ulFrameTotalR)</td></tr>
+<tr class="separator:a220b0151396aded0487b805ea9e84299"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab44020d6ed88ed74028a50e2ec521ed4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQCanNetwork.html#ab44020d6ed88ed74028a50e2ec521ed4">showErrFrames</a> (const <a class="el" href="namespaceQCan.html#abae21c9f603dfe532d8e943f58d9b903">CAN_Channel_e</a> &amp;ubChannelR, const uint32_t &amp;ulFrameTotalR)</td></tr>
+<tr class="separator:ab44020d6ed88ed74028a50e2ec521ed4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a14b959dd437f9ec79bfa479d2b20a278"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQCanNetwork.html#a14b959dd437f9ec79bfa479d2b20a278">showLoad</a> (const <a class="el" href="namespaceQCan.html#abae21c9f603dfe532d8e943f58d9b903">CAN_Channel_e</a> &amp;ubChannelR, const uint8_t &amp;ubLoadR, const uint32_t &amp;ulMsgPerSecR)</td></tr>
+<tr class="separator:a14b959dd437f9ec79bfa479d2b20a278"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
@@ -91,6 +99,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a223557c71714a99eca2af7cf4abfea84"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a179aada1459a2cf7d304e8f2753b863a"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQCanNetwork.html#a179aada1459a2cf7d304e8f2753b863a">addInterface</a> (<a class="el" href="classQCanInterface.html">QCanInterface</a> *pclCanIfV)</td></tr>
 <tr class="separator:a179aada1459a2cf7d304e8f2753b863a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afad429d850e6fd56445a48680c91db3d"><td class="memItemLeft" align="right" valign="top">int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQCanNetwork.html#afad429d850e6fd56445a48680c91db3d">bitrate</a> (void)</td></tr>
+<tr class="separator:afad429d850e6fd56445a48680c91db3d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9ee3a0e7932a96b821ded6e9d7fd53c9"><td class="memItemLeft" align="right" valign="top">int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQCanNetwork.html#a9ee3a0e7932a96b821ded6e9d7fd53c9">nominalBitrate</a> (void)</td></tr>
 <tr class="separator:a9ee3a0e7932a96b821ded6e9d7fd53c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acdd24efec2ba0a596326b4441793ef55"><td class="memItemLeft" align="right" valign="top">QString&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQCanNetwork.html#acdd24efec2ba0a596326b4441793ef55">nominalBitrateString</a> (void)</td></tr>
@@ -99,20 +109,42 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a254bec7df29ba6bf91d112c62af82ba3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a95e3b776ceca4252c6443c78028dd07b"><td class="memItemLeft" align="right" valign="top">QString&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQCanNetwork.html#a95e3b776ceca4252c6443c78028dd07b">dataBitrateString</a> (void)</td></tr>
 <tr class="separator:a95e3b776ceca4252c6443c78028dd07b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab76fa7ea4102f4f0358897da0f487b2f"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQCanNetwork.html#ab76fa7ea4102f4f0358897da0f487b2f">dispatcherTime</a> (void)</td></tr>
-<tr class="separator:ab76fa7ea4102f4f0358897da0f487b2f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5b9f55cbb95102d07a7bb07a6af8d6d2"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQCanNetwork.html#a5b9f55cbb95102d07a7bb07a6af8d6d2">frameCount</a> (void)</td></tr>
+<tr class="separator:a5b9f55cbb95102d07a7bb07a6af8d6d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae7c92ef0f5a659d7053d82c4f5effff2"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQCanNetwork.html#ae7c92ef0f5a659d7053d82c4f5effff2">frameCountError</a> (void)</td></tr>
+<tr class="separator:ae7c92ef0f5a659d7053d82c4f5effff2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a76a80676ccde7cdcae2902e32dd4f338"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQCanNetwork.html#a76a80676ccde7cdcae2902e32dd4f338">hasErrorFrameSupport</a> (void)</td></tr>
+<tr class="separator:a76a80676ccde7cdcae2902e32dd4f338"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a54b9bf454873c8a8f7eb6e592ebe33bc"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQCanNetwork.html#a54b9bf454873c8a8f7eb6e592ebe33bc">hasFastDataSupport</a> (void)</td></tr>
+<tr class="separator:a54b9bf454873c8a8f7eb6e592ebe33bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab738ae51495174dd221490429d3d5c8c"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQCanNetwork.html#ab738ae51495174dd221490429d3d5c8c">hasListenOnlySupport</a> (void)</td></tr>
+<tr class="separator:ab738ae51495174dd221490429d3d5c8c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3db153b9728673af09c1c4a317ec0e33"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQCanNetwork.html#a3db153b9728673af09c1c4a317ec0e33">isErrorFrameEnabled</a> (void)</td></tr>
+<tr class="separator:a3db153b9728673af09c1c4a317ec0e33"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a68850507addfe25550441f402ec381f9"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQCanNetwork.html#a68850507addfe25550441f402ec381f9">isFastDataEnabled</a> (void)</td></tr>
+<tr class="separator:a68850507addfe25550441f402ec381f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a33cfe955735cc18a79d5a4276c55a60b"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQCanNetwork.html#a33cfe955735cc18a79d5a4276c55a60b">isListenOnlyEnabled</a> (void)</td></tr>
+<tr class="separator:a33cfe955735cc18a79d5a4276c55a60b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aabe8a9ee36edee29a138431add62a903"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQCanNetwork.html#aabe8a9ee36edee29a138431add62a903">isNetworkEnabled</a> (void)</td></tr>
 <tr class="separator:aabe8a9ee36edee29a138431add62a903"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a667b3daad9407c30ca2d55c44d21efe5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQCanNetwork.html#a667b3daad9407c30ca2d55c44d21efe5">removeInterface</a> (void)</td></tr>
 <tr class="separator:a667b3daad9407c30ca2d55c44d21efe5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4995c3cf91d127d97f36ca7e8b744ddd"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQCanNetwork.html#a4995c3cf91d127d97f36ca7e8b744ddd">setBitrate</a> (int32_t slNomBitRateV, int32_t slDatBitRateV=eCAN_BITRATE_NONE)</td></tr>
 <tr class="separator:a4995c3cf91d127d97f36ca7e8b744ddd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a379c3d44de1ef9817e472c1f78675c14"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQCanNetwork.html#a379c3d44de1ef9817e472c1f78675c14">setDispatcherTime</a> (uint32_t ulTimeV)</td></tr>
-<tr class="separator:a379c3d44de1ef9817e472c1f78675c14"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6606132b11be7f4c62d5afa584e5510a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQCanNetwork.html#a6606132b11be7f4c62d5afa584e5510a">setErrorFramesEnabled</a> (bool btEnableV=true)</td></tr>
-<tr class="separator:a6606132b11be7f4c62d5afa584e5510a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a284ec78acf27d7ecf234b3de56325b0a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQCanNetwork.html#a284ec78acf27d7ecf234b3de56325b0a">setErrorFrameEnabled</a> (bool btEnableV=true)</td></tr>
+<tr class="separator:a284ec78acf27d7ecf234b3de56325b0a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a37409dc37bee5a493450b7ae52851bab"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQCanNetwork.html#a37409dc37bee5a493450b7ae52851bab">setFastDataEnabled</a> (bool btEnableV=true)</td></tr>
+<tr class="separator:a37409dc37bee5a493450b7ae52851bab"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6015d5f9dab5bd4fe25878a84f371cdf"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQCanNetwork.html#a6015d5f9dab5bd4fe25878a84f371cdf">setInterfaceConfiguration</a> (void)</td></tr>
+<tr class="separator:a6015d5f9dab5bd4fe25878a84f371cdf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7eefacc722e47053cb03ee2b2d7156e3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQCanNetwork.html#a7eefacc722e47053cb03ee2b2d7156e3">setNetworkEnabled</a> (bool btEnableV=true)</td></tr>
 <tr class="separator:a7eefacc722e47053cb03ee2b2d7156e3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa6bc50d877827636facf25057e824be9"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQCanNetwork.html#aa6bc50d877827636facf25057e824be9">startInterface</a> (void)</td></tr>
+<tr class="separator:aa6bc50d877827636facf25057e824be9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abdf6bf6373ae717937ff8df84de7593f"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQCanNetwork.html#abdf6bf6373ae717937ff8df84de7593f">stopInterface</a> (void)</td></tr>
+<tr class="separator:abdf6bf6373ae717937ff8df84de7593f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac93bd69b8844df38417038f734679d2b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespaceQCan.html#a7d2e35a617857b6786ba8eb64d0cdbd0">CAN_State_e</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQCanNetwork.html#ac93bd69b8844df38417038f734679d2b">state</a> (void)</td></tr>
+<tr class="separator:ac93bd69b8844df38417038f734679d2b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a223557c71714a99eca2af7cf4abfea84"></a>
@@ -180,6 +212,86 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="a7593a67180ee3ae56cfbecb4a17e5107"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7593a67180ee3ae56cfbecb4a17e5107">&#9670;&nbsp;</a></span>addLogMessage</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void QCanNetwork::addLogMessage </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="namespaceQCan.html#abae21c9f603dfe532d8e943f58d9b903">CAN_Channel_e</a> &amp;&#160;</td>
+          <td class="paramname"><em>ubChannelR</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const QString &amp;&#160;</td>
+          <td class="paramname"><em>clMessageR</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const LogLevel_e &amp;&#160;</td>
+          <td class="paramname"><em>teLogLevelR</em> = <code>eLOG_LEVEL_NOTICE</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">signal</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">ubChannelR</td><td>- CAN channel </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">clMessageV</td><td>- Logging message </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">teLogLevel</td><td>- Logging level</td></tr>
+  </table>
+  </dd>
+</dl>
+<p>This signal is emitted by the CAN network to inform the application about status changes or error conditions. </p>
+
+</div>
+</div>
+<a id="afad429d850e6fd56445a48680c91db3d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afad429d850e6fd56445a48680c91db3d">&#9670;&nbsp;</a></span>bitrate()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int32_t QCanNetwork::bitrate </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<dl class="section return"><dt>Returns</dt><dd>Bit-rate value for Nominal Bit Timing </dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="classQCanNetwork.html#a9ee3a0e7932a96b821ded6e9d7fd53c9">nominalBitrate()</a> </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000006">Deprecated:</a></b></dt><dd>It is advised to use <a class="el" href="classQCanNetwork.html#a9ee3a0e7932a96b821ded6e9d7fd53c9">nominalBitrate()</a> for new applications.</dd></dl>
+
+</div>
+</div>
 <a id="a254bec7df29ba6bf91d112c62af82ba3"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a254bec7df29ba6bf91d112c62af82ba3">&#9670;&nbsp;</a></span>dataBitrate()</h2>
 
@@ -205,7 +317,7 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <dl class="section return"><dt>Returns</dt><dd>Bit-rate value for Data Bit Timing </dd></dl>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="classQCanNetwork.html#a4995c3cf91d127d97f36ca7e8b744ddd">setBitrate()</a></dd></dl>
-<p>This function returns the data bit-rate of the CAN network. For <b>classical CAN</b>, the return value is always CANpie::eCAN_BITRATE_NONE For <b>CAN FD</b> the return value defines the bit-rate for the data phase. </p>
+<p>This function returns the data bit-rate of the CAN network. For <b>classical CAN</b>, the return value is always CANpie::eCAN_BITRATE_NONE. For <b>CAN FD</b> the return value defines the bit-rate for the data phase. </p>
 <p>If no bit-rate is configured, the function will return CANpie::eCAN_BITRATE_NONE. </p>
 
 </div>
@@ -231,8 +343,8 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="ab76fa7ea4102f4f0358897da0f487b2f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab76fa7ea4102f4f0358897da0f487b2f">&#9670;&nbsp;</a></span>dispatcherTime()</h2>
+<a id="a5b9f55cbb95102d07a7bb07a6af8d6d2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5b9f55cbb95102d07a7bb07a6af8d6d2">&#9670;&nbsp;</a></span>frameCount()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -241,7 +353,7 @@ Public Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">uint32_t QCanNetwork::dispatcherTime </td>
+          <td class="memname">uint32_t QCanNetwork::frameCount </td>
           <td>(</td>
           <td class="paramtype">void&#160;</td>
           <td class="paramname"></td><td>)</td>
@@ -254,9 +366,186 @@ Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<dl class="section return"><dt>Returns</dt><dd>Current dispatcher time </dd></dl>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="classQCanNetwork.html#a379c3d44de1ef9817e472c1f78675c14">setDispatcherTime()</a></dd></dl>
-<p>This function returns the current dispatcher time for the internal CAN frame handler in milliseconds. </p>
+<dl class="section return"><dt>Returns</dt><dd>Number of CAN frames</dd></dl>
+<p>This function returns the actual number of CAN frames that have been transmitted via the network. </p>
+
+</div>
+</div>
+<a id="ae7c92ef0f5a659d7053d82c4f5effff2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae7c92ef0f5a659d7053d82c4f5effff2">&#9670;&nbsp;</a></span>frameCountError()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint32_t QCanNetwork::frameCountError </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<dl class="section return"><dt>Returns</dt><dd>Number of Error frames</dd></dl>
+<p>This function returns the actual number of error frames that have been transmitted via the network. </p>
+
+</div>
+</div>
+<a id="a76a80676ccde7cdcae2902e32dd4f338"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a76a80676ccde7cdcae2902e32dd4f338">&#9670;&nbsp;</a></span>hasErrorFrameSupport()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool QCanNetwork::hasErrorFrameSupport </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="section return"><dt>Returns</dt><dd><code>true</code> if error frames are supported </dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="classQCanNetwork.html#a3db153b9728673af09c1c4a317ec0e33">isErrorFrameEnabled()</a></dd></dl>
+<p>This function returns <code>true</code> if the attached CAN interface supports the evaluation of error frames, otherwise it returns <code>false</code>. </p>
+
+</div>
+</div>
+<a id="a54b9bf454873c8a8f7eb6e592ebe33bc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a54b9bf454873c8a8f7eb6e592ebe33bc">&#9670;&nbsp;</a></span>hasFastDataSupport()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool QCanNetwork::hasFastDataSupport </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="section return"><dt>Returns</dt><dd><code>true</code> if CAN FD is supported </dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="classQCanNetwork.html#a68850507addfe25550441f402ec381f9">isFastDataEnabled()</a></dd></dl>
+<p>This function returns <code>true</code> if the attached CAN interface supports CAN FD frames, otherwise it returns <code>false</code>. </p>
+
+</div>
+</div>
+<a id="ab738ae51495174dd221490429d3d5c8c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab738ae51495174dd221490429d3d5c8c">&#9670;&nbsp;</a></span>hasListenOnlySupport()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool QCanNetwork::hasListenOnlySupport </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="section return"><dt>Returns</dt><dd><code>true</code> if listen-only is supported </dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="classQCanNetwork.html#a33cfe955735cc18a79d5a4276c55a60b">isListenOnlyEnabled()</a></dd></dl>
+<p>This function returns <code>true</code> if the attached CAN interface supports listen-only mode, otherwise it returns <code>false</code>. </p>
+
+</div>
+</div>
+<a id="a3db153b9728673af09c1c4a317ec0e33"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3db153b9728673af09c1c4a317ec0e33">&#9670;&nbsp;</a></span>isErrorFrameEnabled()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool QCanNetwork::isErrorFrameEnabled </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<dl class="section return"><dt>Returns</dt><dd><code>true</code> if handling of error frames is enabled </dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="classQCanNetwork.html#a284ec78acf27d7ecf234b3de56325b0a">setErrorFrameEnabled()</a></dd></dl>
+<p>This function returns <code>true</code> if handling of error frames is enabled, otherwise it returns <code>false</code>. </p>
+
+</div>
+</div>
+<a id="a68850507addfe25550441f402ec381f9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a68850507addfe25550441f402ec381f9">&#9670;&nbsp;</a></span>isFastDataEnabled()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool QCanNetwork::isFastDataEnabled </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<dl class="section return"><dt>Returns</dt><dd><code>true</code> if CAN FD is enabled </dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="classQCanNetwork.html#a37409dc37bee5a493450b7ae52851bab">setFastDataEnabled()</a></dd></dl>
+<p>This function returns <code>true</code> if CAN FD mode is enabled, otherwise it returns <code>false</code>. </p>
+
+</div>
+</div>
+<a id="a33cfe955735cc18a79d5a4276c55a60b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a33cfe955735cc18a79d5a4276c55a60b">&#9670;&nbsp;</a></span>isListenOnlyEnabled()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool QCanNetwork::isListenOnlyEnabled </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<dl class="section return"><dt>Returns</dt><dd><code>true</code> if listen-only is enabled </dd></dl>
+<dl class="section see"><dt>See also</dt><dd>setListenOnlyEnabled()</dd></dl>
+<p>This function returns <code>true</code> if listen-only mode is enabled, otherwise it returns <code>false</code>. </p>
 
 </div>
 </div>
@@ -283,7 +572,7 @@ Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<dl class="section return"><dt>Returns</dt><dd><code>true</code> if CAN is enabled </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd><code>true</code> if network is enabled </dd></dl>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="classQCanNetwork.html#a7eefacc722e47053cb03ee2b2d7156e3">setNetworkEnabled()</a></dd></dl>
 <p>This function returns <code>true</code> if the network is enabled, otherwise it returns <code>false</code>. </p>
 
@@ -337,7 +626,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <dl class="section return"><dt>Returns</dt><dd>Bit-rate value for Nominal Bit Timing</dd></dl>
-<p>This function returns the nominal bit-rate of the CAN network as QString. </p>
+<p>This function returns the nominal bit-rate of the CAN network as QString object. </p>
 <p>If no bit-rate is configured, the function will return "None". </p>
 
 </div>
@@ -395,45 +684,19 @@ Public Member Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="classQCanNetwork.html#a254bec7df29ba6bf91d112c62af82ba3">dataBitrate()</a>, <a class="el" href="classQCanNetwork.html#a9ee3a0e7932a96b821ded6e9d7fd53c9">nominalBitrate()</a></dd></dl>
-<p>This function sets the bit-rate for the CAN network. For <b>Classical CAN</b>, the parameter <code>slBitrateV</code> defines the bit-rate for the complete frame, the parameter <code>slBrsClockV</code> is not evaluated in that case. For <b>CAN FD</b> the parameter <code>slBitrateV</code> defines the bit-rate for the arbitration phase, the parameter <code>slBrsClockV</code> defines the bit-rate for the data phase. </p>
+<p>This function sets the bit-rate for the CAN network. For <b>Classical CAN</b>, the parameter <code>slNomBitRateV</code> defines the bit-rate for the complete frame, the parameter <code>slDatBitRateV</code> is not evaluated in that case. For <b>CAN FD</b> the parameter <code>slNomBitRateV</code> defines the bit-rate for the arbitration phase, the parameter <code>slDatBitRateV</code> defines the bit-rate for the data phase. </p>
 <p>For selection of predefined bit-rates the value can be taken from the enumeration CANpie::CAN_Bitrate_e. </p>
 
 </div>
 </div>
-<a id="a379c3d44de1ef9817e472c1f78675c14"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a379c3d44de1ef9817e472c1f78675c14">&#9670;&nbsp;</a></span>setDispatcherTime()</h2>
+<a id="a284ec78acf27d7ecf234b3de56325b0a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a284ec78acf27d7ecf234b3de56325b0a">&#9670;&nbsp;</a></span>setErrorFrameEnabled()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void QCanNetwork::setDispatcherTime </td>
-          <td>(</td>
-          <td class="paramtype">uint32_t&#160;</td>
-          <td class="paramname"><em>ulTimeV</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">ulTimeV</td><td>Dispatcher time </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="classQCanNetwork.html#ab76fa7ea4102f4f0358897da0f487b2f">dispatcherTime()</a></dd></dl>
-<p>This function sets the dispatcher time for the internal CAN frame handler in milliseconds. </p>
-
-</div>
-</div>
-<a id="a6606132b11be7f4c62d5afa584e5510a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6606132b11be7f4c62d5afa584e5510a">&#9670;&nbsp;</a></span>setErrorFramesEnabled()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void QCanNetwork::setErrorFramesEnabled </td>
+          <td class="memname">void QCanNetwork::setErrorFrameEnabled </td>
           <td>(</td>
           <td class="paramtype">bool&#160;</td>
           <td class="paramname"><em>btEnableV</em> = <code>true</code></td><td>)</td>
@@ -447,8 +710,53 @@ Public Member Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section see"><dt>See also</dt><dd>isErrorFramesEnabled()</dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="classQCanNetwork.html#a3db153b9728673af09c1c4a317ec0e33">isErrorFrameEnabled()</a></dd></dl>
 <p>This function enables the dispatching of CAN error frames if <em>btEnable</em> is <code>true</code>, it is disabled on <code>false</code>. </p>
+
+</div>
+</div>
+<a id="a37409dc37bee5a493450b7ae52851bab"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a37409dc37bee5a493450b7ae52851bab">&#9670;&nbsp;</a></span>setFastDataEnabled()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void QCanNetwork::setFastDataEnabled </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>btEnableV</em> = <code>true</code></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">btEnableV</td><td>Enable / disable CAN FD mode </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="classQCanNetwork.html#a68850507addfe25550441f402ec381f9">isFastDataEnabled()</a></dd></dl>
+<p>This function enables the CAN FD mode if <em>btEnable</em> is <code>true</code>, it is disabled on <code>false</code>. </p>
+
+</div>
+</div>
+<a id="a6015d5f9dab5bd4fe25878a84f371cdf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6015d5f9dab5bd4fe25878a84f371cdf">&#9670;&nbsp;</a></span>setInterfaceConfiguration()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void QCanNetwork::setInterfaceConfiguration </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Perform a device specific interface configuration. This function is only executed if a CAN interface has been added to the network (refer to <a class="el" href="classQCanNetwork.html#a179aada1459a2cf7d304e8f2753b863a">addInterface()</a>). </p>
 
 </div>
 </div>
@@ -478,8 +786,8 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="afef98cbd746270b2e486e74443ac9280"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#afef98cbd746270b2e486e74443ac9280">&#9670;&nbsp;</a></span>showApiFrames</h2>
+<a id="ac12235158ddae50140e985263e9f40c4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac12235158ddae50140e985263e9f40c4">&#9670;&nbsp;</a></span>showApiFrames</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -490,113 +798,14 @@ Public Member Functions</h2></td></tr>
         <tr>
           <td class="memname">void QCanNetwork::showApiFrames </td>
           <td>(</td>
-          <td class="paramtype">uint32_t&#160;</td>
-          <td class="paramname"><em>ulFrameTotalV</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">signal</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">ulFrameTotalV</td><td>Total number of frames</td></tr>
-  </table>
-  </dd>
-</dl>
-<p>This signal is emitted every second. The parameter <em>ulFrameTotalV</em> denotes the total number of API frames. </p>
-
-</div>
-</div>
-<a id="a43f77cda0c5473c4df41dc8eb2fe082a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a43f77cda0c5473c4df41dc8eb2fe082a">&#9670;&nbsp;</a></span>showCanFrames</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void QCanNetwork::showCanFrames </td>
-          <td>(</td>
-          <td class="paramtype">uint32_t&#160;</td>
-          <td class="paramname"><em>ulFrameTotalV</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">signal</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">ulFrameTotalV</td><td>Total number of frames</td></tr>
-  </table>
-  </dd>
-</dl>
-<p>This signal is emitted every second. The parameter <em>ulFrameTotalV</em> denotes the total number of CAN frames. </p>
-
-</div>
-</div>
-<a id="a7f5a5a34ca4f276caec7311dd3f671aa"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7f5a5a34ca4f276caec7311dd3f671aa">&#9670;&nbsp;</a></span>showErrFrames</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void QCanNetwork::showErrFrames </td>
-          <td>(</td>
-          <td class="paramtype">uint32_t&#160;</td>
-          <td class="paramname"><em>ulFrameTotalV</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">signal</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">ulFrameTotalV</td><td>Total number of frames</td></tr>
-  </table>
-  </dd>
-</dl>
-<p>This signal is emitted every second. The parameter <em>ulFrameTotalV</em> denotes the total number of CAN error frames. </p>
-
-</div>
-</div>
-<a id="a96c4d0a3ab88bb426565d8b8839bc099"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a96c4d0a3ab88bb426565d8b8839bc099">&#9670;&nbsp;</a></span>showLoad</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void QCanNetwork::showLoad </td>
-          <td>(</td>
-          <td class="paramtype">uint8_t&#160;</td>
-          <td class="paramname"><em>ubLoadV</em>, </td>
+          <td class="paramtype">const <a class="el" href="namespaceQCan.html#abae21c9f603dfe532d8e943f58d9b903">CAN_Channel_e</a> &amp;&#160;</td>
+          <td class="paramname"><em>ubChannelR</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">uint32_t&#160;</td>
-          <td class="paramname"><em>ulMsgPerSecV</em>&#160;</td>
+          <td class="paramtype">const uint32_t &amp;&#160;</td>
+          <td class="paramname"><em>ulFrameTotalR</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -612,12 +821,223 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">ubLoadV</td><td>Bus load in percent </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">ulMsgPerSecV</td><td>Messages per second</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">ubChannelR</td><td>- CAN channel </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">ulFrameTotalV</td><td>Total number of frames</td></tr>
+  </table>
+  </dd>
+</dl>
+<p>This signal is emitted every second. The parameter <em>ulFrameTotalV</em> denotes the total number of API frames. </p>
+
+</div>
+</div>
+<a id="a220b0151396aded0487b805ea9e84299"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a220b0151396aded0487b805ea9e84299">&#9670;&nbsp;</a></span>showCanFrames</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void QCanNetwork::showCanFrames </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="namespaceQCan.html#abae21c9f603dfe532d8e943f58d9b903">CAN_Channel_e</a> &amp;&#160;</td>
+          <td class="paramname"><em>ubChannelR</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const uint32_t &amp;&#160;</td>
+          <td class="paramname"><em>ulFrameTotalR</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">signal</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">ubChannelR</td><td>- CAN channel </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">ulFrameTotalV</td><td>Total number of frames</td></tr>
+  </table>
+  </dd>
+</dl>
+<p>This signal is emitted every second. The parameter <em>ulFrameTotalV</em> denotes the total number of CAN frames. </p>
+
+</div>
+</div>
+<a id="ab44020d6ed88ed74028a50e2ec521ed4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab44020d6ed88ed74028a50e2ec521ed4">&#9670;&nbsp;</a></span>showErrFrames</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void QCanNetwork::showErrFrames </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="namespaceQCan.html#abae21c9f603dfe532d8e943f58d9b903">CAN_Channel_e</a> &amp;&#160;</td>
+          <td class="paramname"><em>ubChannelR</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const uint32_t &amp;&#160;</td>
+          <td class="paramname"><em>ulFrameTotalR</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">signal</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">ubChannelR</td><td>- CAN channel </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">ulFrameTotalV</td><td>- Total number of frames</td></tr>
+  </table>
+  </dd>
+</dl>
+<p>This signal is emitted every second. The parameter <em>ulFrameTotalV</em> denotes the total number of CAN error frames. </p>
+
+</div>
+</div>
+<a id="a14b959dd437f9ec79bfa479d2b20a278"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a14b959dd437f9ec79bfa479d2b20a278">&#9670;&nbsp;</a></span>showLoad</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void QCanNetwork::showLoad </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="namespaceQCan.html#abae21c9f603dfe532d8e943f58d9b903">CAN_Channel_e</a> &amp;&#160;</td>
+          <td class="paramname"><em>ubChannelR</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const uint8_t &amp;&#160;</td>
+          <td class="paramname"><em>ubLoadR</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const uint32_t &amp;&#160;</td>
+          <td class="paramname"><em>ulMsgPerSecR</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">signal</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">ubChannelR</td><td>- CAN channel </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">ubLoadR</td><td>- Bus load in percent </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">ulMsgPerSecR</td><td>- Messages per second</td></tr>
   </table>
   </dd>
 </dl>
 <p>This signal is emitted every second. The parameter <em>ubLoadV</em> denotes the bus load in percent (value range 0 .. 100). </p>
+
+</div>
+</div>
+<a id="aa6bc50d877827636facf25057e824be9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa6bc50d877827636facf25057e824be9">&#9670;&nbsp;</a></span>startInterface()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool QCanNetwork::startInterface </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="section return"><dt>Returns</dt><dd><code>true</code> if CAN interface is started </dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="classQCanNetwork.html#a179aada1459a2cf7d304e8f2753b863a">addInterface()</a></dd></dl>
+<p>The function starts a physical CAN interface. The interface must have been attached to the network using <a class="el" href="classQCanNetwork.html#a179aada1459a2cf7d304e8f2753b863a">addInterface()</a> in advance. </p>
+<p>The function returns <code>true</code> if the CAN interface is started, otherwise it will return <code>false</code>. </p>
+
+</div>
+</div>
+<a id="ac93bd69b8844df38417038f734679d2b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac93bd69b8844df38417038f734679d2b">&#9670;&nbsp;</a></span>state()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespaceQCan.html#a7d2e35a617857b6786ba8eb64d0cdbd0">CAN_State_e</a> QCanNetwork::state </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<dl class="section return"><dt>Returns</dt><dd>State of CAN network</dd></dl>
+<p>The function returns the CAN state of the network. </p>
+
+</div>
+</div>
+<a id="abdf6bf6373ae717937ff8df84de7593f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abdf6bf6373ae717937ff8df84de7593f">&#9670;&nbsp;</a></span>stopInterface()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool QCanNetwork::stopInterface </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="section return"><dt>Returns</dt><dd><code>true</code> if CAN interface is stopped </dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="classQCanNetwork.html#a179aada1459a2cf7d304e8f2753b863a">addInterface()</a></dd></dl>
+<p>The function stops a physical CAN interface. The interface must have been attached to the network using <a class="el" href="classQCanNetwork.html#a179aada1459a2cf7d304e8f2753b863a">addInterface()</a> in advance. </p>
+<p>The function returns <code>true</code> if the CAN interface is stopped, otherwise it will return <code>false</code>. </p>
 
 </div>
 </div>
