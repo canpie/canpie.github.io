@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['statistic_20information',['Statistic information',['../page_8api_statistic.html',1,'']]]
+  ['physical_20can_20interface',['Physical CAN interface',['../page_8api_phys_can.html',1,'']]]
 ];

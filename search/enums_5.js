@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['type_5fe',['Type_e',['../classQCanData.html#ac2f3910e27e44314bb0d9d29db8b4a19',1,'QCanData']]]
+  ['state_5fe',['State_e',['../classQCanServerSettings.html#a6fc280294a8df83d609b4640df204ee2',1,'QCanServerSettings']]]
 ];

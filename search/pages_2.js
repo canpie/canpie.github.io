@@ -1,4 +1,7 @@
 var searchData=
 [
-  ['migration_20from_20_25canpie_20to_20_25canpie_20fd',['Migration from %CANpie to %CANpie FD',['../page_8api_migration.html',1,'']]]
+  ['deprecated_20list',['Deprecated List',['../deprecated.html',1,'']]],
+  ['deprecated_20_25canpie_20functions',['Deprecated %CANpie functions',['../page_8api_deprecated.html',1,'']]],
+  ['demo_5fbuffer_5fconfig_2ec',['demo_buffer_config.c',['../page_8ex_buffer.html',1,'']]],
+  ['demo_5fbuffer_5ffifo_2ec',['demo_buffer_fifo.c',['../page_8ex_fifo.html',1,'']]]
 ];

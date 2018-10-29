@@ -1,6 +1,4 @@
 var searchData=
 [
-  ['haserrorframesupport',['hasErrorFrameSupport',['../classQCanNetwork.html#a76a80676ccde7cdcae2902e32dd4f338',1,'QCanNetwork']]],
-  ['hasfastdatasupport',['hasFastDataSupport',['../classQCanNetwork.html#a54b9bf454873c8a8f7eb6e592ebe33bc',1,'QCanNetwork']]],
-  ['haslistenonlysupport',['hasListenOnlySupport',['../classQCanNetwork.html#ab738ae51495174dd221490429d3d5c8c',1,'QCanNetwork']]]
+  ['getinterface',['getInterface',['../classQCanPluginIxxat.html#aab1ba5bef69350069b7334c1114bf7cb',1,'QCanPluginIxxat::getInterface()'],['../classQCanPluginPeak.html#a203a5c2faf33eb91eb51871c2b8960fb',1,'QCanPluginPeak::getInterface()'],['../classQCanPluginTemplate.html#acf153cfa1db66f0882724ce5944b04ea',1,'QCanPluginTemplate::getInterface()'],['../classQCanPlugin.html#abbc25888d9d0e6dd27d38c3f5aacae2d',1,'QCanPlugin::getInterface()']]]
 ];

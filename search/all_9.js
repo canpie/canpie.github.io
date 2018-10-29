@@ -1,8 +1,5 @@
 var searchData=
 [
-  ['name',['name',['../classQCanFrameApi.html#a05c7c943ff072fece917dd437d3c8ba7',1,'QCanFrameApi::name()'],['../classQCanInterface.html#aec6b8e38ead03f559a616a5d1c1ff362',1,'QCanInterface::name()']]],
-  ['nanoseconds',['nanoSeconds',['../classQCanTimeStamp.html#a8ea9d6b11c8727d9436e4789d40bd01d',1,'QCanTimeStamp']]],
-  ['network',['network',['../classQCanServer.html#a36e71bfb8a6997e3cef1d56d80f93bb1',1,'QCanServer']]],
-  ['nominalbitrate',['nominalBitrate',['../classQCanFrameApi.html#a5e3f0be9c7d2c7f074df56741f521c32',1,'QCanFrameApi::nominalBitrate()'],['../classQCanNetwork.html#a9ee3a0e7932a96b821ded6e9d7fd53c9',1,'QCanNetwork::nominalBitrate()']]],
-  ['nominalbitratestring',['nominalBitrateString',['../classQCanNetwork.html#acdd24efec2ba0a596326b4441793ef55',1,'QCanNetwork']]]
+  ['len',['LEN',['../structtagTPCANMsg.html#ab5bf9102bab0ebd589084c2c95b2f2df',1,'tagTPCANMsg']]],
+  ['loglevel_5fe',['LogLevel_e',['../namespaceQCan.html#a026c08d96c4b4ed52d39aa934acb3814',1,'QCan']]]
 ];

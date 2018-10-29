@@ -1,7 +1,11 @@
 var searchData=
 [
-  ['read',['read',['../classQCanInterface.html#a2132e10fbf66cd862b34827d96bc88ff',1,'QCanInterface::read()'],['../classQCanSocket.html#a258863b370de5d30ffdc4359917e29df',1,'QCanSocket::read()']]],
-  ['readyread',['readyRead',['../classQCanInterface.html#a338bd6724d804efd0756b947be5e4fae',1,'QCanInterface']]],
-  ['removeinterface',['removeInterface',['../classQCanNetwork.html#a667b3daad9407c30ca2d55c44d21efe5',1,'QCanNetwork']]],
-  ['reset',['reset',['../classQCanInterface.html#a849e5e9f812a8941c4b35ca272ac5579',1,'QCanInterface']]]
+  ['physical_20can_20interface',['Physical CAN interface',['../page_8api_phys_can.html',1,'']]],
+  ['peeraddress',['peerAddress',['../classQCanSocketDialog.html#a16be2fef333d8a82f75036ebde07662a',1,'QCanSocketDialog']]],
+  ['pfncanchannelopenp',['pfnCanChannelOpenP',['../classQCanIxxatVci.html#a087104af5b20861d5502eefc7c46a8c3',1,'QCanIxxatVci']]],
+  ['pfncancontrolopenp',['pfnCanControlOpenP',['../classQCanIxxatVci.html#a3f26befa132622e36188ae824c64a6b1',1,'QCanIxxatVci']]],
+  ['pfncanscheduleropenp',['pfnCanSchedulerOpenP',['../classQCanIxxatVci.html#a804307b9d58912381958aefbc02c678e',1,'QCanIxxatVci']]],
+  ['pfnvcideviceopenp',['pfnVciDeviceOpenP',['../classQCanIxxatVci.html#aa57e06d304298d145ea617ced5afd169',1,'QCanIxxatVci']]],
+  ['pfnvcienumdeviceopenp',['pfnVciEnumDeviceOpenP',['../classQCanIxxatVci.html#a34572581d3412814633b5d6126fc379a',1,'QCanIxxatVci']]],
+  ['ptscanmsg',['ptsCanMsg',['../structCpFifo__s.html#aa53d68f824eb03646858e149ac570234',1,'CpFifo_s']]]
 ];

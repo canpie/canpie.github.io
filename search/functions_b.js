@@ -1,12 +1,14 @@
 var searchData=
 [
-  ['qcandata',['QCanData',['../classQCanData.html#af0b8a7bd34e692c03c32d1bf8c72adef',1,'QCanData']]],
-  ['qcanframe',['QCanFrame',['../classQCanFrame.html#a40713e67c24b8a8b982fd920eb421826',1,'QCanFrame::QCanFrame()'],['../classQCanFrame.html#a7e079e0caf7d994a82149176bd127371',1,'QCanFrame::QCanFrame(const Format_e &amp;ubFormatR, const uint32_t &amp;ulIdentifierR=0, const uint8_t &amp;ubDlcR=0)']]],
-  ['qcanframeapi',['QCanFrameApi',['../classQCanFrameApi.html#a646c0567fa60c5013b756084e6f23d6e',1,'QCanFrameApi']]],
-  ['qcanframeerror',['QCanFrameError',['../classQCanFrameError.html#ac0691dd37f937be1f330b97fe7be064e',1,'QCanFrameError']]],
-  ['qcannetwork',['QCanNetwork',['../classQCanNetwork.html#a223557c71714a99eca2af7cf4abfea84',1,'QCanNetwork']]],
-  ['qcanserver',['QCanServer',['../classQCanServer.html#a3b4ab89279bace48223fbcd95f875e8f',1,'QCanServer']]],
-  ['qcansocket',['QCanSocket',['../classQCanSocket.html#adb61caef05f95014c58f4e2d76beacaa',1,'QCanSocket']]],
-  ['qcansocketdialog',['QCanSocketDialog',['../classQCanSocketDialog.html#ac927d8883283318b8cc16969ee898fc7',1,'QCanSocketDialog::QCanSocketDialog(QWidget *pclParentV, Qt::WindowFlags f)'],['../classQCanSocketDialog.html#ab317372ebb6dbcca1d3bbeef004becaa',1,'QCanSocketDialog::QCanSocketDialog(QWidget *pclParentV=Q_NULLPTR, const QString &amp;caption=QString())']]],
-  ['qcantimestamp',['QCanTimeStamp',['../classQCanTimeStamp.html#a81fa54ac3c2a3eb0c17ee90821bf893b',1,'QCanTimeStamp']]]
+  ['oninterfacechange',['onInterfaceChange',['../classQCanServerDialog.html#ae66c088908b1b1d9a3162304520d0df3',1,'QCanServerDialog']]],
+  ['operator_21_3d',['operator!=',['../classQCanTimeStamp.html#ae4dc2bb690ec25ba7ac71cfc1494d9ff',1,'QCanTimeStamp']]],
+  ['operator_2b',['operator+',['../classQCanTimeStamp.html#a47c4164532f614ef572b06228df6a1e9',1,'QCanTimeStamp']]],
+  ['operator_2b_3d',['operator+=',['../classQCanTimeStamp.html#a2c02c823ef3fe4e31b65f65feda6f38f',1,'QCanTimeStamp']]],
+  ['operator_2d',['operator-',['../classQCanTimeStamp.html#a68b2fa79e4f93f9baf46c50f8d751cdf',1,'QCanTimeStamp']]],
+  ['operator_2d_3d',['operator-=',['../classQCanTimeStamp.html#af36a8e5f08a1f7ae8d06ed1b5859d3d9',1,'QCanTimeStamp']]],
+  ['operator_3c',['operator&lt;',['../classQCanTimeStamp.html#a4a0ca9f889b0d20c703076530d723155',1,'QCanTimeStamp']]],
+  ['operator_3c_3d',['operator&lt;=',['../classQCanTimeStamp.html#ac2683eb1f3eaafedfb5ccb04c0782ffa',1,'QCanTimeStamp']]],
+  ['operator_3d_3d',['operator==',['../classQCanTimeStamp.html#adf2471b5bc66c12eb04b2a523573c9e5',1,'QCanTimeStamp']]],
+  ['operator_3e',['operator&gt;',['../classQCanTimeStamp.html#ae2872999208c8f0cb1e28f429f91f89c',1,'QCanTimeStamp']]],
+  ['operator_3e_3d',['operator&gt;=',['../classQCanTimeStamp.html#ad9b5a2dad0f3d0f0109b0b3a54e1d6b2',1,'QCanTimeStamp']]]
 ];

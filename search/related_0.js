@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['cpcorebitrate',['CpCoreBitrate',['../classQCanSocketCpFD.html#a444870a08040e06fed3692eb586ce95a',1,'QCanSocketCpFD']]],
+  ['cpcorebitrate',['CpCoreBitrate',['../classQCanSocketCpFD.html#a23cb8c502d0c9c62156e12b40c3298e2',1,'QCanSocketCpFD']]],
   ['cpcorebufferconfig',['CpCoreBufferConfig',['../classQCanSocketCpFD.html#a9008afd4e151fdc0eeec7ec13410d174',1,'QCanSocketCpFD']]],
   ['cpcorebuffergetdata',['CpCoreBufferGetData',['../classQCanSocketCpFD.html#a02c004107e978ccfa06d6afce05c86ac',1,'QCanSocketCpFD']]],
   ['cpcorebuffergetdlc',['CpCoreBufferGetDlc',['../classQCanSocketCpFD.html#affc70af9b4efd5ec75eaeb30ea2e1356',1,'QCanSocketCpFD']]],

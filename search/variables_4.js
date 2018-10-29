@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['sldatbitrate',['slDatBitRate',['../structCpHdi__s.html#a8743f82067a0fcd66594e6fbacadabfe',1,'CpHdi_s']]],
-  ['slnombitrate',['slNomBitRate',['../structCpHdi__s.html#a028744948c35628b50f394e30b699522',1,'CpHdi_s']]]
+  ['len',['LEN',['../structtagTPCANMsg.html#ab5bf9102bab0ebd589084c2c95b2f2df',1,'tagTPCANMsg']]]
 ];
