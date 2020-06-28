@@ -1,9 +1,7 @@
 var searchData=
 [
-  ['name',['name',['../classQCanInterfaceIxxat.html#a442cf40d1fd90fb74495079118e8bb3f',1,'QCanInterfaceIxxat::name()'],['../classQCanPluginIxxat.html#ab070cb948629661e5512fcbb84145e39',1,'QCanPluginIxxat::name()'],['../classQCanInterfacePeak.html#a5dce32a924088f0d8021f11fa49e5e5c',1,'QCanInterfacePeak::name()'],['../classQCanPluginPeak.html#ab446a6a89a090e32ac97e9b8bbb724f3',1,'QCanPluginPeak::name()'],['../classQCanInterfaceTemplate.html#abdf45d6f8a3b5ad6ed99a7d7eeef7afa',1,'QCanInterfaceTemplate::name()'],['../classQCanPluginTemplate.html#aaaa2ff1bbf4988ff1a313d7685d99d6f',1,'QCanPluginTemplate::name()'],['../classQCanInterfaceWidget.html#a711eb064bf2e1b92eb217512f5cbbe8a',1,'QCanInterfaceWidget::name()'],['../classQCanInterface.html#aec6b8e38ead03f559a616a5d1c1ff362',1,'QCanInterface::name()'],['../classQCanNetworkSettings.html#aec97cafafb4b7befef98c15cc188a2ec',1,'QCanNetworkSettings::name()'],['../classQCanPlugin.html#a79d39a01be512e7e8ef82f139b3a728d',1,'QCanPlugin::name()']]],
-  ['nanoseconds',['nanoSeconds',['../classQCanTimeStamp.html#a8ea9d6b11c8727d9436e4789d40bd01d',1,'QCanTimeStamp']]],
-  ['network',['network',['../classQCanServer.html#a36e71bfb8a6997e3cef1d56d80f93bb1',1,'QCanServer']]],
-  ['networkcount',['networkCount',['../classQCanServerSettings.html#ab4e4ba40fc2ee9334f1123493b247fb0',1,'QCanServerSettings']]],
-  ['nominalbitrate',['nominalBitrate',['../classQCanNetwork.html#a9ee3a0e7932a96b821ded6e9d7fd53c9',1,'QCanNetwork::nominalBitrate()'],['../classQCanNetworkSettings.html#a8400f16fc433f0116768629ec89e6dc9',1,'QCanNetworkSettings::nominalBitrate()']]],
-  ['nominalbitratestring',['nominalBitrateString',['../classQCanNetwork.html#acdd24efec2ba0a596326b4441793ef55',1,'QCanNetwork::nominalBitrateString()'],['../classQCanNetworkSettings.html#a485de74994d7b83b24c07999009ba7f3',1,'QCanNetworkSettings::nominalBitrateString()']]]
+  ['marker_678',['marker',['../classQCanFrame.html#af9c0dcdebe921774c91dfa24dd777955',1,'QCanFrame']]],
+  ['match_679',['match',['../classQCanFilter.html#aa7d10f1dab6da2f25c3445378cf736c0',1,'QCanFilter']]],
+  ['maximumnetwork_680',['maximumNetwork',['../classQCanServer.html#a472b68e3aba72b3a8e2014ebb2251236',1,'QCanServer']]],
+  ['message_681',['message',['../classQCanServerLogger.html#a5fe2435d6ff87e87a149b121294e050f',1,'QCanServerLogger']]]
 ];

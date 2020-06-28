@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['_7emcgcan',['~McgCan',['../classMcgCan.html#a746b87301beae40cc546154a4d325d0d',1,'McgCan']]]
+  ['write_775',['write',['../classQCanInterface.html#aa18ec743fe91e01b89bf52b196af3b19',1,'QCanInterface::write()'],['../classQCanSocket.html#ae9fa6c12e59cf4cb407ed465a20865c4',1,'QCanSocket::write()']]]
 ];

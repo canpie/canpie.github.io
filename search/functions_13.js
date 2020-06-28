@@ -1,4 +1,7 @@
 var searchData=
 [
-  ['write',['write',['../classQCanInterfaceIxxat.html#a5de133a77f18c9f40b389efc918be9f5',1,'QCanInterfaceIxxat::write()'],['../classQCanInterfacePeak.html#a834806cbf26ae1c5edc28d3b1d0b474e',1,'QCanInterfacePeak::write()'],['../classQCanInterfaceTemplate.html#a0eb8d0e37fce88d2fdc7f97cce4ab80d',1,'QCanInterfaceTemplate::write()'],['../classQCanInterface.html#aa18ec743fe91e01b89bf52b196af3b19',1,'QCanInterface::write()'],['../classQCanSocket.html#ae9fa6c12e59cf4cb407ed465a20865c4',1,'QCanSocket::write()']]]
+  ['version_771',['version',['../classQCanInterface.html#a1adf584754aeae2ec310cb23f03bf0f9',1,'QCanInterface']]],
+  ['versionbuild_772',['versionBuild',['../classQCanServerSettings.html#a6cdb9f9c393021636b0faf010fe8780a',1,'QCanServerSettings']]],
+  ['versionmajor_773',['versionMajor',['../classQCanServerSettings.html#aab9f0817050631544543f89ec6cef818',1,'QCanServerSettings']]],
+  ['versionminor_774',['versionMinor',['../classQCanServerSettings.html#ade225f051475a64b05c26f0be390ba00',1,'QCanServerSettings']]]
 ];

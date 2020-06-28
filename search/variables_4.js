@@ -1,4 +1,32 @@
 var searchData=
 [
-  ['len',['LEN',['../structtagTPCANMsg.html#ab5bf9102bab0ebd589084c2c95b2f2df',1,'tagTPCANMsg']]]
+  ['ubbuffermax_783',['ubBufferMax',['../structCpHdi__s.html#a9da5fc597f00d8af98cbd8987f90caa5',1,'CpHdi_s']]],
+  ['ubcanerrstate_784',['ubCanErrState',['../structCpState__s.html#abe27ab99d5e1394cab041d5efbf85353',1,'CpState_s']]],
+  ['ubcanerrtype_785',['ubCanErrType',['../structCpState__s.html#a0e00013b8330a685dcbdd3509b8fc3a1',1,'CpState_s']]],
+  ['ubcanfeatures_786',['ubCanFeatures',['../structCpHdi__s.html#a75d3c1e09010c03271bf2cec52e9caa2',1,'CpHdi_s']]],
+  ['ubcanrcverrcnt_787',['ubCanRcvErrCnt',['../structCpState__s.html#a5492ad9cac9ca88034c256c773a382c6',1,'CpState_s']]],
+  ['ubcantrmerrcnt_788',['ubCanTrmErrCnt',['../structCpState__s.html#abb772c0a2252945ef1ee3468c3295d30',1,'CpState_s']]],
+  ['ubdriverfeatures_789',['ubDriverFeatures',['../structCpHdi__s.html#a26023c9c7b185406c9d6aabd742f479b',1,'CpHdi_s']]],
+  ['ubdrivermajor_790',['ubDriverMajor',['../structCpHdi__s.html#a172f68c972437885e9f6d4c6d03d4e93',1,'CpHdi_s']]],
+  ['ubdriverminor_791',['ubDriverMinor',['../structCpHdi__s.html#a2e128a1a2ef45440540e187d76f2e0d2',1,'CpHdi_s']]],
+  ['ubmsgctrl_792',['ubMsgCtrl',['../structCpCanMsg__s.html#aaf6c9f49d0a30c389c19ee62d8f37c3e',1,'CpCanMsg_s']]],
+  ['ubmsgdlc_793',['ubMsgDLC',['../structCpCanMsg__s.html#a4cc8d5b31595b806e0459560178e36ac',1,'CpCanMsg_s']]],
+  ['ubreserved_794',['ubReserved',['../structCpHdi__s.html#a8666a42897be97123b5fe684e75ebd84',1,'CpHdi_s']]],
+  ['ubversionmajor_795',['ubVersionMajor',['../structCpHdi__s.html#a455888216192e580a335b6e75752f34e',1,'CpHdi_s']]],
+  ['ubversionminor_796',['ubVersionMinor',['../structCpHdi__s.html#a593d36a46813f94f000a5d0121894bd4',1,'CpHdi_s']]],
+  ['ulbitratemax_797',['ulBitRateMax',['../structCpHdi__s.html#a1b76402d68d3d76b4a3ce54e8d770a61',1,'CpHdi_s']]],
+  ['ulbitratemin_798',['ulBitRateMin',['../structCpHdi__s.html#a5f6e435a215d865a713c38d600f532f7',1,'CpHdi_s']]],
+  ['ulcanclock_799',['ulCanClock',['../structCpHdi__s.html#af37239121b380a7306ac78844e8eadec',1,'CpHdi_s']]],
+  ['ulerrmsgcount_800',['ulErrMsgCount',['../structCpStatistic__s.html#ab4c2a9ae58b8f70ff8e4e5e29f246f18',1,'CpStatistic_s']]],
+  ['ulidentifier_801',['ulIdentifier',['../structCpCanMsg__s.html#a34b06ff26b36e8dc803061c1964917b5',1,'CpCanMsg_s']]],
+  ['ulindexin_802',['ulIndexIn',['../structCpFifo__s.html#a7a6491527a7952c42481e72549f4e9f1',1,'CpFifo_s']]],
+  ['ulindexmax_803',['ulIndexMax',['../structCpFifo__s.html#a827dec6216e18bc13912188ef41719a7',1,'CpFifo_s']]],
+  ['ulindexout_804',['ulIndexOut',['../structCpFifo__s.html#ab5b819924cf972d33f0f447786ebad21',1,'CpFifo_s']]],
+  ['ulmsguser_805',['ulMsgUser',['../structCpCanMsg__s.html#a0d23e9f3d0f873e32d6713c9f7ffe816',1,'CpCanMsg_s']]],
+  ['ulnanosec_806',['ulNanoSec',['../structCpTime__s.html#a8c07923115633cebb56256a785c549e6',1,'CpTime_s']]],
+  ['ulrcvmsgcount_807',['ulRcvMsgCount',['../structCpStatistic__s.html#abf83347dacaefe41a688466601e901a0',1,'CpStatistic_s']]],
+  ['ulsec1970_808',['ulSec1970',['../structCpTime__s.html#a371d8582270e8ddd589c3e470c0378cf',1,'CpTime_s']]],
+  ['ulstate_809',['ulState',['../structCpFifo__s.html#a50df11a1b013f62862822d5439852f03',1,'CpFifo_s']]],
+  ['ultimestampres_810',['ulTimeStampRes',['../structCpHdi__s.html#a06918a0549c59b635b94ae47ee5b459a',1,'CpHdi_s']]],
+  ['ultrmmsgcount_811',['ulTrmMsgCount',['../structCpStatistic__s.html#a471c8c6af8f5e1f03ee69b7b54a91c4b',1,'CpStatistic_s']]]
 ];
