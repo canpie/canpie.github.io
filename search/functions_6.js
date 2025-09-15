@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['getinterface_661',['getInterface',['../classQCanPlugin.html#abbc25888d9d0e6dd27d38c3f5aacae2d',1,'QCanPlugin']]]
+  ['getinterface_0',['getInterface',['../classQCanPlugin.html#a598103c04db792c19e16cde8cecdf9b8',1,'QCanPlugin']]]
 ];

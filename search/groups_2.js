@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['mask_20values_20for_20can_20messages_1022',['Mask values for CAN messages',['../group__CP__MASK.html',1,'']]]
+  ['definitions_0',['definitions',['../group__QCAN__FRAME.html',1,'QCan frame definitions'],['../group__QCAN__IF.html',1,'QCan interface definitions'],['../group__QCAN__NW.html',1,'QCan network definitions']]]
 ];

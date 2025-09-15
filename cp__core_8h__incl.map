@@ -1,7 +1,0 @@
-<map id="cp_core.h" name="cp_core.h">
-<area shape="rect" id="node1" title="CANpie core functions." alt="" coords="85,5,165,32"/>
-<area shape="rect" id="node2" href="$cp__fifo_8h.html" title="CANpie FIFO functions." alt="" coords="89,80,161,107"/>
-<area shape="rect" id="node3" href="$canpie_8h.html" title="CANpie constants, structures and enumerations" alt="" coords="89,155,161,181"/>
-<area shape="rect" id="node4" title=" " alt="" coords="5,229,115,256"/>
-<area shape="rect" id="node5" title=" " alt="" coords="139,229,242,256"/>
-</map>

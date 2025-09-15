@@ -9,9 +9,9 @@ var indexSectionsWithContent =
   6: "cefils",
   7: "cefu",
   8: "c",
-  9: "cqt",
-  10: "bcmq",
-  11: "bcdmpst"
+  9: "c",
+  10: "bcdfimnoqv",
+  11: "abcdefghilmprstv"
 };
 
 var indexSectionNames =

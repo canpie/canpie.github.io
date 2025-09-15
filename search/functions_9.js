@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['loglevel_677',['logLevel',['../classQCanServerLogger.html#a295e0d55d78b72971f28e4bce114d126',1,'QCanServerLogger']]]
+  ['loglevel_0',['logLevel',['../classQCanServerLogger.html#a6a82dbf9b6f4007210155a01302c60a5',1,'QCanServerLogger']]]
 ];

@@ -1,11 +1,11 @@
 var searchData=
 [
-  ['acceptframe_552',['acceptFrame',['../classQCanFilter.html#aea368fc0c843d5c7bca10d3e74140bd3',1,'QCanFilter']]],
-  ['addinterface_553',['addInterface',['../classQCanNetwork.html#a179aada1459a2cf7d304e8f2753b863a',1,'QCanNetwork']]],
-  ['addlogmessage_554',['addLogMessage',['../classQCanInterface.html#a1d2b2be163a0040f89f87d39b39eb4ee',1,'QCanInterface::addLogMessage()'],['../classQCanNetwork.html#a4d7247077637c66d38d2438e99cb81d8',1,'QCanNetwork::addLogMessage()']]],
-  ['allowbitratechange_555',['allowBitrateChange',['../classQCanServer.html#a97aced7ec3d9f3e73914ab4652fabd3b',1,'QCanServer']]],
-  ['appendfilter_556',['appendFilter',['../classQCanFilterList.html#a14874236f8754ffece47f17edb67a0a8',1,'QCanFilterList']]],
-  ['appendmessage_557',['appendMessage',['../classQCanServerLogger.html#a6d2857abcc3016ef70d7c565bc651a2a',1,'QCanServerLogger']]],
-  ['attachserver_558',['attachServer',['../classQCanServerLogger.html#af1dee0a9f91e687e62a8a8c97983398e',1,'QCanServerLogger']]],
-  ['attachwebsocket_559',['attachWebSocket',['../classQCanNetwork.html#a5bf78653478c987b4ab7cec809f488c6',1,'QCanNetwork']]]
+  ['acceptframe_0',['acceptFrame',['../classQCanFilter.html#aea368fc0c843d5c7bca10d3e74140bd3',1,'QCanFilter']]],
+  ['addinterface_1',['addInterface',['../classQCanNetwork.html#a179aada1459a2cf7d304e8f2753b863a',1,'QCanNetwork']]],
+  ['addlogmessage_2',['addLogMessage',['../classQCanInterface.html#a7712b9ee3ad7aba63daf5cb5f2447318',1,'QCanInterface::addLogMessage()'],['../classQCanNetwork.html#a67212654873c8aa7c806a28b835ccf57',1,'QCanNetwork::addLogMessage()']]],
+  ['allowbitratechange_3',['allowBitrateChange',['../classQCanServer.html#a97aced7ec3d9f3e73914ab4652fabd3b',1,'QCanServer']]],
+  ['appendfilter_4',['appendFilter',['../classQCanFilterList.html#a14874236f8754ffece47f17edb67a0a8',1,'QCanFilterList']]],
+  ['appendmessage_5',['appendMessage',['../classQCanPlugin.html#a5ae2c2f6bd6ecd121b8037d5c59a747e',1,'QCanPlugin::appendMessage()'],['../classQCanServerLogger.html#a46040a3e8c48baa92fa6c3f20c848d45',1,'QCanServerLogger::appendMessage(const QCan::CAN_Channel_e teChannelV, const QString &amp;clLogMessageV, const QCan::LogLevel_e teLogLevelV=QCan::eLOG_LEVEL_INFO)']]],
+  ['attachserver_6',['attachServer',['../classQCanServerLogger.html#af1dee0a9f91e687e62a8a8c97983398e',1,'QCanServerLogger']]],
+  ['attachwebsocket_7',['attachWebSocket',['../classQCanNetwork.html#a6a339b93ce84bf5e3864b75d8d17f6cb',1,'QCanNetwork']]]
 ];
